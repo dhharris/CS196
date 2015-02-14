@@ -82,6 +82,7 @@ game_EXTERNAL_OBJECTS =
 game: CMakeFiles/game.dir/src/main.c.o
 game: CMakeFiles/game.dir/build.make
 game: deps/glfw-3.1/src/libglfw3.a
+game: deps/glfw-3.1/src/libglfw3.a
 game: CMakeFiles/game.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)

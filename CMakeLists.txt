@@ -17,15 +17,25 @@ include_directories(
 
 find_package(OpenGL REQUIRED)
 
+
 set(ALL_LIBS
 	${OPENGL_LIBRARY}
 	${GLFW_LIBRARIES}
-	${COCOA_LIBRARY}
 )
 
+if(UNIX)
 target_link_libraries(game glfw
 	${ALL_LIBS}
 )
+endif()
+
+if(APPLE)
+target_link_libraries(game glfw
+	${ALL_LIBS}
+	${COCOA_LIBRARY}
+)
+
+endif()
 
 
 
