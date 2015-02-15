@@ -533,6 +533,54 @@ windows/fast:
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
+src/block.o: src/block.c.o
+.PHONY : src/block.o
+
+# target to build an object file
+src/block.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/block.c.o
+.PHONY : src/block.c.o
+
+src/block.i: src/block.c.i
+.PHONY : src/block.i
+
+# target to preprocess a source file
+src/block.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/block.c.i
+.PHONY : src/block.c.i
+
+src/block.s: src/block.c.s
+.PHONY : src/block.s
+
+# target to generate assembly for a file
+src/block.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/block.c.s
+.PHONY : src/block.c.s
+
+src/input.o: src/input.c.o
+.PHONY : src/input.o
+
+# target to build an object file
+src/input.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/input.c.o
+.PHONY : src/input.c.o
+
+src/input.i: src/input.c.i
+.PHONY : src/input.i
+
+# target to preprocess a source file
+src/input.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/input.c.i
+.PHONY : src/input.c.i
+
+src/input.s: src/input.c.s
+.PHONY : src/input.s
+
+# target to generate assembly for a file
+src/input.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/input.c.s
+.PHONY : src/input.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -599,6 +647,12 @@ help:
 	@echo "... empty"
 	@echo "... gamma"
 	@echo "... fsaa"
+	@echo "... src/block.o"
+	@echo "... src/block.i"
+	@echo "... src/block.s"
+	@echo "... src/input.o"
+	@echo "... src/input.i"
+	@echo "... src/input.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

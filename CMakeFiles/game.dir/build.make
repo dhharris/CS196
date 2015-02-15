@@ -49,9 +49,55 @@ include CMakeFiles/game.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/game.dir/flags.make
 
+CMakeFiles/game.dir/src/block.c.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/block.c.o: src/block.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/game.dir/src/block.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/game.dir/src/block.c.o   -c /Users/hugh/GitHub/CS196/src/block.c
+
+CMakeFiles/game.dir/src/block.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/game.dir/src/block.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/hugh/GitHub/CS196/src/block.c > CMakeFiles/game.dir/src/block.c.i
+
+CMakeFiles/game.dir/src/block.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/game.dir/src/block.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/hugh/GitHub/CS196/src/block.c -o CMakeFiles/game.dir/src/block.c.s
+
+CMakeFiles/game.dir/src/block.c.o.requires:
+.PHONY : CMakeFiles/game.dir/src/block.c.o.requires
+
+CMakeFiles/game.dir/src/block.c.o.provides: CMakeFiles/game.dir/src/block.c.o.requires
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/block.c.o.provides.build
+.PHONY : CMakeFiles/game.dir/src/block.c.o.provides
+
+CMakeFiles/game.dir/src/block.c.o.provides.build: CMakeFiles/game.dir/src/block.c.o
+
+CMakeFiles/game.dir/src/input.c.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/input.c.o: src/input.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/game.dir/src/input.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/game.dir/src/input.c.o   -c /Users/hugh/GitHub/CS196/src/input.c
+
+CMakeFiles/game.dir/src/input.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/game.dir/src/input.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/hugh/GitHub/CS196/src/input.c > CMakeFiles/game.dir/src/input.c.i
+
+CMakeFiles/game.dir/src/input.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/game.dir/src/input.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/hugh/GitHub/CS196/src/input.c -o CMakeFiles/game.dir/src/input.c.s
+
+CMakeFiles/game.dir/src/input.c.o.requires:
+.PHONY : CMakeFiles/game.dir/src/input.c.o.requires
+
+CMakeFiles/game.dir/src/input.c.o.provides: CMakeFiles/game.dir/src/input.c.o.requires
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/input.c.o.provides.build
+.PHONY : CMakeFiles/game.dir/src/input.c.o.provides
+
+CMakeFiles/game.dir/src/input.c.o.provides.build: CMakeFiles/game.dir/src/input.c.o
+
 CMakeFiles/game.dir/src/main.c.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/main.c.o: src/main.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/game.dir/src/main.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/game.dir/src/main.c.o   -c /Users/hugh/GitHub/CS196/src/main.c
 
@@ -74,11 +120,15 @@ CMakeFiles/game.dir/src/main.c.o.provides.build: CMakeFiles/game.dir/src/main.c.
 
 # Object files for target game
 game_OBJECTS = \
+"CMakeFiles/game.dir/src/block.c.o" \
+"CMakeFiles/game.dir/src/input.c.o" \
 "CMakeFiles/game.dir/src/main.c.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
+game: CMakeFiles/game.dir/src/block.c.o
+game: CMakeFiles/game.dir/src/input.c.o
 game: CMakeFiles/game.dir/src/main.c.o
 game: CMakeFiles/game.dir/build.make
 game: deps/glfw-3.1/src/libglfw3.a
@@ -91,6 +141,8 @@ game: CMakeFiles/game.dir/link.txt
 CMakeFiles/game.dir/build: game
 .PHONY : CMakeFiles/game.dir/build
 
+CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/block.c.o.requires
+CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/input.c.o.requires
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/main.c.o.requires
 .PHONY : CMakeFiles/game.dir/requires
 

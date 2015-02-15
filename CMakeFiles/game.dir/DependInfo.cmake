@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/hugh/GitHub/CS196/src/block.c" "/Users/hugh/GitHub/CS196/CMakeFiles/game.dir/src/block.c.o"
+  "/Users/hugh/GitHub/CS196/src/input.c" "/Users/hugh/GitHub/CS196/CMakeFiles/game.dir/src/input.c.o"
   "/Users/hugh/GitHub/CS196/src/main.c" "/Users/hugh/GitHub/CS196/CMakeFiles/game.dir/src/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")

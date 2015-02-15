@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/hugh/GitHub/CS196/src/main.c
-main.h
-/Users/hugh/GitHub/CS196/src/main.h
+/Users/hugh/GitHub/CS196/src/block.c
+block.h
+/Users/hugh/GitHub/CS196/src/block.h
+headers.h
+/Users/hugh/GitHub/CS196/src/headers.h
 
-/Users/hugh/GitHub/CS196/src/main.h
+/Users/hugh/GitHub/CS196/src/block.h
+
+/Users/hugh/GitHub/CS196/src/headers.h
 GLFW/glfw3.h
 -
 stdio.h
@@ -23,6 +27,26 @@ string.h
 -
 time.h
 -
+
+/Users/hugh/GitHub/CS196/src/input.c
+headers.h
+/Users/hugh/GitHub/CS196/src/headers.h
+
+/Users/hugh/GitHub/CS196/src/input.h
+headers.h
+/Users/hugh/GitHub/CS196/src/headers.h
+
+/Users/hugh/GitHub/CS196/src/main.c
+main.h
+/Users/hugh/GitHub/CS196/src/main.h
+block.h
+/Users/hugh/GitHub/CS196/src/block.h
+input.h
+/Users/hugh/GitHub/CS196/src/input.h
+
+/Users/hugh/GitHub/CS196/src/main.h
+headers.h
+/Users/hugh/GitHub/CS196/src/headers.h
 
 deps/glfw-3.1/include/GLFW/glfw3.h
 stddef.h
