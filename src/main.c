@@ -2,7 +2,7 @@
 #include "block.h"
 #include "input.h"
 
-double rotate_x = 0 ;
+double rotate_x = 0;
 double rotate_y = 0;
 
 static Global global;
