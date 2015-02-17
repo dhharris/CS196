@@ -1,0 +1,888 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"WINDOW",
+				"WINDOW_HEIGHT"
+			],
+			[
+				"SDL",
+				"SDL_SWSURFACE"
+			],
+			[
+				"SCRE",
+				"SCREEN_HEIGHT"
+			],
+			[
+				"SCREE",
+				"SCREEN_WIDTH"
+			],
+			[
+				"SDL_S",
+				"SDL_SetVideoMode"
+			],
+			[
+				"int",
+				"intToChar"
+			],
+			[
+				"find",
+				"findSnake"
+			],
+			[
+				"move",
+				"moveBody"
+			],
+			[
+				"init",
+				"initArena"
+			],
+			[
+				"count",
+				"countNumAsterisks"
+			],
+			[
+				"res",
+				"resetArena"
+			],
+			[
+				"In",
+				"Incompatible"
+			],
+			[
+				"num",
+				"num_elements"
+			],
+			[
+				"nu",
+				"num_elements"
+			],
+			[
+				"n",
+				"num_elements"
+			],
+			[
+				"in",
+				"inputarray"
+			],
+			[
+				"c",
+				"coefficient"
+			],
+			[
+				"delta",
+				"deltaTIce"
+			],
+			[
+				"m",
+				"mIce"
+			],
+			[
+				"delt",
+				"deltaHFusion"
+			],
+			[
+				"deltaT",
+				"deltaTIce"
+			],
+			[
+				"del",
+				"deltaT"
+			],
+			[
+				"de",
+				"deltaTwater"
+			],
+			[
+				"pars",
+				"parseInt"
+			],
+			[
+				"par",
+				"parseInt"
+			],
+			[
+				"final",
+				"finalTemp"
+			],
+			[
+				"Fib",
+				"Fibonacci"
+			],
+			[
+				"product",
+				"productDigits"
+			],
+			[
+				"produ",
+				"productDigits"
+			],
+			[
+				"prod",
+				"productDigits"
+			],
+			[
+				"draw",
+				"drawnDeck"
+			],
+			[
+				"card",
+				"card_added"
+			],
+			[
+				"drawn",
+				"drawnDeck"
+			],
+			[
+				"comput",
+				"computer_or_player"
+			],
+			[
+				"com",
+				"computer_or_player"
+			],
+			[
+				"large",
+				"largestChain"
+			],
+			[
+				"number",
+				"numberOfDivisors"
+			],
+			[
+				"next",
+				"nextTriangle"
+			],
+			[
+				"five",
+				"fiveHundred"
+			],
+			[
+				"sqrt",
+				"sqrtT"
+			],
+			[
+				"nth",
+				"nthPrime"
+			],
+			[
+				"prime",
+				"primeCounter"
+			],
+			[
+				"sieve",
+				"sieveOfAtkin"
+			],
+			[
+				"is",
+				"isPrime"
+			],
+			[
+				"maxV",
+				"maxValue-1"
+			],
+			[
+				"numb",
+				"numberOfPrimes"
+			],
+			[
+				"lar",
+				"largestfactor"
+			],
+			[
+				"myBoo",
+				"myBoolean"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 449,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main.c",
+			"settings":
+			{
+				"buffer_size": 3673,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/block.c",
+			"settings":
+			{
+				"buffer_size": 5300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n	\"folders\":\n	[\n		{\n			\"follow_symlinks\": true,\n			\"path\": \".\"\n		}\n	]\n}\n",
+			"file": "CS196.sublime-project",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/block.h",
+			"settings":
+			{
+				"buffer_size": 610,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/input.h",
+			"settings":
+			{
+				"buffer_size": 277,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/input.c",
+			"settings":
+			{
+				"buffer_size": 1231,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main.h",
+			"settings":
+			{
+				"buffer_size": 242,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/headers.h",
+			"settings":
+			{
+				"buffer_size": 118,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"command_palette":
+	{
+		"height": 101.0,
+		"selected_items":
+		[
+			[
+				"upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"toggle",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Add Channel"
+			],
+			[
+				"git",
+				"Git: Pull"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colors",
+				"Colorsublime: Install Theme"
+			]
+		],
+		"width": 475.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/hugh/GitHub/CS196",
+		"/Users/hugh/GitHub/CS196/src"
+	],
+	"file_history":
+	[
+		"/Users/hugh/GitHub/CS196/CS196.sublime-project",
+		"/Users/hugh/GitHub/CS196/src/main.h",
+		"/Users/hugh/Downloads/primes.c",
+		"/Users/hugh/Downloads/names.c",
+		"/Users/hugh/Downloads/primes.txt",
+		"/Users/hugh/GitHub/CS196-Project/src/main.h",
+		"/Users/hugh/GitHub/CS196-Project/src/main.c",
+		"/Users/hugh/GitHub/CS196-Project/README.md",
+		"/Users/hugh/GitHub/CS196-Project/CMakeLists.txt",
+		"/Users/hugh/GitHub/CS196-Project/bin",
+		"/Users/hugh/GitHub/CCraft/src/world.h",
+		"/Users/hugh/GitHub/CCraft/src/item.c",
+		"/Users/hugh/GitHub/CCraft/src/world.c",
+		"/Users/hugh/Documents/project_euler/src/PE.h",
+		"/Users/hugh/Documents/project_euler/src/problem7.java",
+		"/Users/hugh/Documents/project_euler/util/fib.c",
+		"/Users/hugh/Documents/project_euler/util/factorial.c",
+		"/Users/hugh/Documents/project_euler/util/big.h",
+		"/Users/hugh/Documents/project_euler/util/primes.c",
+		"/Users/hugh/Documents/project_euler/src/problem3.c",
+		"/Users/hugh/Documents/project_euler/src/problem3.java",
+		"/Users/hugh/Documents/project_euler/src/problem2.c",
+		"/Users/hugh/Documents/project_euler/src/problem1.c",
+		"/Users/hugh/Documents/project_euler/util/bignum.h",
+		"/Users/hugh/Documents/project_euler/src/problem1.java",
+		"/Users/hugh/Documents/project_euler/src/test.c",
+		"/Users/hugh/Documents/project_euler/util/gcd.c",
+		"/Users/hugh/Documents/project_euler/problem11.c",
+		"/Users/hugh/Documents/project_euler/factorial.c",
+		"/Users/hugh/GitHub/Space/SDLTest/src/main.c",
+		"/Users/hugh/GitHub/Space/SDLTest/src/main.h",
+		"/Users/hugh/GitHub/ioq3/code/game/g_public.h",
+		"/Users/hugh/GitHub/ioq3/code/game/bg_public.h",
+		"/Users/hugh/Downloads/SpacePong-master/main.h",
+		"/Users/hugh/Documents/Games/cgames/Snake/.names.txt",
+		"/Users/hugh/Documents/Games/cgames/Snake/.highscores.txt",
+		"/Users/hugh/Documents/Games/cgame/Snake/snake.h",
+		"/Users/hugh/Documents/Games/cgame/Snake/Makefile",
+		"/Users/hugh/Documents/Games/cgame/Snake/output.c",
+		"/Users/hugh/Documents/Games/cgame/Snake/display.c",
+		"/Users/hugh/Documents/Games/cgame/Snake/snake.c",
+		"/Users/hugh/Documents/C/sort/sort_alphabetical.c",
+		"/Users/hugh/Documents/C/sort/sort.c",
+		"/Users/hugh/Documents/Games/cgame/sdltest.c",
+		"/Users/hugh/Documents/Games/cgame/demo.c",
+		"/Users/hugh/Downloads/fileio.c",
+		"/Users/hugh/Documents/CS/sort.c",
+		"/Users/hugh/Documents/C/removespace.c",
+		"/Users/hugh/Documents/C/add.c",
+		"/Users/hugh/Documents/C/slope.c",
+		"/Users/hugh/Documents/C/gfxexample.c",
+		"/Users/hugh/Documents/Games/cgame/play.c",
+		"/Users/hugh/Documents/CS/sort",
+		"/Users/hugh/Documents/C/taylor.c",
+		"/Users/hugh/Documents/Games/cgame",
+		"/Users/hugh/Documents/C/simpsons.c",
+		"/Users/hugh/Documents/CS/101/mp2/play.c",
+		"/Users/hugh/Documents/C/pointers.c",
+		"/Users/hugh/Documents/C/hi.c",
+		"/Users/hugh/Documents/C/derivative.c",
+		"/Users/hugh/Documents/C/headerexample.c",
+		"/Users/hugh/Documents/C/date.c",
+		"/Users/hugh/Documents/C/table.c",
+		"/Users/hugh/Documents/C/examscores.c",
+		"/Users/hugh/Documents/C/calculator.c",
+		"/Users/hugh/Documents/C/heat.c",
+		"/Users/hugh/Documents/C/test.c",
+		"/Users/hugh/Documents/C/listletters.c",
+		"/Users/hugh/Documents/C/Hugh.h",
+		"/Users/hugh/Documents/C/age",
+		"/Users/hugh/Documents/project_euler/problem25.c",
+		"/Users/hugh/Documents/project_euler/problem142.c",
+		"/Users/hugh/Documents/C/removespaces.c",
+		"/Users/hugh/Documents/C/printsum.c",
+		"/Users/hugh/Documents/project_euler/problem34.java",
+		"/Users/hugh/Documents/project_euler/problem34.c",
+		"/Users/hugh/Documents/project_euler/problem8.c",
+		"/Users/hugh/Documents/project_euler/problem13.c",
+		"/Users/hugh/Documents/project_euler/problem22.c",
+		"/Users/hugh/Documents/project_euler/gmpexample.c",
+		"/Users/hugh/Documents/CS/101/mp2/display.c",
+		"/Users/hugh/Documents/java/Result.java",
+		"/Users/hugh/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/hugh/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/hugh/Documents/C/Test.c",
+		"/Users/hugh/Documents/java/project_euler/problem30.c",
+		"/Users/hugh/Documents/java/project_euler/problem48.c",
+		"/Users/hugh/Documents/java/project_euler/problem13.c",
+		"/Users/hugh/Documents/java/project_euler/problem14.java",
+		"/Users/hugh/Documents/java/project_euler/problem20.java",
+		"/Users/hugh/Documents/java/project_euler/factorial.c",
+		"/Users/hugh/Documents/java/project_euler/problem20.jaca",
+		"/Users/hugh/Documents/java/project_euler/problem13.java",
+		"/Users/hugh/Documents/java/project_euler/problem16.java",
+		"/Users/hugh/Documents/java/project_euler/problem16.c",
+		"/Users/hugh/Documents/java/project_euler/number.dat",
+		"/Users/hugh/Documents/java/multitable.java",
+		"/Users/hugh/Documents/java/project_euler/problem12.java",
+		"/Users/hugh/Documents/java/project_euler/problem10.java",
+		"/Users/hugh/Documents/java/project_euler/problem9.java",
+		"/Users/hugh/Documents/java/project_euler/problem7.java",
+		"/Users/hugh/Documents/java/project_euler/problem6.java",
+		"/Users/hugh/Documents/java/project_euler/Problem.java",
+		"/Users/hugh/Documents/java/project_euler/problem4.java",
+		"/Users/hugh/Documents/java/project_euler/PalCheck.java",
+		"/Users/hugh/Documents/java/project_euler/problem3.java",
+		"/Users/hugh/Documents/java/project_euler/problem2.c",
+		"/Users/hugh/Documents/java/project_euler/problem1.java",
+		"/Users/hugh/Documents/java/project_euler/Test.java",
+		"/Users/hugh/Documents/java/project_euler/problem2.java",
+		"/Users/hugh/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/hugh/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/hugh/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/hugh/Documents/java/project euler/problem2.java",
+		"/Users/hugh/Library/Application Support/Sublime Text 3/Packages/new_templates.py",
+		"/Users/hugh/Documents/java/project euler/test.java",
+		"/Users/hugh/Documents/java/fibonacci.java",
+		"/Users/hugh/Documents/java/Atom.java",
+		"/Users/hugh/Documents/java/FirstApplet.java",
+		"/Users/hugh/Documents/java/Coffee.java",
+		"/Users/hugh/Documents/java/HelloWorldApp.java",
+		"/Users/hugh/Library/Application Support/Sublime Text 3/Packages/Colorsublime/Colorsublime.sublime-settings"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"(GLfloat)",
+			"float",
+			"GLfloat",
+			"double",
+			"float",
+			"glvie",
+			"rotate_y",
+			"lastX",
+			"			\n",
+			"project"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3673,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3391,
+								3391
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1562.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/block.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1640,
+								1640
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/C++/C.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 778.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "CS196.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/block.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/input.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								265
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/input.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								421,
+								421
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/C++/C.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/main.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/headers.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 98.0
+	},
+	"project": "CS196.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+		],
+		"width": 637.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 159.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

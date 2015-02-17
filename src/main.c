@@ -41,25 +41,33 @@ int create_window() {
 
     /* OpenGL Initializations */
     glEnable(GL_DEPTH_TEST); // Allows us to use Z axis
+    glMatrixMode( GL_PROJECTION );
 
     return 1;
 
 
 }
+/* Test - just renders a cube with input */
+void gl_test(void) {
 
-void render(void) {
+    input_rotate(&rotate_x,&rotate_y);
 
-    input_main(&rotate_x,&rotate_y);
-
-    /* OpenGL rendering */
+    //  Clear screen and Z-buffer
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 
     // Reset transformations
     glLoadIdentity();
 
+    // Other Transformations
+    // glTranslatef( 0.1, 0.0, 0.0 );      // Not included
+    // glRotatef( 180, 0.0, 1.0, 0.0 );    // Not included
+
     // Rotate when user changes rotate_x and rotate_y
     glRotatef( rotate_x, 1.0, 0.0, 0.0 );
     glRotatef( rotate_y, 0.0, 1.0, 0.0 );
+
+    // Other Transformations
+    // glScalef( 2.0, 2.0, 0.0 );          // Not included
 
     //Multi-colored side - FRONT
     glBegin(GL_POLYGON);
@@ -70,7 +78,6 @@ void render(void) {
     glColor3f( 1.0, 0.0, 1.0 );     glVertex3f( -0.5, -0.5, -0.5 );      // P4 is purple
 
     glEnd();
-
 
     // White side - BACK
     glBegin(GL_POLYGON);
@@ -117,21 +124,80 @@ void render(void) {
     glVertex3f( -0.5, -0.5, -0.5 );
     glEnd();
 
+
+    glfwSwapBuffers(g->window);  // Swap the front and back frame buffers (double buffering)
+    glfwPollEvents(); // Check for any events
+
+}
+
+void input() {
+
+    input_main(&g->translate_x, &g->translate_y, &g->translate_z, &g->zoom, &rotate_x, &rotate_y);
+
+    glOrtho( -WINDOW_WIDTH/2*g->zoom, WINDOW_WIDTH/2*g->zoom, -WINDOW_HEIGHT/2*g->zoom, WINDOW_HEIGHT/2*g->zoom, -100, 100 );
+
+    glTranslatef(g->translate_x, g->translate_y, g->translate_z);
+}
+
+void render(Block *blocks, int block_count) {
+
+
+    /* OpenGL rendering */
+    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+
+    /* Reset transformations */
+    glLoadIdentity();
+
+    input();
+
+    /* Rotate using arrow keys */
+    glRotatef( rotate_x, 1.0, 0.0, 0.0 );
+    glRotatef( rotate_y, 0.0, 1.0, 0.0 );
+
+    
+
+    draw_blocks(blocks, block_count);
+
     glfwSwapBuffers(g->window);  // Swap the front and back frame buffers (double buffering)
     glfwPollEvents(); // Check for any events
 }
 
 int main(int argc, char **argv) {
 
-	if (!create_window())
+    srand(time(NULL)); /* Seed random numbers for block color */
+
+    /* Block variables */
+    int block_array_size = INITIAL_BLOCKS;
+    int block_count = 0;
+
+    g->translate_x = 0.0;
+    g->translate_y = 0.0;
+    g->translate_z = 0.0;
+    g->zoom = 0.0;
+
+   
+
+    Block *blocks = init_blocks();
+
+
+    create_blocks(
+    0.0, 0.0, 0.0, 
+    5, 5, 5,
+    blocks, &block_array_size, &block_count);
+
+
+    
+    if (!create_window())
         return -1;
 
     /* Game Loop */
     while (!glfwWindowShouldClose(g->window)) {
     	
-        render();
+        /*gl_test();*/
+        render(blocks, block_count);
         
     }
+    remove_blocks(blocks);
     glfwTerminate();
     return 0;
 }
