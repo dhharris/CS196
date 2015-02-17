@@ -173,7 +173,7 @@ int main(int argc, char **argv) {
     g->translate_x = 0.0;
     g->translate_y = 0.0;
     g->translate_z = 0.0;
-    g->zoom = 0.0;
+    g->zoom = INITIAL_ZOOM;
 
    
 

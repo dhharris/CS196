@@ -1,5 +1,7 @@
 #include "headers.h"
 
+#define INITIAL_ZOOM -0.1f
+
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
 void input_init(GLFWwindow* window);

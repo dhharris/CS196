@@ -2,6 +2,7 @@
 
 #define MOVE_SPEED 2
 #define ROTATE_SPEED 3
+#define ZOOM_MULTIPLIER 0.002
 
 int action1; /* Camera rotation */
 double action2; /* Scrolling */
@@ -90,9 +91,9 @@ void input_main(float *x, float *y, float *z, double *zoom, double *rotate_x, do
 	input_rotate(rotate_x, rotate_y);
 
 	if (action2 > 0) /* Scroll up */
-		*zoom += 0.001;
+		*zoom += ZOOM_MULTIPLIER;
 	else if (action2 < 0) /* Scroll down */
-		*zoom -= 0.001;
+		*zoom -= ZOOM_MULTIPLIER;
 	else; /* Do nothing */
 
 	input_translate(x,y,z);
