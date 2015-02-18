@@ -138,3 +138,23 @@ void draw_blocks(Block *blocks) {
 
 	}
 }
+
+float distance(float x0, float y0, float z0, float x1, float y1, float z1) {
+
+	return sqrt(pow((x1-x0),2)+pow((y1-y0),2)+pow((z1-z0),2));
+}
+
+void create_sphere(Block *blocks, float x, float y, float z, float radius, int *size) {
+
+	int i, j, k;
+
+	for (j = z - radius; j <= z + radius; j++) {
+		for (i = x - radius; i <= x + radius; i++ ) {
+			for (k = z - radius; k <= z + radius; k++) {
+				if (distance(i,j,k,x,y,z) <= (radius + SPHERE_THRESHOLD) && distance(i,j,k,x,y,z) >= (radius - SPHERE_THRESHOLD)) {
+					create_block(i,j,k,blocks,size);
+				}
+			}
+		}
+	}
+}

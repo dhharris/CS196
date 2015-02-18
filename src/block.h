@@ -1,6 +1,7 @@
 
 #define BLOCK_SIZE 1.0f /* length of one side of the block */
-#define INITIAL_BLOCKS 10000 /* number of blocks in initial memory allocation */
+#define INITIAL_BLOCKS 100000 /* number of blocks in initial memory allocation */
+#define SPHERE_THRESHOLD 0.5f
 
 typedef struct {
     float x;
@@ -23,3 +24,6 @@ void create_blocks(
 	float initial_x, float initial_y, float initial_z, 
 	int length_x, int length_y, int length_z,
 	Block *blocks, int *size);
+
+float distance(float x0, float y0, float z0, float x1, float y1, float z1);
+void create_sphere(Block *blocks, float x, float y, float z, float radius, int *size);

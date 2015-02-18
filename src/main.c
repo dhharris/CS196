@@ -176,14 +176,16 @@ int main(int argc, char **argv) {
     g->translate_z = 0.0;
     g->zoom = INITIAL_ZOOM;
 
+    printf("%f\n",distance(0,0,0,0,0,1));
    
 
     Block *blocks = init_blocks();
 
+    create_sphere(blocks,0,0,0,25,&block_array_size);
 
     create_blocks(
-    0.0, 0.0, 0.0, 
-    5, 1, 5,
+    50.0, 0.0, 0.0, 
+    10, 10, 10,
     blocks, &block_array_size);
 
 
