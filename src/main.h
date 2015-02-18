@@ -18,3 +18,4 @@ typedef struct {
     GLdouble zoom;
 
 } Global; // Contains all the globals
+// TODO - REMOVE ALL GLOBALS

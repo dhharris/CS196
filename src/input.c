@@ -28,9 +28,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     	action3 = 3;
     else
     	action1 = action3 = -1;
-
-    if (GLFW_PRESS)
-    	printf("Key pressed!\n");
+ 
 
 }
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
@@ -43,8 +41,6 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset) {
 	action2 = yoffset;
-	if (action2 != 0)
-		printf("Scroll wheel!\n");
 }
 
 void input_init(GLFWwindow* window) {

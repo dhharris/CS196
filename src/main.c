@@ -8,8 +8,7 @@ double rotate_y = 0;
 static Global global;
 Global *g = &global;
 
-void error_callback(int error, const char* description)
-{
+void error_callback(int error, const char* description) {
     fputs(description, stderr);
 }
 
@@ -22,6 +21,7 @@ int create_window() {
     if (!glfwInit())
         return -1; // -1 means that there was an error
 
+    /* Create the window */
     g->window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, GAME_NAME, NULL, NULL);
     
     if (!g->window) {
@@ -30,6 +30,8 @@ int create_window() {
     }
 
     glfwMakeContextCurrent(g->window);
+
+    /* Rate at which buffers are swapped (best to keep at 1) */
     glfwSwapInterval(1);
 
     /* Init user input */
@@ -48,7 +50,7 @@ int create_window() {
 
 }
 /* Test - just renders a cube with input */
-void gl_test(void) {
+/*void gl_test(void) {
 
     input_rotate(&rotate_x,&rotate_y);
 
@@ -128,7 +130,7 @@ void gl_test(void) {
     glfwSwapBuffers(g->window);  // Swap the front and back frame buffers (double buffering)
     glfwPollEvents(); // Check for any events
 
-}
+}*/
 
 void input() {
 
@@ -139,7 +141,7 @@ void input() {
     glTranslatef(g->translate_x, g->translate_y, g->translate_z);
 }
 
-void render(Block *blocks, int block_count) {
+void render(Block *blocks) {
 
 
     /* OpenGL rendering */
@@ -156,7 +158,7 @@ void render(Block *blocks, int block_count) {
 
     
 
-    draw_blocks(blocks, block_count);
+    draw_blocks(blocks);
 
     glfwSwapBuffers(g->window);  // Swap the front and back frame buffers (double buffering)
     glfwPollEvents(); // Check for any events
@@ -168,7 +170,6 @@ int main(int argc, char **argv) {
 
     /* Block variables */
     int block_array_size = INITIAL_BLOCKS;
-    int block_count = 0;
 
     g->translate_x = 0.0;
     g->translate_y = 0.0;
@@ -182,19 +183,34 @@ int main(int argc, char **argv) {
 
     create_blocks(
     0.0, 0.0, 0.0, 
-    5, 5, 5,
-    blocks, &block_array_size, &block_count);
+    5, 1, 5,
+    blocks, &block_array_size);
 
 
     
     if (!create_window())
         return -1;
 
+    /* Time variables */
+    double last_time = glfwGetTime();
+    int nb_frames = 0;
+
     /* Game Loop */
     while (!glfwWindowShouldClose(g->window)) {
     	
-        /*gl_test();*/
-        render(blocks, block_count);
+        /*  Measure speed */
+        double currentTime = glfwGetTime();
+        nb_frames++;
+        if ( currentTime - last_time >= 1.0 ) { // If last prinf() was more than 1 sec ago
+            // printf and reset timer
+            printf("%2.2f frames/sec\n", (double)(nb_frames));
+            nb_frames = 0;
+            last_time += 1.0;
+        }
+
+
+        /* gl_test(); */
+        render(blocks);
         
     }
     remove_blocks(blocks);
