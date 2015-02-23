@@ -6,17 +6,43 @@
 
 #IncludeRegexTransform: 
 
+/Users/hugh/GitHub/CS196/deps/lodepng.c
+lodepng.h
+/Users/hugh/GitHub/CS196/deps/lodepng.h
+stdio.h
+-
+stdlib.h
+-
+fstream
+-
+
+/Users/hugh/GitHub/CS196/deps/lodepng.h
+string.h
+-
+vector
+-
+string
+-
+lodepng.h
+/Users/hugh/GitHub/CS196/deps/lodepng.h
+iostream
+-
+lodepng.h
+/Users/hugh/GitHub/CS196/deps/lodepng.h
+
 /Users/hugh/GitHub/CS196/src/block.c
-block.h
-/Users/hugh/GitHub/CS196/src/block.h
 headers.h
 /Users/hugh/GitHub/CS196/src/headers.h
+block.h
+/Users/hugh/GitHub/CS196/src/block.h
 
 /Users/hugh/GitHub/CS196/src/block.h
 
 /Users/hugh/GitHub/CS196/src/headers.h
 GLFW/glfw3.h
 -
+../deps/lodepng.h
+/Users/hugh/GitHub/CS196/deps/lodepng.h
 stdio.h
 -
 math.h
@@ -43,10 +69,22 @@ block.h
 /Users/hugh/GitHub/CS196/src/block.h
 input.h
 /Users/hugh/GitHub/CS196/src/input.h
+textures.h
+/Users/hugh/GitHub/CS196/src/textures.h
 
 /Users/hugh/GitHub/CS196/src/main.h
 headers.h
 /Users/hugh/GitHub/CS196/src/headers.h
+
+/Users/hugh/GitHub/CS196/src/textures.c
+headers.h
+/Users/hugh/GitHub/CS196/src/headers.h
+textures.h
+/Users/hugh/GitHub/CS196/src/textures.h
+
+/Users/hugh/GitHub/CS196/src/textures.h
+block.h
+/Users/hugh/GitHub/CS196/src/block.h
 
 deps/glfw-3.1/include/GLFW/glfw3.h
 stddef.h

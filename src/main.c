@@ -1,6 +1,7 @@
 #include "main.h"
 #include "block.h"
 #include "input.h"
+#include "textures.h"
 
 double rotate_x = 0;
 double rotate_y = 0;
@@ -42,113 +43,45 @@ int create_window() {
     printf("OpenGL version supported %s\n", glGetString(GL_VERSION));
 
     /* OpenGL Initializations */
-    glEnable(GL_DEPTH_TEST); // Allows us to use Z axis
-    glMatrixMode( GL_PROJECTION );
+    glEnable(GL_TEXTURE_2D);                        // Enable Texture Mapping ( NEW )
+    glShadeModel(GL_SMOOTH);                       // Enable Smooth Shading
+    glClearColor(0.0f, 0.0f, 0.0f, 0.5f);                   // Black Background
+    glClearDepth(1.0f);                         // Depth Buffer Setup
+    glEnable(GL_DEPTH_TEST);                        // Enables Depth Testing
+    glDepthFunc(GL_LEQUAL);                         // The Type Of Depth Test To Do
+    glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);          // Really Nice Perspective Calculations
+
+
 
     return 1;
 
 
 }
-/* Test - just renders a cube with input */
-/*void gl_test(void) {
-
-    input_rotate(&rotate_x,&rotate_y);
-
-    //  Clear screen and Z-buffer
-    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-
-    // Reset transformations
-    glLoadIdentity();
-
-    // Other Transformations
-    // glTranslatef( 0.1, 0.0, 0.0 );      // Not included
-    // glRotatef( 180, 0.0, 1.0, 0.0 );    // Not included
-
-    // Rotate when user changes rotate_x and rotate_y
-    glRotatef( rotate_x, 1.0, 0.0, 0.0 );
-    glRotatef( rotate_y, 0.0, 1.0, 0.0 );
-
-    // Other Transformations
-    // glScalef( 2.0, 2.0, 0.0 );          // Not included
-
-    //Multi-colored side - FRONT
-    glBegin(GL_POLYGON);
-
-    glColor3f( 1.0, 0.0, 0.0 );     glVertex3f(  0.5, -0.5, -0.5 );      // P1 is red
-    glColor3f( 0.0, 1.0, 0.0 );     glVertex3f(  0.5,  0.5, -0.5 );      // P2 is green
-    glColor3f( 0.0, 0.0, 1.0 );     glVertex3f( -0.5,  0.5, -0.5 );      // P3 is blue
-    glColor3f( 1.0, 0.0, 1.0 );     glVertex3f( -0.5, -0.5, -0.5 );      // P4 is purple
-
-    glEnd();
-
-    // White side - BACK
-    glBegin(GL_POLYGON);
-    glColor3f(   1.0,  1.0, 1.0 );
-    glVertex3f(  0.5, -0.5, 0.5 );
-    glVertex3f(  0.5,  0.5, 0.5 );
-    glVertex3f( -0.5,  0.5, 0.5 );
-    glVertex3f( -0.5, -0.5, 0.5 );
-    glEnd();
-
-    // Purple side - RIGHT
-    glBegin(GL_POLYGON);
-    glColor3f(  1.0,  0.0,  1.0 );
-    glVertex3f( 0.5, -0.5, -0.5 );
-    glVertex3f( 0.5,  0.5, -0.5 );
-    glVertex3f( 0.5,  0.5,  0.5 );
-    glVertex3f( 0.5, -0.5,  0.5 );
-    glEnd();
-
-    // Green side - LEFT
-    glBegin(GL_POLYGON);
-    glColor3f(   0.0,  1.0,  0.0 );
-    glVertex3f( -0.5, -0.5,  0.5 );
-    glVertex3f( -0.5,  0.5,  0.5 );
-    glVertex3f( -0.5,  0.5, -0.5 );
-    glVertex3f( -0.5, -0.5, -0.5 );
-    glEnd();
-
-    // Blue side - TOP
-    glBegin(GL_POLYGON);
-    glColor3f(   0.0,  0.0,  1.0 );
-    glVertex3f(  0.5,  0.5,  0.5 );
-    glVertex3f(  0.5,  0.5, -0.5 );
-    glVertex3f( -0.5,  0.5, -0.5 );
-    glVertex3f( -0.5,  0.5,  0.5 );
-    glEnd();
-
-    // Red side - BOTTOM
-    glBegin(GL_POLYGON);
-    glColor3f(   1.0,  0.0,  0.0 );
-    glVertex3f(  0.5, -0.5, -0.5 );
-    glVertex3f(  0.5, -0.5,  0.5 );
-    glVertex3f( -0.5, -0.5,  0.5 );
-    glVertex3f( -0.5, -0.5, -0.5 );
-    glEnd();
-
-
-    glfwSwapBuffers(g->window);  // Swap the front and back frame buffers (double buffering)
-    glfwPollEvents(); // Check for any events
-
-}*/
 
 void input() {
 
     input_main(&g->translate_x, &g->translate_y, &g->translate_z, &g->zoom, &rotate_x, &rotate_y);
 
     glOrtho( -WINDOW_WIDTH/2*g->zoom, WINDOW_WIDTH/2*g->zoom, -WINDOW_HEIGHT/2*g->zoom, WINDOW_HEIGHT/2*g->zoom, -100, 100 );
-
+    glViewport(0,0, WINDOW_WIDTH * g->zoom, WINDOW_HEIGHT * g->zoom);
     glTranslatef(g->translate_x, g->translate_y, g->translate_z);
+
 }
 
-void render(Block *blocks) {
+void render(Block *blocks, unsigned char *image) {
 
 
     /* OpenGL rendering */
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 
+
+
     /* Reset transformations */
+    glMatrixMode(GL_PROJECTION);                        // Select The Projection Matrix
     glLoadIdentity();
+
+    glMatrixMode(GL_MODELVIEW);                     // Select The Modelview Matrix
+    glLoadIdentity();                           // Reset The Modelview Matrix
 
     input();
 
@@ -158,7 +91,7 @@ void render(Block *blocks) {
 
     
 
-    draw_blocks(blocks);
+    draw_textures(image, blocks);
 
     glfwSwapBuffers(g->window);  // Swap the front and back frame buffers (double buffering)
     glfwPollEvents(); // Check for any events
@@ -171,27 +104,37 @@ int main(int argc, char **argv) {
     /* Block variables */
     int block_array_size = INITIAL_BLOCKS;
 
+    /* Image variables */
+    unsigned char *image;
+
     g->translate_x = 0.0;
     g->translate_y = 0.0;
     g->translate_z = 0.0;
     g->zoom = INITIAL_ZOOM;
-
-    printf("%f\n",distance(0,0,0,0,0,1));
    
 
     Block *blocks = init_blocks();
 
-    create_sphere(blocks,0,0,0,25,&block_array_size);
-
     create_blocks(
-    50.0, 0.0, 0.0, 
-    10, 10, 10,
-    blocks, &block_array_size);
+    0.0, 0.0, 0.0, 
+    5, 1, 5,
+    blocks, &block_array_size, 1);
+
+    create_blocks(0.0,1 * BLOCK_SIZE,0.0, 4,1,4,blocks,&block_array_size, 0);
+    create_blocks(0.0,2 * BLOCK_SIZE,0.0,3,3,3,blocks,&block_array_size, 3);
+    create_blocks(0.0,3 * BLOCK_SIZE,0.0, 3,3,3,blocks,&block_array_size,4);
+
+    printf("%d\n",blocks[0].type);
 
 
     
     if (!create_window())
         return -1;
+
+    if (!load_gl_texture(DEFAULT_TEXTURE, image, BLOCK_SIZE, BLOCK_SIZE)) {
+        printf("Program closed with an error\n");
+        return -1;
+    }
 
     /* Time variables */
     double last_time = glfwGetTime();
@@ -200,7 +143,7 @@ int main(int argc, char **argv) {
     /* Game Loop */
     while (!glfwWindowShouldClose(g->window)) {
     	
-        /*  Measure speed */
+        /*  Measure FPS */
         double currentTime = glfwGetTime();
         nb_frames++;
         if ( currentTime - last_time >= 1.0 ) { // If last prinf() was more than 1 sec ago
@@ -210,12 +153,12 @@ int main(int argc, char **argv) {
             last_time += 1.0;
         }
 
+        render(blocks, image);
 
-        /* gl_test(); */
-        render(blocks);
         
     }
     remove_blocks(blocks);
     glfwTerminate();
+    free(image);
     return 0;
 }

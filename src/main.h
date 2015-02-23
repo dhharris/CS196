@@ -1,3 +1,6 @@
+#ifndef _main_h_
+#define _main_h_
+
 #include "headers.h"
 
 /* Game constants */
@@ -19,3 +22,5 @@ typedef struct {
 
 } Global; // Contains all the globals
 // TODO - REMOVE ALL GLOBALS
+
+#endif

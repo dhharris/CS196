@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/hugh/GitHub/CS196
 CMakeFiles/game.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/depend
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  22 23 24
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  22 23 24 25 26
 	@echo "Built target game"
 .PHONY : CMakeFiles/game.dir/all
 
@@ -69,7 +69,7 @@ all: CMakeFiles/game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugh/GitHub/CS196/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugh/GitHub/CS196/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugh/GitHub/CS196/CMakeFiles 0
 .PHONY : CMakeFiles/game.dir/rule
@@ -162,7 +162,7 @@ deps/glfw-3.1/src/preinstall:
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) -f deps/glfw-3.1/src/CMakeFiles/glfw.dir/build.make deps/glfw-3.1/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) -f deps/glfw-3.1/src/CMakeFiles/glfw.dir/build.make deps/glfw-3.1/src/CMakeFiles/glfw.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  27 28 29 30 31 32 33 34 35 36 37 38
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  29 30 31 32 33 34 35 36 37 38 39 40
 	@echo "Built target glfw"
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 
@@ -802,7 +802,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/gamma.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  25 26
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  27 28
 	@echo "Built target gamma"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/gamma.dir/all
 
@@ -837,7 +837,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/gamma.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  39 40
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  41 42
 	@echo "Built target glfwinfo"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/all
 
@@ -872,7 +872,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/iconify.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  41 42
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  43 44
 	@echo "Built target iconify"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/iconify.dir/all
 
@@ -907,7 +907,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/iconify.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  43
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  45
 	@echo "Built target joysticks"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/all
 
@@ -942,7 +942,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/modes.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  44 45
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  46 47
 	@echo "Built target modes"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/modes.dir/all
 
@@ -977,7 +977,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/modes.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/peter.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  46
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  48
 	@echo "Built target peter"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/peter.dir/all
 
@@ -1012,7 +1012,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/peter.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/reopen.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  47
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  49
 	@echo "Built target reopen"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/reopen.dir/all
 
@@ -1047,7 +1047,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/reopen.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/sharing.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  48
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  50
 	@echo "Built target sharing"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/sharing.dir/all
 
@@ -1082,7 +1082,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/sharing.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/tearing.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  49
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  51
 	@echo "Built target tearing"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/tearing.dir/all
 
@@ -1117,7 +1117,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/tearing.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  50 51
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  52 53
 	@echo "Built target threads"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/threads.dir/all
 
@@ -1152,7 +1152,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/threads.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/title.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  52
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  54
 	@echo "Built target title"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/title.dir/all
 
@@ -1187,7 +1187,7 @@ clean: deps/glfw-3.1/tests/CMakeFiles/title.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/windows.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  53
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  55
 	@echo "Built target windows"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/windows.dir/all
 

@@ -51,16 +51,6 @@ CMAKE_BINARY_DIR = /Users/hugh/GitHub/CS196
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -533,6 +523,30 @@ windows/fast:
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
+deps/lodepng.o: deps/lodepng.c.o
+.PHONY : deps/lodepng.o
+
+# target to build an object file
+deps/lodepng.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/deps/lodepng.c.o
+.PHONY : deps/lodepng.c.o
+
+deps/lodepng.i: deps/lodepng.c.i
+.PHONY : deps/lodepng.i
+
+# target to preprocess a source file
+deps/lodepng.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/deps/lodepng.c.i
+.PHONY : deps/lodepng.c.i
+
+deps/lodepng.s: deps/lodepng.c.s
+.PHONY : deps/lodepng.s
+
+# target to generate assembly for a file
+deps/lodepng.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/deps/lodepng.c.s
+.PHONY : deps/lodepng.c.s
+
 src/block.o: src/block.c.o
 .PHONY : src/block.o
 
@@ -605,13 +619,36 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/textures.o: src/textures.c.o
+.PHONY : src/textures.o
+
+# target to build an object file
+src/textures.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/textures.c.o
+.PHONY : src/textures.c.o
+
+src/textures.i: src/textures.c.i
+.PHONY : src/textures.i
+
+# target to preprocess a source file
+src/textures.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/textures.c.i
+.PHONY : src/textures.c.i
+
+src/textures.s: src/textures.c.s
+.PHONY : src/textures.s
+
+# target to generate assembly for a file
+src/textures.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/textures.c.s
+.PHONY : src/textures.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... install"
@@ -647,6 +684,9 @@ help:
 	@echo "... empty"
 	@echo "... gamma"
 	@echo "... fsaa"
+	@echo "... deps/lodepng.o"
+	@echo "... deps/lodepng.i"
+	@echo "... deps/lodepng.s"
 	@echo "... src/block.o"
 	@echo "... src/block.i"
 	@echo "... src/block.s"
@@ -656,6 +696,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/textures.o"
+	@echo "... src/textures.i"
+	@echo "... src/textures.s"
 .PHONY : help
 
 

@@ -118,11 +118,59 @@ CMakeFiles/game.dir/src/main.c.o.provides: CMakeFiles/game.dir/src/main.c.o.requ
 
 CMakeFiles/game.dir/src/main.c.o.provides.build: CMakeFiles/game.dir/src/main.c.o
 
+CMakeFiles/game.dir/src/textures.c.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/textures.c.o: src/textures.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/game.dir/src/textures.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/game.dir/src/textures.c.o   -c /Users/hugh/GitHub/CS196/src/textures.c
+
+CMakeFiles/game.dir/src/textures.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/game.dir/src/textures.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/hugh/GitHub/CS196/src/textures.c > CMakeFiles/game.dir/src/textures.c.i
+
+CMakeFiles/game.dir/src/textures.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/game.dir/src/textures.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/hugh/GitHub/CS196/src/textures.c -o CMakeFiles/game.dir/src/textures.c.s
+
+CMakeFiles/game.dir/src/textures.c.o.requires:
+.PHONY : CMakeFiles/game.dir/src/textures.c.o.requires
+
+CMakeFiles/game.dir/src/textures.c.o.provides: CMakeFiles/game.dir/src/textures.c.o.requires
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/textures.c.o.provides.build
+.PHONY : CMakeFiles/game.dir/src/textures.c.o.provides
+
+CMakeFiles/game.dir/src/textures.c.o.provides.build: CMakeFiles/game.dir/src/textures.c.o
+
+CMakeFiles/game.dir/deps/lodepng.c.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/deps/lodepng.c.o: deps/lodepng.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/game.dir/deps/lodepng.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/game.dir/deps/lodepng.c.o   -c /Users/hugh/GitHub/CS196/deps/lodepng.c
+
+CMakeFiles/game.dir/deps/lodepng.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/game.dir/deps/lodepng.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /Users/hugh/GitHub/CS196/deps/lodepng.c > CMakeFiles/game.dir/deps/lodepng.c.i
+
+CMakeFiles/game.dir/deps/lodepng.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/game.dir/deps/lodepng.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /Users/hugh/GitHub/CS196/deps/lodepng.c -o CMakeFiles/game.dir/deps/lodepng.c.s
+
+CMakeFiles/game.dir/deps/lodepng.c.o.requires:
+.PHONY : CMakeFiles/game.dir/deps/lodepng.c.o.requires
+
+CMakeFiles/game.dir/deps/lodepng.c.o.provides: CMakeFiles/game.dir/deps/lodepng.c.o.requires
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/deps/lodepng.c.o.provides.build
+.PHONY : CMakeFiles/game.dir/deps/lodepng.c.o.provides
+
+CMakeFiles/game.dir/deps/lodepng.c.o.provides.build: CMakeFiles/game.dir/deps/lodepng.c.o
+
 # Object files for target game
 game_OBJECTS = \
 "CMakeFiles/game.dir/src/block.c.o" \
 "CMakeFiles/game.dir/src/input.c.o" \
-"CMakeFiles/game.dir/src/main.c.o"
+"CMakeFiles/game.dir/src/main.c.o" \
+"CMakeFiles/game.dir/src/textures.c.o" \
+"CMakeFiles/game.dir/deps/lodepng.c.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
@@ -130,6 +178,8 @@ game_EXTERNAL_OBJECTS =
 game: CMakeFiles/game.dir/src/block.c.o
 game: CMakeFiles/game.dir/src/input.c.o
 game: CMakeFiles/game.dir/src/main.c.o
+game: CMakeFiles/game.dir/src/textures.c.o
+game: CMakeFiles/game.dir/deps/lodepng.c.o
 game: CMakeFiles/game.dir/build.make
 game: deps/glfw-3.1/src/libglfw3.a
 game: deps/glfw-3.1/src/libglfw3.a
@@ -144,6 +194,8 @@ CMakeFiles/game.dir/build: game
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/block.c.o.requires
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/input.c.o.requires
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/main.c.o.requires
+CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/textures.c.o.requires
+CMakeFiles/game.dir/requires: CMakeFiles/game.dir/deps/lodepng.c.o.requires
 .PHONY : CMakeFiles/game.dir/requires
 
 CMakeFiles/game.dir/clean:

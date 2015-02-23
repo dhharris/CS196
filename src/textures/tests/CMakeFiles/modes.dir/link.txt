@@ -1,0 +1,1 @@
+/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/modes.dir/modes.c.o CMakeFiles/modes.dir/__/deps/getopt.c.o  -o modes  ../src/libglfw3.a -framework AGL -framework Cocoa -framework OpenGL -framework IOKit -framework CoreFoundation -framework CoreVideo 
