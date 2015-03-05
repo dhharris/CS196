@@ -483,7 +483,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+<<<<<<< HEAD
 	@echo "... boing"
+=======
+>>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
 	@echo "... edit_cache"
 	@echo "... gears"
 	@echo "... heightmap"

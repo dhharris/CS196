@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /usr/bin/cc      CMakeFiles/game.dir/src/block.c.o CMakeFiles/game.dir/src/input.c.o CMakeFiles/game.dir/src/main.c.o  -o game -rdynamic deps/glfw-3.1/src/libglfw3.a -lGLU -lGL -lX11 -lXext -lX11 -lpthread -lrt -lXrandr -lXinerama -lXi -lXxf86vm -lrt -lm -lXcursor -lGL -lX11 -lXext -lpthread -lrt -lXrandr -lXinerama -lXi -lXxf86vm -lm -lXcursor 
+=======
+/usr/bin/cc   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/game.dir/src/block.c.o CMakeFiles/game.dir/src/input.c.o CMakeFiles/game.dir/src/main.c.o CMakeFiles/game.dir/src/textures.c.o CMakeFiles/game.dir/deps/lodepng.c.o  -o game  deps/glfw-3.1/src/libglfw3.a -framework AGL -framework OpenGL -framework Cocoa -framework OpenGL -framework IOKit -framework CoreFoundation -framework CoreVideo deps/glfw-3.1/src/libglfw3.a -framework AGL -framework OpenGL -framework Cocoa -framework OpenGL -framework IOKit -framework CoreFoundation -framework CoreVideo 
+>>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8

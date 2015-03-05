@@ -529,6 +529,7 @@ windows/fast:
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
+<<<<<<< HEAD
 #=============================================================================
 # Target rules for targets named docs
 
@@ -541,6 +542,31 @@ docs: cmake_check_build_system
 docs/fast:
 	$(MAKE) -f deps/glfw-3.1/docs/CMakeFiles/docs.dir/build.make deps/glfw-3.1/docs/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
+=======
+deps/lodepng.o: deps/lodepng.c.o
+.PHONY : deps/lodepng.o
+
+# target to build an object file
+deps/lodepng.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/deps/lodepng.c.o
+.PHONY : deps/lodepng.c.o
+
+deps/lodepng.i: deps/lodepng.c.i
+.PHONY : deps/lodepng.i
+
+# target to preprocess a source file
+deps/lodepng.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/deps/lodepng.c.i
+.PHONY : deps/lodepng.c.i
+
+deps/lodepng.s: deps/lodepng.c.s
+.PHONY : deps/lodepng.s
+
+# target to generate assembly for a file
+deps/lodepng.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/deps/lodepng.c.s
+.PHONY : deps/lodepng.c.s
+>>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
 
 src/block.o: src/block.c.o
 .PHONY : src/block.o
@@ -614,6 +640,30 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/textures.o: src/textures.c.o
+.PHONY : src/textures.o
+
+# target to build an object file
+src/textures.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/textures.c.o
+.PHONY : src/textures.c.o
+
+src/textures.i: src/textures.c.i
+.PHONY : src/textures.i
+
+# target to preprocess a source file
+src/textures.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/textures.c.i
+.PHONY : src/textures.c.i
+
+src/textures.s: src/textures.c.s
+.PHONY : src/textures.s
+
+# target to generate assembly for a file
+src/textures.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/textures.c.s
+.PHONY : src/textures.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -651,12 +701,23 @@ help:
 	@echo "... modes"
 	@echo "... peter"
 	@echo "... reopen"
+<<<<<<< HEAD
 	@echo "... sharing"
 	@echo "... tearing"
 	@echo "... threads"
 	@echo "... title"
 	@echo "... windows"
 	@echo "... docs"
+=======
+	@echo "... glfwinfo"
+	@echo "... events"
+	@echo "... empty"
+	@echo "... gamma"
+	@echo "... fsaa"
+	@echo "... deps/lodepng.o"
+	@echo "... deps/lodepng.i"
+	@echo "... deps/lodepng.s"
+>>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
 	@echo "... src/block.o"
 	@echo "... src/block.i"
 	@echo "... src/block.s"
@@ -666,6 +727,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/textures.o"
+	@echo "... src/textures.i"
+	@echo "... src/textures.s"
 .PHONY : help
 
 

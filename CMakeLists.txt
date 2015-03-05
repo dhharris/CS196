@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.6)
 project (game)
 
 
-file(GLOB SOURCE_FILES src/*.c)
+file(GLOB SOURCE_FILES src/*.c deps/*.c)
 
 add_executable(game
 	${SOURCE_FILES}
@@ -12,6 +12,7 @@ add_subdirectory(deps/glfw-3.1)
 
 include_directories(
 	deps/glfw-3.1/include
+	deps
 	.
 )
 

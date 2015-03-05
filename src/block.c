@@ -1,5 +1,5 @@
-#include "block.h"
 #include "headers.h"
+#include "block.h"
 
 Block* init_blocks(void) {
 	int i;
@@ -26,42 +26,55 @@ int count_blocks(Block *blocks) {
 }
 
 /* size is the size of blocks array, offset is how many you are adding/removing */
-void resize(Block **blocks, int *size, int offset) {
-	*blocks = realloc(*blocks, (*size + offset) * sizeof(*blocks[0]));
+void resize(Block *blocks, int *size, int offset) {
+	int i;
+
+	Block *blocks_temp = malloc((*size + offset) * sizeof(Block)); /* Create temporary array */
+
+	for (i = 0; i < *size; ++i){
+		blocks_temp[i].x = blocks[i].x;
+		blocks_temp[i].y = blocks[i].y;
+		blocks_temp[i].z = blocks[i].z;
+		blocks_temp[i].visible = blocks[i].visible;
+	} /* Put the elements of block array into temp array */
+	blocks = blocks_temp;
 	*size += offset;
 }
 
 /* x, y, z are the coordinate location of the center of the block */
-void create_block(float x, float y, float z, Block *blocks, int *size) {
+void create_block(float x, float y, float z, Block *blocks, int *size, int type) {
 	int count = count_blocks(blocks);
 
 	if (count == *size)
-		resize(&blocks, size, 1);
+		resize(blocks, size, 1);
 
 	blocks[count].x = x;
 	blocks[count].y = y;
 	blocks[count].z = z; 
 	blocks[count].visible = 1;
-	blocks[count].color_r = (float)(rand() % 4) - 0.5;
+	blocks[count].type = type;
+
+
+	/*blocks[count].color_r = (float)(rand() % 4) - 0.5;
 	blocks[count].color_g = (float)(rand() % 4) - 0.5;
 	blocks[count].color_b = (float)(rand() % 4) - 0.5;
 
 	if (blocks[count].color_r <= 0.3 && blocks[count].color_g <= 0.3 && blocks[count].color_b <= 0.3)
-		blocks[count].color_r = blocks[count].color_b = blocks[count].color_g = 1.0;
+		blocks[count].color_r = blocks[count].color_b = blocks[count].color_g = 1.0;*/
 
 }
 
 void create_blocks(
 	float initial_x, float initial_y, float initial_z, 
 	int length_x, int length_y, int length_z,
-	Block *blocks, int *size) {
+	Block *blocks, int *size, int block_type) {
 
 	int i ,j, k;
 
 	for (i = 0; i < length_x; ++i) {
 		for (j = 0; j < length_z; ++j) {
 			for (k = 0; k < length_y; ++k) {
-				create_block(initial_x + i, initial_y + k, initial_z + j, blocks, size);
+				create_block(initial_x + i*BLOCK_SIZE, initial_y + k*BLOCK_SIZE, initial_z + j*BLOCK_SIZE, blocks, size, block_type);
 			}
 		}
 	}
@@ -87,6 +100,8 @@ void draw_block(Block *blocks, int index) {
 
 
 	};
+
+	
 	glBegin(GL_QUADS); /* Begin drawing */
 
 	/* Front side  */
@@ -136,5 +151,25 @@ void draw_blocks(Block *blocks) {
 	for (i = 0; i < count; ++i) {
 		draw_block(blocks,i);
 
+	}
+}
+
+float distance(float x0, float y0, float z0, float x1, float y1, float z1) {
+
+	return sqrt(pow((x1-x0),2)+pow((y1-y0),2)+pow((z1-z0),2));
+}
+
+void create_sphere(Block *blocks, float x, float y, float z, float radius, int *size) {
+
+	int i, j, k;
+
+	for (j = z - radius; j <= z + radius; j++) {
+		for (i = x - radius; i <= x + radius; i++ ) {
+			for (k = z - radius; k <= z + radius; k++) {
+				if (distance(i,j,k,x,y,z) <= (radius + SPHERE_THRESHOLD) && distance(i,j,k,x,y,z) >= (radius - SPHERE_THRESHOLD)) {
+					create_block(i,j,k,blocks,size, 0);
+				}
+			}
+		}
 	}
 }
