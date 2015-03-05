@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/tests/cursoranim.c
+/home/eric/CS196/deps/glfw-3.1/tests/cursoranim.c
 GLFW/glfw3.h
 -
 stdlib.h

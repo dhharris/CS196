@@ -1,4 +1,4 @@
-file(REMOVE_RECURSE
+FILE(REMOVE_RECURSE
   "CMakeFiles/game.dir/src/block.c.o"
   "CMakeFiles/game.dir/src/input.c.o"
   "CMakeFiles/game.dir/src/main.c.o"
@@ -7,6 +7,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C)
-  include(CMakeFiles/game.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+FOREACH(lang C)
+  INCLUDE(CMakeFiles/game.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

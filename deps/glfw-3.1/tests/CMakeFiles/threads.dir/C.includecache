@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/deps/tinycthread.c
+/home/eric/CS196/deps/glfw-3.1/deps/tinycthread.c
 tinycthread.h
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/deps/tinycthread.h
+/home/eric/CS196/deps/glfw-3.1/deps/tinycthread.h
 stdlib.h
 -
 signal.h
@@ -26,7 +26,7 @@ process.h
 sys/timeb.h
 -
 
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/deps/tinycthread.h
+/home/eric/CS196/deps/glfw-3.1/deps/tinycthread.h
 time.h
 -
 pthread.h
@@ -34,9 +34,9 @@ pthread.h
 windows.h
 -
 
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/tests/threads.c
+/home/eric/CS196/deps/glfw-3.1/tests/threads.c
 tinycthread.h
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/tests/tinycthread.h
+/home/eric/CS196/deps/glfw-3.1/tests/tinycthread.h
 GLFW/glfw3.h
 -
 stdio.h

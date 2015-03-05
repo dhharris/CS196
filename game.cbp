@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="game" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\deps\;CMake Files\deps\glfw-3.1\;CMake Files\deps\glfw-3.1\src\;CMake Files\deps\glfw-3.1\docs\;CMake Files\deps\glfw-3.1\examples\;CMake Files\deps\glfw-3.1\tests\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/eric/CS196" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="game">
+         <Option output="/home/eric/CS196/game" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/." />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 game" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="game/fast">
+         <Option output="/home/eric/CS196/game" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/." />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 game/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="/home/eric/CS196" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 install" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="/home/eric/CS196" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 install/local" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="/home/eric/CS196" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 install/strip" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="/home/eric/CS196" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 list_install_components" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/eric/CS196" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="uninstall">
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/Makefile&quot;  VERBOSE=1 uninstall" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="glfw">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/src/libglfw3.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/src" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-D_GLFW_USE_CONFIG_H" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/src/Makefile&quot;  VERBOSE=1 glfw" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="glfw/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/src/libglfw3.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/src" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-D_GLFW_USE_CONFIG_H" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/src" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/src/Makefile&quot;  VERBOSE=1 glfw/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/src/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/src/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="boing">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/boing" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 boing" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="boing/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/boing" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 boing/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gears">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/gears" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 gears" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gears/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/gears" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 gears/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="heightmap">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/heightmap" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 heightmap" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="heightmap/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/heightmap" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 heightmap/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="particles">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/particles" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 particles" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="particles/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/particles" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 particles/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="simple">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/simple" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 simple" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="simple/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/simple" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 simple/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="splitview">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/splitview" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 splitview" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="splitview/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/splitview" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 splitview/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="wave">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/wave" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 wave" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="wave/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/examples/wave" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/examples" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 wave/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/examples/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="accuracy">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/accuracy" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 accuracy" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="accuracy/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/accuracy" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 accuracy/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="clipboard">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/clipboard" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clipboard" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="clipboard/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/clipboard" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clipboard/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="cursor">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/cursor" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 cursor" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="cursor/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/cursor" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 cursor/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="cursoranim">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/cursoranim" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 cursoranim" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="cursoranim/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/cursoranim" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 cursoranim/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="defaults">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/defaults" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 defaults" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="defaults/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/defaults" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 defaults/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="empty">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/empty" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 empty" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="empty/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/empty" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 empty/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="events">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/events" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 events" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="events/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/events" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 events/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="fsaa">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/fsaa" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 fsaa" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="fsaa/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/fsaa" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 fsaa/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gamma">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/gamma" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 gamma" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gamma/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/gamma" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 gamma/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="glfwinfo">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/glfwinfo" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 glfwinfo" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="glfwinfo/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/glfwinfo" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 glfwinfo/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="iconify">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/iconify" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 iconify" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="iconify/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/iconify" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 iconify/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="joysticks">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/joysticks" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 joysticks" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="joysticks/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/joysticks" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 joysticks/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="modes">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/modes" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 modes" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="modes/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/modes" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 modes/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="peter">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/peter" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 peter" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="peter/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/peter" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 peter/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="reopen">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/reopen" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 reopen" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="reopen/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/reopen" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 reopen/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sharing">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/sharing" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 sharing" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sharing/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/sharing" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 sharing/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tearing">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/tearing" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 tearing" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tearing/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/tearing" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 tearing/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="threads">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/threads" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 threads" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="threads/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/threads" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 threads/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="title">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/title" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 title" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="title/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/title" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 title/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="windows">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/windows" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 windows" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="windows/fast">
+         <Option output="/home/eric/CS196/deps/glfw-3.1/tests/windows" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/tests" />
+         <Option object_output="./" />
+         <Option type="0" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/deps" />
+            <Add directory="/home/eric/CS196/deps/glfw-3.1/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 windows/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/tests/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="docs">
+         <Option working_dir="/home/eric/CS196/deps/glfw-3.1/docs" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/docs/Makefile&quot;  VERBOSE=1 docs" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/docs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/docs/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/eric/CS196/deps/glfw-3.1/docs/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/deps/getopt.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/deps/glad.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/deps/tinycthread.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/examples/boing.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/examples/gears.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/examples/heightmap.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/examples/particles.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/examples/simple.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/examples/splitview.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/examples/wave.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/context.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/glx_context.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/init.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/input.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/linux_joystick.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/monitor.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/posix_time.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/posix_tls.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/window.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/x11_init.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/x11_monitor.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/x11_window.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/xkb_unicode.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/accuracy.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/clipboard.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/cursor.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/cursoranim.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/defaults.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/empty.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/events.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/fsaa.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/gamma.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/glfwinfo.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/iconify.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/joysticks.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/modes.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/peter.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/reopen.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/sharing.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/tearing.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/threads.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/title.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/windows.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/src/block.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/src/input.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/src/main.c">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/deps/getopt.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/deps/glad/glad.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/deps/tinycthread.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/include/GLFW/glfw3.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/include/GLFW/glfw3native.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/glfw_config.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/glx_context.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/internal.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/linux_joystick.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/posix_time.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/posix_tls.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/x11_platform.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/xkb_unicode.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/src/block.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/src/input.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/src/main.h">
+      </Unit>
+      <Unit filename="/home/eric/CS196/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/cmake_uninstall.cmake.in">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/cmake_uninstall.cmake.in">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/glfw3Config.cmake.in">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\src\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/glfw_config.h.in">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\src\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/glfw3.pc.in">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\src\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\src\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/glfw3Config.cmake.in">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\src\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/glfw_config.h.in">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\src\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/glfw3.pc.in">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\src\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\src\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/docs/Doxyfile.in">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\docs\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/docs/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\docs\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/docs/Doxyfile.in">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\docs\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/docs/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\docs\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/examples/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\examples\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/examples/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\examples\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\tests\" />
+      </Unit>
+      <Unit filename="/home/eric/CS196/deps/glfw-3.1/tests/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\deps\glfw-3.1\tests\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

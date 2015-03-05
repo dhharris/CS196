@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/tests/peter.c
+/home/eric/CS196/deps/glfw-3.1/tests/peter.c
 GLFW/glfw3.h
 -
 stdio.h
