@@ -1,0 +1,11 @@
+Description of game - Hugh Harris
+
+
+This game is going to be an authentic space physics simulator where you can fly spacecraft 
+and explore a variety of different planets. It will also have a survival aspect where you can
+ gather resources as you work to survive harsh environments and dangerous creatures, create
+ vehicles and form your own civilizations. Eventually you will be able to leave your home
+ planet and colonize other systems, each having a different set of challenges. There will be two main sections of the game – space and the surface worlds. The physics will be replicated
+ as closely as possible to real life, with each planet having its own gravity, etc.
+ You can play "survival mode" where you have to fight enemies and craft objects, 
+or use "creative mode" if you just want to experience the physics engine. Think of a cross between Minecraft and KSP but with realistic physics. 
