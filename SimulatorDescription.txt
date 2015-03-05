@@ -1,0 +1,3 @@
+Solar system simulator:
+
+The aim of our solar system simulator is to do just that: simulate a solar system. Given a seed, the simulator will generate a fully dynamic solar system for the user to explore. The game draws two main audiences: those with an interest in games, and those with an interest in the development of solar systems. Game elements include mining and surface exploration of different bodies in the solar system. More than that, though, the simulator will accurately convey how a realistic solar system would develop. This has a variety of research implications, up to and including furthering understanding of the formation and discovery of exoplanets.
