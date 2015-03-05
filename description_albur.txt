@@ -1,0 +1,2 @@
+Description of game:
+The game is a free roam game spanning the size of a solar system. A physics engine will be used to randomize and simulate the creation of a realistic solar system through realworld physics. The solar system would then be used as the game world. Within the game the player will be able to explore each planet and the solar system itself. The physics engine would also help simulate the game physics.
