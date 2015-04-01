@@ -14,7 +14,7 @@ void gen_terrain(int seed, Blocks *bl) {
 		at z = 0
 	*/
 
-	int i, j;
+	int i, j, k;
 
 	for (i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {
 		for (j = -WORLD_SIZE/2; j < WORLD_SIZE/2; j += BLOCK_SIZE) {
@@ -25,9 +25,9 @@ void gen_terrain(int seed, Blocks *bl) {
 
 
 	/* Stone */
-	for (int i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {
-		for (int j = -WORLD_SIZE/2; j < WORLD_SIZE/2; j += BLOCK_SIZE) {
-			for (int k = -WORLD_HEIGHT; k < 0; k += BLOCK_SIZE) {
+	for (i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {
+		for (j = -WORLD_SIZE/2; j < WORLD_SIZE/2; j += BLOCK_SIZE) {
+			for (k = -WORLD_HEIGHT; k < 0; k += BLOCK_SIZE) {
 				create_block(i, k, j, bl, 1);
 			}
 		}
