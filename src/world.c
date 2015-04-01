@@ -13,8 +13,11 @@ void gen_terrain(int seed, Blocks *bl) {
 		-WORLD_SIZE/2 < y < WORLD_SIZE/2
 		at z = 0
 	*/
-	for (int i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {
-		for (int j = -WORLD_SIZE/2; j < WORLD_SIZE/2; j += BLOCK_SIZE) {
+
+	int i, j;
+
+	for (i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {
+		for (j = -WORLD_SIZE/2; j < WORLD_SIZE/2; j += BLOCK_SIZE) {
 			create_block(i, 0, j, bl, 5);
 		}
 	}
