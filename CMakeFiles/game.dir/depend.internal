@@ -39,6 +39,7 @@ CMakeFiles/game.dir/src/main.c.o
  /Users/hugh/GitHub/CS196/src/main.c
  /Users/hugh/GitHub/CS196/src/main.h
  /Users/hugh/GitHub/CS196/src/textures.h
+ /Users/hugh/GitHub/CS196/src/world.h
  deps/glfw-3.1/include/GLFW/glfw3.h
 CMakeFiles/game.dir/src/textures.c.o
  /Users/hugh/GitHub/CS196/deps/lodepng.h
@@ -47,4 +48,12 @@ CMakeFiles/game.dir/src/textures.c.o
  /Users/hugh/GitHub/CS196/src/textures.c
  /Users/hugh/GitHub/CS196/src/textures.h
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+ deps/glfw-3.1/include/GLFW/glfw3.h
+CMakeFiles/game.dir/src/world.c.o
+ /Users/hugh/GitHub/CS196/deps/lodepng.h
+ /Users/hugh/GitHub/CS196/src/block.h
+ /Users/hugh/GitHub/CS196/src/headers.h
+ /Users/hugh/GitHub/CS196/src/textures.h
+ /Users/hugh/GitHub/CS196/src/world.c
+ /Users/hugh/GitHub/CS196/src/world.h
  deps/glfw-3.1/include/GLFW/glfw3.h

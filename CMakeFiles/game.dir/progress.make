@@ -8,5 +8,9 @@ CMAKE_PROGRESS_2 = 23
 CMAKE_PROGRESS_3 = 24
 CMAKE_PROGRESS_4 = 25
 CMAKE_PROGRESS_5 = 26
+<<<<<<< Updated upstream
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+CMAKE_PROGRESS_6 = 27
+>>>>>>> Stashed changes
 

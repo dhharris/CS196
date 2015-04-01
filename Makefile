@@ -664,6 +664,30 @@ src/textures.c.s:
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/textures.c.s
 .PHONY : src/textures.c.s
 
+src/world.o: src/world.c.o
+.PHONY : src/world.o
+
+# target to build an object file
+src/world.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/world.c.o
+.PHONY : src/world.c.o
+
+src/world.i: src/world.c.i
+.PHONY : src/world.i
+
+# target to preprocess a source file
+src/world.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/world.c.i
+.PHONY : src/world.c.i
+
+src/world.s: src/world.c.s
+.PHONY : src/world.s
+
+# target to generate assembly for a file
+src/world.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/world.c.s
+.PHONY : src/world.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -730,6 +754,9 @@ help:
 	@echo "... src/textures.o"
 	@echo "... src/textures.i"
 	@echo "... src/textures.s"
+	@echo "... src/world.o"
+	@echo "... src/world.i"
+	@echo "... src/world.s"
 .PHONY : help
 
 

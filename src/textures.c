@@ -12,9 +12,8 @@ const char* block_type_to_filename(int block_type) {
 	}
 }
 
-int load_gl_texture(int block_type, unsigned char *image, unsigned width, unsigned height) {
+int load_gl_texture(int block_type, const char *filename, unsigned char *image, unsigned width, unsigned height) {
 	int status = 0;
-	const char *filename = block_type_to_filename(block_type);
 
 	while(!lodepng_decode32_file(&image, &width, &height, filename)) {
 		GLint texSize;
@@ -38,70 +37,93 @@ int load_gl_texture(int block_type, unsigned char *image, unsigned width, unsign
 	return status;
 }
 
-void draw_texture(unsigned char *image, Block *blocks, int index) {
+const char* change_texture(int type, int side) {
+	switch(type) {
+		case 5: 
+			if (side != 2 && side != 3) // must be side of block
+				return GRASS_SIDE;
+			else if (side == 2) // top
+				return GRASS_TOP;
+			else 
+				return DIRT;
+		default: return NULL_BLOCK;
+	}
+}
 
+void draw_texture(unsigned char *image, Blocks *blocks, int index) {
+
+	int side = 0; /* Add one every time a side is drawn */
 
 	GLfloat vertices[8][3] = {
 
 		/* Bottom Vertices */
-		{blocks[index].x + BLOCK_SIZE / 2, blocks[index].y - BLOCK_SIZE / 2, blocks[index].z + BLOCK_SIZE / 2 }, // 0 Bottom front right
-		{blocks[index].x - BLOCK_SIZE / 2, blocks[index].y - BLOCK_SIZE / 2, blocks[index].z + BLOCK_SIZE / 2}, // 1 Bottom front left
-		{blocks[index].x + BLOCK_SIZE / 2, blocks[index].y - BLOCK_SIZE / 2, blocks[index].z - BLOCK_SIZE / 2}, // 2 Bottom back right
-		{blocks[index].x - BLOCK_SIZE / 2, blocks[index].y - BLOCK_SIZE / 2, blocks[index].z - BLOCK_SIZE / 2}, // 3 Bottom back left
+		{blocks->arr[index].x + BLOCK_SIZE / 2, blocks->arr[index].y - BLOCK_SIZE / 2, blocks->arr[index].z + BLOCK_SIZE / 2 }, // 0 Bottom front right
+		{blocks->arr[index].x - BLOCK_SIZE / 2, blocks->arr[index].y - BLOCK_SIZE / 2, blocks->arr[index].z + BLOCK_SIZE / 2}, // 1 Bottom front left
+		{blocks->arr[index].x + BLOCK_SIZE / 2, blocks->arr[index].y - BLOCK_SIZE / 2, blocks->arr[index].z - BLOCK_SIZE / 2}, // 2 Bottom back right
+		{blocks->arr[index].x - BLOCK_SIZE / 2, blocks->arr[index].y - BLOCK_SIZE / 2, blocks->arr[index].z - BLOCK_SIZE / 2}, // 3 Bottom back left
 
 		/* Top vertices */
-		{blocks[index].x + BLOCK_SIZE / 2, blocks[index].y + BLOCK_SIZE / 2, blocks[index].z + BLOCK_SIZE / 2}, // 4 Top front right
-		{blocks[index].x - BLOCK_SIZE / 2, blocks[index].y + BLOCK_SIZE / 2, blocks[index].z + BLOCK_SIZE / 2}, // 5 Top front left
-		{blocks[index].x + BLOCK_SIZE / 2, blocks[index].y + BLOCK_SIZE / 2, blocks[index].z - BLOCK_SIZE / 2}, // 6 Top back right
-		{blocks[index].x - BLOCK_SIZE / 2, blocks[index].y + BLOCK_SIZE / 2, blocks[index].z - BLOCK_SIZE / 2} // 7 Top back left
+		{blocks->arr[index].x + BLOCK_SIZE / 2, blocks->arr[index].y + BLOCK_SIZE / 2, blocks->arr[index].z + BLOCK_SIZE / 2}, // 4 Top front right
+		{blocks->arr[index].x - BLOCK_SIZE / 2, blocks->arr[index].y + BLOCK_SIZE / 2, blocks->arr[index].z + BLOCK_SIZE / 2}, // 5 Top front left
+		{blocks->arr[index].x + BLOCK_SIZE / 2, blocks->arr[index].y + BLOCK_SIZE / 2, blocks->arr[index].z - BLOCK_SIZE / 2}, // 6 Top back right
+		{blocks->arr[index].x - BLOCK_SIZE / 2, blocks->arr[index].y + BLOCK_SIZE / 2, blocks->arr[index].z - BLOCK_SIZE / 2} // 7 Top back left
 
 
 	};
 
+
 	glBegin(GL_QUADS);
+	
     // Front Face
     glTexCoord2f(0.0f, 0.0f); glVertex3fv(vertices[1]);  // Bottom Left Of The Texture and Quad
     glTexCoord2f(1.0f, 0.0f); glVertex3fv(vertices[0]);  // Bottom Right Of The Texture and Quad
     glTexCoord2f(1.0f, 1.0f); glVertex3fv( vertices[4]);  // Top Right Of The Texture and Quad
     glTexCoord2f(0.0f, 1.0f); glVertex3fv(vertices[5]);  // Top Left Of The Texture and Quad
+
     // Back Face
     glTexCoord2f(1.0f, 0.0f); glVertex3fv(vertices[2]);  // Bottom Right Of The Texture and Quad
     glTexCoord2f(1.0f, 1.0f); glVertex3fv(vertices[6]);  // Top Right Of The Texture and Quad
     glTexCoord2f(0.0f, 1.0f); glVertex3fv( vertices[7]);  // Top Left Of The Texture and Quad
     glTexCoord2f(0.0f, 0.0f); glVertex3fv( vertices[3]);  // Bottom Left Of The Texture and Quad
+
     // Top Face
     glTexCoord2f(0.0f, 1.0f); glVertex3fv(vertices[7]);  // Top Left Of The Texture and Quad
     glTexCoord2f(0.0f, 0.0f); glVertex3fv(vertices[5]);  // Bottom Left Of The Texture and Quad
     glTexCoord2f(1.0f, 0.0f); glVertex3fv( vertices[4]);  // Bottom Right Of The Texture and Quad
     glTexCoord2f(1.0f, 1.0f); glVertex3fv( vertices[6]);  // Top Right Of The Texture and Quad
+
     // Bottom Face
     glTexCoord2f(1.0f, 1.0f); glVertex3fv(vertices[0]);  // Top Right Of The Texture and Quad
     glTexCoord2f(0.0f, 1.0f); glVertex3fv( vertices[2]);  // Top Left Of The Texture and Quad
     glTexCoord2f(0.0f, 0.0f); glVertex3fv( vertices[3]);  // Bottom Left Of The Texture and Quad
     glTexCoord2f(1.0f, 0.0f); glVertex3fv(vertices[1]);  // Bottom Right Of The Texture and Quad
+
     // Right face
     glTexCoord2f(1.0f, 0.0f); glVertex3fv( vertices[2]);  // Bottom Right Of The Texture and Quad
     glTexCoord2f(1.0f, 1.0f); glVertex3fv( vertices[6]);  // Top Right Of The Texture and Quad
     glTexCoord2f(0.0f, 1.0f); glVertex3fv( vertices[4]);  // Top Left Of The Texture and Quad
     glTexCoord2f(0.0f, 0.0f); glVertex3fv( vertices[0]);  // Bottom Left Of The Texture and Quad
+
     // Left Face
     glTexCoord2f(0.0f, 0.0f); glVertex3fv(vertices[3]);  // Bottom Left Of The Texture and Quad
     glTexCoord2f(1.0f, 0.0f); glVertex3fv(vertices[1]);  // Bottom Right Of The Texture and Quad
     glTexCoord2f(1.0f, 1.0f); glVertex3fv(vertices[5]);  // Top Right Of The Texture and Quad
     glTexCoord2f(0.0f, 1.0f); glVertex3fv(vertices[7]);  // Top Left Of The Texture and Quad
+
 	glEnd();
 }
 
-void draw_textures(unsigned char *image, Block *blocks) {
+//TODO - Use sprite sheet instead of loading in individual textures. Too slow to load grass block separately 
+void draw_textures(unsigned char *image, Blocks  *blocks) {
 	int i;
-	int count = count_blocks(blocks);
-	load_gl_texture(blocks[0].type, image, BLOCK_SIZE, BLOCK_SIZE);
-	int last_block_type = blocks[0].type;
 
-	for (i = 0; i < count; ++i) {
-		if (blocks[i].type != last_block_type) {
-			load_gl_texture(blocks[i].type, image, BLOCK_SIZE, BLOCK_SIZE);
-			last_block_type = blocks[i].type;
+	load_gl_texture(blocks->arr[0].type, block_type_to_filename(blocks->arr[0].type), image, BLOCK_SIZE, BLOCK_SIZE);
+	int last_block_type = blocks->arr[0].type;
+
+	for (i = 0; i < blocks->count; ++i) {
+		if (blocks->arr[i].type != last_block_type) {
+			load_gl_texture(blocks->arr[i].type, block_type_to_filename(blocks->arr[i].type), image, BLOCK_SIZE, BLOCK_SIZE);
+			last_block_type = blocks->arr[i].type;
 		}
 		draw_texture(image, blocks,i);
 

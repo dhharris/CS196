@@ -59,11 +59,15 @@ CMAKE_BINARY_DIR = /home/eric/CS196
 CMakeFiles/game.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/depend
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  15 16 17
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  22 23 24 25 26
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  22 23 24 25 26 27
+>>>>>>> Stashed changes
 	@echo "Built target game"
 .PHONY : CMakeFiles/game.dir/all
 
@@ -73,11 +77,15 @@ all: CMakeFiles/game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/game.dir/rule: cmake_check_build_system
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/CS196/CMakeFiles 16
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugh/GitHub/CS196/CMakeFiles 17
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hugh/GitHub/CS196/CMakeFiles 18
+>>>>>>> Stashed changes
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/CS196/CMakeFiles 0
 .PHONY : CMakeFiles/game.dir/rule
@@ -173,11 +181,15 @@ deps/glfw-3.1/src/preinstall:
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) -f deps/glfw-3.1/src/CMakeFiles/glfw.dir/build.make deps/glfw-3.1/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) -f deps/glfw-3.1/src/CMakeFiles/glfw.dir/build.make deps/glfw-3.1/src/CMakeFiles/glfw.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  21 22 23 24 25 26 27 28 29 30 31 32 33
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  29 30 31 32 33 34 35 36 37 38 39 40
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  30 31 32 33 34 35 36 37 38 39 40 41
+>>>>>>> Stashed changes
 	@echo "Built target glfw"
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 
@@ -817,11 +829,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/gamma.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  18 19
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  27 28
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  28 29
+>>>>>>> Stashed changes
 	@echo "Built target gamma"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/gamma.dir/all
 
@@ -856,11 +872,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/gamma.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  34 35
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  41 42
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  42 43
+>>>>>>> Stashed changes
 	@echo "Built target glfwinfo"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/all
 
@@ -895,11 +915,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/iconify.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  38 39
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  43 44
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  44 45
+>>>>>>> Stashed changes
 	@echo "Built target iconify"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/iconify.dir/all
 
@@ -934,11 +958,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/iconify.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  40
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  45
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  46
+>>>>>>> Stashed changes
 	@echo "Built target joysticks"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/all
 
@@ -973,11 +1001,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/modes.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  41 42
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  46 47
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  47 48
+>>>>>>> Stashed changes
 	@echo "Built target modes"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/modes.dir/all
 
@@ -1012,11 +1044,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/modes.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/peter.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  46
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  48
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  49
+>>>>>>> Stashed changes
 	@echo "Built target peter"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/peter.dir/all
 
@@ -1051,11 +1087,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/peter.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/reopen.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  47
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  49
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  50
+>>>>>>> Stashed changes
 	@echo "Built target reopen"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/reopen.dir/all
 
@@ -1090,11 +1130,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/reopen.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/sharing.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  48
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  50
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  51
+>>>>>>> Stashed changes
 	@echo "Built target sharing"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/sharing.dir/all
 
@@ -1129,11 +1173,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/sharing.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/tearing.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  51
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  51
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  52
+>>>>>>> Stashed changes
 	@echo "Built target tearing"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/tearing.dir/all
 
@@ -1168,11 +1216,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/tearing.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  52 53
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  52 53
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  53 54
+>>>>>>> Stashed changes
 	@echo "Built target threads"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/threads.dir/all
 
@@ -1207,11 +1259,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/threads.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/title.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  54
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  54
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  55
+>>>>>>> Stashed changes
 	@echo "Built target title"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/title.dir/all
 
@@ -1246,11 +1302,15 @@ clean: deps/glfw-3.1/tests/CMakeFiles/title.dir/clean
 deps/glfw-3.1/tests/CMakeFiles/windows.dir/all: deps/glfw-3.1/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/depend
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/build
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles  56
 =======
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  55
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles  56
+>>>>>>> Stashed changes
 	@echo "Built target windows"
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/windows.dir/all
 

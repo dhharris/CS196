@@ -15,7 +15,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/hugh/GitHub/CS196/src/input.c" "/Users/hugh/GitHub/CS196/CMakeFiles/game.dir/src/input.c.o"
   "/Users/hugh/GitHub/CS196/src/main.c" "/Users/hugh/GitHub/CS196/CMakeFiles/game.dir/src/main.c.o"
   "/Users/hugh/GitHub/CS196/src/textures.c" "/Users/hugh/GitHub/CS196/CMakeFiles/game.dir/src/textures.c.o"
+<<<<<<< Updated upstream
 >>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+=======
+  "/Users/hugh/GitHub/CS196/src/world.c" "/Users/hugh/GitHub/CS196/CMakeFiles/game.dir/src/world.c.o"
+>>>>>>> Stashed changes
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 

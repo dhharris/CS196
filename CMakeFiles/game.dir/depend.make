@@ -22,6 +22,7 @@ CMakeFiles/game.dir/src/main.c.o: src/input.h
 CMakeFiles/game.dir/src/main.c.o: src/main.c
 CMakeFiles/game.dir/src/main.c.o: src/main.h
 CMakeFiles/game.dir/src/main.c.o: src/textures.h
+CMakeFiles/game.dir/src/main.c.o: src/world.h
 CMakeFiles/game.dir/src/main.c.o: deps/glfw-3.1/include/GLFW/glfw3.h
 
 CMakeFiles/game.dir/src/textures.c.o: deps/lodepng.h
@@ -30,4 +31,12 @@ CMakeFiles/game.dir/src/textures.c.o: src/headers.h
 CMakeFiles/game.dir/src/textures.c.o: src/textures.c
 CMakeFiles/game.dir/src/textures.c.o: src/textures.h
 CMakeFiles/game.dir/src/textures.c.o: deps/glfw-3.1/include/GLFW/glfw3.h
+
+CMakeFiles/game.dir/src/world.c.o: deps/lodepng.h
+CMakeFiles/game.dir/src/world.c.o: src/block.h
+CMakeFiles/game.dir/src/world.c.o: src/headers.h
+CMakeFiles/game.dir/src/world.c.o: src/textures.h
+CMakeFiles/game.dir/src/world.c.o: src/world.c
+CMakeFiles/game.dir/src/world.c.o: src/world.h
+CMakeFiles/game.dir/src/world.c.o: deps/glfw-3.1/include/GLFW/glfw3.h
 

@@ -2,6 +2,7 @@
 #include "block.h"
 #include "input.h"
 #include "textures.h"
+#include "world.h"
 
 double rotate_x = 0;
 double rotate_y = 0;
@@ -68,7 +69,7 @@ void input() {
 
 }
 
-void render(Block *blocks, unsigned char *image) {
+void render(Blocks *blocks, unsigned char *image) {
 
 
     /* OpenGL rendering */
@@ -102,7 +103,7 @@ int main(int argc, char **argv) {
     srand(time(NULL)); /* Seed random numbers for block color */
 
     /* Block variables */
-    int block_array_size = INITIAL_BLOCKS;
+    Blocks *blocks = init_blocks();
 
     /* Image variables */
     unsigned char *image;
@@ -113,25 +114,15 @@ int main(int argc, char **argv) {
     g->zoom = INITIAL_ZOOM;
    
 
-    Block *blocks = init_blocks();
+    gen_terrain(0, blocks);
 
-    create_blocks(
-    0.0, 0.0, 0.0, 
-    5, 1, 5,
-    blocks, &block_array_size, 1);
-
-    create_blocks(0.0,1 * BLOCK_SIZE,0.0, 4,1,4,blocks,&block_array_size, 0);
-    create_blocks(0.0,2 * BLOCK_SIZE,0.0,3,3,3,blocks,&block_array_size, 3);
-    create_blocks(0.0,3 * BLOCK_SIZE,0.0, 3,3,3,blocks,&block_array_size,4);
-
-    printf("%d\n",blocks[0].type);
 
 
     
     if (!create_window())
         return -1;
 
-    if (!load_gl_texture(DEFAULT_TEXTURE, image, BLOCK_SIZE, BLOCK_SIZE)) {
+    if (!load_gl_texture(DEFAULT_TEXTURE, block_type_to_filename(DEFAULT_TEXTURE), image, BLOCK_SIZE, BLOCK_SIZE)) {
         printf("Program closed with an error\n");
         return -1;
     }
