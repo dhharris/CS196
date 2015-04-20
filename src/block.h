@@ -24,18 +24,6 @@ typedef struct {
 } Blocks;
 
 
-/* Block types */
-
-/*
-0 - dirt
-1 - stone
-2 - sand
-3 - planks
-4 - bricks
-5 - grass
-*/
-
-
 Blocks* init_blocks(void);
 void create_block(float x, float y, float z, Blocks *blocks, int type);
 void resize(Block *blocks, int *size, int offset);

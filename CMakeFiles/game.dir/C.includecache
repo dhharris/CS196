@@ -6,13 +6,6 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD
-/home/eric/CS196/src/block.c
-block.h
-/home/eric/CS196/src/block.h
-headers.h
-/home/eric/CS196/src/headers.h
-=======
 /Users/hugh/GitHub/CS196/deps/lodepng.c
 lodepng.h
 /Users/hugh/GitHub/CS196/deps/lodepng.h
@@ -42,11 +35,10 @@ headers.h
 /Users/hugh/GitHub/CS196/src/headers.h
 block.h
 /Users/hugh/GitHub/CS196/src/block.h
->>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
 
-/home/eric/CS196/src/block.h
+/Users/hugh/GitHub/CS196/src/block.h
 
-/home/eric/CS196/src/headers.h
+/Users/hugh/GitHub/CS196/src/headers.h
 GLFW/glfw3.h
 -
 ../deps/lodepng.h
@@ -62,36 +54,29 @@ string.h
 time.h
 -
 
-/home/eric/CS196/src/input.c
+/Users/hugh/GitHub/CS196/src/input.c
 headers.h
-/home/eric/CS196/src/headers.h
+/Users/hugh/GitHub/CS196/src/headers.h
 
-/home/eric/CS196/src/input.h
+/Users/hugh/GitHub/CS196/src/input.h
 headers.h
-/home/eric/CS196/src/headers.h
+/Users/hugh/GitHub/CS196/src/headers.h
 
-/home/eric/CS196/src/main.c
+/Users/hugh/GitHub/CS196/src/main.c
 main.h
-/home/eric/CS196/src/main.h
+/Users/hugh/GitHub/CS196/src/main.h
 block.h
-/home/eric/CS196/src/block.h
+/Users/hugh/GitHub/CS196/src/block.h
 input.h
-<<<<<<< HEAD
-/home/eric/CS196/src/input.h
-=======
 /Users/hugh/GitHub/CS196/src/input.h
 textures.h
 /Users/hugh/GitHub/CS196/src/textures.h
-<<<<<<< Updated upstream
->>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
-=======
 world.h
 /Users/hugh/GitHub/CS196/src/world.h
->>>>>>> Stashed changes
 
-/home/eric/CS196/src/main.h
+/Users/hugh/GitHub/CS196/src/main.h
 headers.h
-/home/eric/CS196/src/headers.h
+/Users/hugh/GitHub/CS196/src/headers.h
 
 /Users/hugh/GitHub/CS196/src/textures.c
 headers.h

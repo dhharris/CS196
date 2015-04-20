@@ -1,10 +1,10 @@
-FILE(REMOVE_RECURSE
-  "CMakeFiles/simple.dir/simple.c.o"
-  "simple.pdb"
-  "simple"
+file(REMOVE_RECURSE
+  "CMakeFiles/Simple.dir/simple.c.o"
+  "Simple.pdb"
+  "Simple.app/Contents/MacOS/Simple"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang C)
-  INCLUDE(CMakeFiles/simple.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang C)
+  include(CMakeFiles/Simple.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

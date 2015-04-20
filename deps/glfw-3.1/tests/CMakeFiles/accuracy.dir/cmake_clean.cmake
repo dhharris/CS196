@@ -1,10 +1,10 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/accuracy.dir/accuracy.c.o"
   "accuracy.pdb"
-  "accuracy"
+  "accuracy.app/Contents/MacOS/accuracy"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang C)
-  INCLUDE(CMakeFiles/accuracy.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang C)
+  include(CMakeFiles/accuracy.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

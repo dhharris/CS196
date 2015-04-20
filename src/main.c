@@ -54,6 +54,8 @@ int create_window() {
 
 
 
+
+
     return 1;
 
 
@@ -113,16 +115,21 @@ int main(int argc, char **argv) {
     g->translate_z = 0.0;
     g->zoom = INITIAL_ZOOM;
    
+    // Generate terrain
+         create_block(0.0, 0.0, 0.0, blocks, 8);
+         create_block(16.0, 0.0, 0.0, blocks, 0);
+         create_block(32.0, 0.0, 0.0, blocks, 16);
+         create_block(48.0, 0.0, 0.0, blocks, 35);
 
-    gen_terrain(0, blocks);
 
 
 
-    
+    // Create window
     if (!create_window())
         return -1;
 
-    if (!load_gl_texture(DEFAULT_TEXTURE, block_type_to_filename(DEFAULT_TEXTURE), image, BLOCK_SIZE, BLOCK_SIZE)) {
+    // Load spritesheet 
+    if (!load_gl_texture(DEFAULT_TEXTURE, image, BLOCK_SIZE, BLOCK_SIZE)) {
         printf("Program closed with an error\n");
         return -1;
     }

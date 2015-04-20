@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/eric/CS196/deps/glfw-3.1/tests/reopen.c
+/Users/hugh/GitHub/CS196/deps/glfw-3.1/tests/reopen.c
 GLFW/glfw3.h
 -
 time.h

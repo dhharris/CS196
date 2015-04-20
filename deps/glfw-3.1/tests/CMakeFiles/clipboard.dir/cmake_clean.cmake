@@ -1,4 +1,4 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/clipboard.dir/clipboard.c.o"
   "CMakeFiles/clipboard.dir/__/deps/getopt.c.o"
   "clipboard.pdb"
@@ -6,6 +6,6 @@ FILE(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang C)
-  INCLUDE(CMakeFiles/clipboard.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang C)
+  include(CMakeFiles/clipboard.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
