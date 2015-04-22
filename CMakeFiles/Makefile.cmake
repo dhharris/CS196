@@ -13,7 +13,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeLists.txt"
   "deps/glfw-3.1/CMakeLists.txt"
   "deps/glfw-3.1/cmake_uninstall.cmake.in"
-  "deps/glfw-3.1/docs/CMakeLists.txt"
   "deps/glfw-3.1/docs/Doxyfile.in"
   "deps/glfw-3.1/examples/CMakeLists.txt"
   "deps/glfw-3.1/src/CMakeLists.txt"
@@ -25,10 +24,13 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-2.8/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake"
+  "/usr/share/cmake-2.8/Modules/CMakeConfigurableFile.in"
   "/usr/share/cmake-2.8/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-2.8/Modules/CMakePackageConfigHelpers.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeParseArguments.cmake"
   "/usr/share/cmake-2.8/Modules/CMakeSystemSpecificInformation.cmake"
+  "/usr/share/cmake-2.8/Modules/CMakeUnixFindMake.cmake"
+  "/usr/share/cmake-2.8/Modules/CheckFunctionExists.c"
   "/usr/share/cmake-2.8/Modules/CheckFunctionExists.cmake"
   "/usr/share/cmake-2.8/Modules/CheckIncludeFiles.cmake"
   "/usr/share/cmake-2.8/Modules/CheckLibraryExists.cmake"
@@ -63,7 +65,6 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "deps/glfw-3.1/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "deps/glfw-3.1/examples/CMakeFiles/CMakeDirectoryInformation.cmake"
   "deps/glfw-3.1/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "deps/glfw-3.1/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -98,5 +99,4 @@ SET(CMAKE_DEPEND_INFO_FILES
   "deps/glfw-3.1/tests/CMakeFiles/threads.dir/DependInfo.cmake"
   "deps/glfw-3.1/tests/CMakeFiles/title.dir/DependInfo.cmake"
   "deps/glfw-3.1/tests/CMakeFiles/windows.dir/DependInfo.cmake"
-  "deps/glfw-3.1/docs/CMakeFiles/docs.dir/DependInfo.cmake"
   )

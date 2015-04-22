@@ -18,11 +18,11 @@ void gen_terrain(int seed, Blocks *bl) {
 
 	for (i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {
 		for (j = -WORLD_SIZE/2; j < WORLD_SIZE/2; j += BLOCK_SIZE) {
-			create_block(i, 0, j, bl, 5);
+			create_block(i, 0, j, bl, 4);
 		}
 	}
 
-
+	
 
 	/* Stone */
 	for (i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {

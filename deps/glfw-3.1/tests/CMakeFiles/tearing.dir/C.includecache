@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/eric/CS196/deps/glfw-3.1/tests/tearing.c
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/tearing.c
 GLFW/glfw3.h
 -
 stdio.h

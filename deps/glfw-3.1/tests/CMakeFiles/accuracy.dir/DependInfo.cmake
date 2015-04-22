@@ -4,13 +4,13 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/home/eric/CS196/deps/glfw-3.1/tests/accuracy.c" "/home/eric/CS196/deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/accuracy.c.o"
+  "/home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/accuracy.c" "/home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/accuracy.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/eric/CS196/deps/glfw-3.1/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/home/albur/Documents/Github/CS196/deps/glfw-3.1/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

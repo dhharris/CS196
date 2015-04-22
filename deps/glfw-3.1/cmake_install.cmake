@@ -1,4 +1,4 @@
-# Install script for directory: /home/eric/CS196/deps/glfw-3.1
+# Install script for directory: /home/albur/Documents/Github/CS196/deps/glfw-3.1
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,13 +33,13 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/eric/CS196/deps/glfw-3.1/include/GLFW" FILES_MATCHING REGEX "/glfw3\\.h$" REGEX "/glfw3native\\.h$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/albur/Documents/Github/CS196/deps/glfw-3.1/include/GLFW" FILES_MATCHING REGEX "/glfw3\\.h$" REGEX "/glfw3native\\.h$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES
-    "/home/eric/CS196/deps/glfw-3.1/src/glfw3Config.cmake"
-    "/home/eric/CS196/deps/glfw-3.1/src/glfw3ConfigVersion.cmake"
+    "/home/albur/Documents/Github/CS196/deps/glfw-3.1/src/glfw3Config.cmake"
+    "/home/albur/Documents/Github/CS196/deps/glfw-3.1/src/glfw3ConfigVersion.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
@@ -47,7 +47,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets.cmake")
     FILE(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets.cmake"
-         "/home/eric/CS196/deps/glfw-3.1/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
+         "/home/albur/Documents/Github/CS196/deps/glfw-3.1/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
     IF(EXPORT_FILE_CHANGED)
       FILE(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw/glfwTargets-*.cmake")
       IF(OLD_CONFIG_FILES)
@@ -56,22 +56,21 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
       ENDIF(OLD_CONFIG_FILES)
     ENDIF(EXPORT_FILE_CHANGED)
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/home/eric/CS196/deps/glfw-3.1/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/home/albur/Documents/Github/CS196/deps/glfw-3.1/CMakeFiles/Export/lib/cmake/glfw/glfwTargets.cmake")
   IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/home/eric/CS196/deps/glfw-3.1/CMakeFiles/Export/lib/cmake/glfw/glfwTargets-noconfig.cmake")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/glfw" TYPE FILE FILES "/home/albur/Documents/Github/CS196/deps/glfw-3.1/CMakeFiles/Export/lib/cmake/glfw/glfwTargets-noconfig.cmake")
   ENDIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/eric/CS196/deps/glfw-3.1/src/glfw3.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/albur/Documents/Github/CS196/deps/glfw-3.1/src/glfw3.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/eric/CS196/deps/glfw-3.1/src/cmake_install.cmake")
-  INCLUDE("/home/eric/CS196/deps/glfw-3.1/examples/cmake_install.cmake")
-  INCLUDE("/home/eric/CS196/deps/glfw-3.1/tests/cmake_install.cmake")
-  INCLUDE("/home/eric/CS196/deps/glfw-3.1/docs/cmake_install.cmake")
+  INCLUDE("/home/albur/Documents/Github/CS196/deps/glfw-3.1/src/cmake_install.cmake")
+  INCLUDE("/home/albur/Documents/Github/CS196/deps/glfw-3.1/examples/cmake_install.cmake")
+  INCLUDE("/home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/CS196
+CMAKE_SOURCE_DIR = /home/albur/Documents/Github/CS196
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/CS196
+CMAKE_BINARY_DIR = /home/albur/Documents/Github/CS196
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,16 +79,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -110,9 +100,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/CS196/CMakeFiles /home/eric/CS196/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/albur/Documents/Github/CS196/CMakeFiles /home/albur/Documents/Github/CS196/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/CS196/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/albur/Documents/Github/CS196/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -529,20 +519,6 @@ windows/fast:
 	$(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
-<<<<<<< HEAD
-#=============================================================================
-# Target rules for targets named docs
-
-# Build rule for target.
-docs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 docs
-.PHONY : docs
-
-# fast build rule for target.
-docs/fast:
-	$(MAKE) -f deps/glfw-3.1/docs/CMakeFiles/docs.dir/build.make deps/glfw-3.1/docs/CMakeFiles/docs.dir/build
-.PHONY : docs/fast
-=======
 deps/lodepng.o: deps/lodepng.c.o
 .PHONY : deps/lodepng.o
 
@@ -566,7 +542,6 @@ deps/lodepng.s: deps/lodepng.c.s
 deps/lodepng.c.s:
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/deps/lodepng.c.s
 .PHONY : deps/lodepng.c.s
->>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
 
 src/block.o: src/block.c.o
 .PHONY : src/block.o
@@ -591,6 +566,30 @@ src/block.s: src/block.c.s
 src/block.c.s:
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/block.c.s
 .PHONY : src/block.c.s
+
+src/gravity.o: src/gravity.c.o
+.PHONY : src/gravity.o
+
+# target to build an object file
+src/gravity.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/gravity.c.o
+.PHONY : src/gravity.c.o
+
+src/gravity.i: src/gravity.c.i
+.PHONY : src/gravity.i
+
+# target to preprocess a source file
+src/gravity.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/gravity.c.i
+.PHONY : src/gravity.c.i
+
+src/gravity.s: src/gravity.c.s
+.PHONY : src/gravity.s
+
+# target to generate assembly for a file
+src/gravity.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/gravity.c.s
+.PHONY : src/gravity.c.s
 
 src/input.o: src/input.c.o
 .PHONY : src/input.o
@@ -639,6 +638,30 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+src/movement.o: src/movement.c.o
+.PHONY : src/movement.o
+
+# target to build an object file
+src/movement.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/movement.c.o
+.PHONY : src/movement.c.o
+
+src/movement.i: src/movement.c.i
+.PHONY : src/movement.i
+
+# target to preprocess a source file
+src/movement.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/movement.c.i
+.PHONY : src/movement.c.i
+
+src/movement.s: src/movement.c.s
+.PHONY : src/movement.s
+
+# target to generate assembly for a file
+src/movement.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/movement.c.s
+.PHONY : src/movement.c.s
 
 src/textures.o: src/textures.c.o
 .PHONY : src/textures.o
@@ -698,7 +721,6 @@ help:
 	@echo "... game"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
@@ -725,32 +747,29 @@ help:
 	@echo "... modes"
 	@echo "... peter"
 	@echo "... reopen"
-<<<<<<< HEAD
 	@echo "... sharing"
 	@echo "... tearing"
 	@echo "... threads"
 	@echo "... title"
 	@echo "... windows"
-	@echo "... docs"
-=======
-	@echo "... glfwinfo"
-	@echo "... events"
-	@echo "... empty"
-	@echo "... gamma"
-	@echo "... fsaa"
 	@echo "... deps/lodepng.o"
 	@echo "... deps/lodepng.i"
 	@echo "... deps/lodepng.s"
->>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
 	@echo "... src/block.o"
 	@echo "... src/block.i"
 	@echo "... src/block.s"
+	@echo "... src/gravity.o"
+	@echo "... src/gravity.i"
+	@echo "... src/gravity.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/movement.o"
+	@echo "... src/movement.i"
+	@echo "... src/movement.s"
 	@echo "... src/textures.o"
 	@echo "... src/textures.i"
 	@echo "... src/textures.s"

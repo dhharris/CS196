@@ -6,24 +6,7 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD
-/home/eric/CS196/src/block.c
-block.h
-/home/eric/CS196/src/block.h
-headers.h
-/home/eric/CS196/src/headers.h
-=======
-/Users/hugh/GitHub/CS196/deps/lodepng.c
-lodepng.h
-/Users/hugh/GitHub/CS196/deps/lodepng.h
-stdio.h
--
-stdlib.h
--
-fstream
--
-
-/Users/hugh/GitHub/CS196/deps/lodepng.h
+/home/albur/Documents/Github/CS196/deps/lodepng.h
 string.h
 -
 vector
@@ -31,26 +14,23 @@ vector
 string
 -
 lodepng.h
-/Users/hugh/GitHub/CS196/deps/lodepng.h
+/home/albur/Documents/Github/CS196/deps/lodepng.h
 iostream
 -
 lodepng.h
-/Users/hugh/GitHub/CS196/deps/lodepng.h
+/home/albur/Documents/Github/CS196/deps/lodepng.h
 
-/Users/hugh/GitHub/CS196/src/block.c
-headers.h
-/Users/hugh/GitHub/CS196/src/headers.h
-block.h
-/Users/hugh/GitHub/CS196/src/block.h
->>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
+/home/albur/Documents/Github/CS196/src/block.h
 
-/home/eric/CS196/src/block.h
+/home/albur/Documents/Github/CS196/src/gravity.c
+physics.h
+/home/albur/Documents/Github/CS196/src/physics.h
 
-/home/eric/CS196/src/headers.h
+/home/albur/Documents/Github/CS196/src/headers.h
 GLFW/glfw3.h
 -
 ../deps/lodepng.h
-/Users/hugh/GitHub/CS196/deps/lodepng.h
+/home/albur/Documents/Github/CS196/deps/lodepng.h
 stdio.h
 -
 math.h
@@ -62,58 +42,57 @@ string.h
 time.h
 -
 
-/home/eric/CS196/src/input.c
+/home/albur/Documents/Github/CS196/src/input.h
 headers.h
-/home/eric/CS196/src/headers.h
+/home/albur/Documents/Github/CS196/src/headers.h
 
-/home/eric/CS196/src/input.h
-headers.h
-/home/eric/CS196/src/headers.h
-
-/home/eric/CS196/src/main.c
+/home/albur/Documents/Github/CS196/src/main.c
 main.h
-/home/eric/CS196/src/main.h
+/home/albur/Documents/Github/CS196/src/main.h
 block.h
-/home/eric/CS196/src/block.h
+/home/albur/Documents/Github/CS196/src/block.h
 input.h
-<<<<<<< HEAD
-/home/eric/CS196/src/input.h
-=======
-/Users/hugh/GitHub/CS196/src/input.h
+/home/albur/Documents/Github/CS196/src/input.h
 textures.h
-/Users/hugh/GitHub/CS196/src/textures.h
-<<<<<<< Updated upstream
->>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
-=======
+/home/albur/Documents/Github/CS196/src/textures.h
 world.h
-/Users/hugh/GitHub/CS196/src/world.h
->>>>>>> Stashed changes
+/home/albur/Documents/Github/CS196/src/world.h
+physics.h
+/home/albur/Documents/Github/CS196/src/physics.h
+movement.h
+/home/albur/Documents/Github/CS196/src/movement.h
 
-/home/eric/CS196/src/main.h
+/home/albur/Documents/Github/CS196/src/main.h
 headers.h
-/home/eric/CS196/src/headers.h
+/home/albur/Documents/Github/CS196/src/headers.h
 
-/Users/hugh/GitHub/CS196/src/textures.c
-headers.h
-/Users/hugh/GitHub/CS196/src/headers.h
-textures.h
-/Users/hugh/GitHub/CS196/src/textures.h
-
-/Users/hugh/GitHub/CS196/src/textures.h
-block.h
-/Users/hugh/GitHub/CS196/src/block.h
-
-/Users/hugh/GitHub/CS196/src/world.c
+/home/albur/Documents/Github/CS196/src/movement.h
 world.h
-/Users/hugh/GitHub/CS196/src/world.h
-
-/Users/hugh/GitHub/CS196/src/world.h
+/home/albur/Documents/Github/CS196/src/world.h
 block.h
-/Users/hugh/GitHub/CS196/src/block.h
+/home/albur/Documents/Github/CS196/src/block.h
 headers.h
-/Users/hugh/GitHub/CS196/src/headers.h
+/home/albur/Documents/Github/CS196/src/headers.h
+
+/home/albur/Documents/Github/CS196/src/physics.h
+world.h
+/home/albur/Documents/Github/CS196/src/world.h
+block.h
+/home/albur/Documents/Github/CS196/src/block.h
+headers.h
+/home/albur/Documents/Github/CS196/src/headers.h
+
+/home/albur/Documents/Github/CS196/src/textures.h
+block.h
+/home/albur/Documents/Github/CS196/src/block.h
+
+/home/albur/Documents/Github/CS196/src/world.h
+block.h
+/home/albur/Documents/Github/CS196/src/block.h
+headers.h
+/home/albur/Documents/Github/CS196/src/headers.h
 textures.h
-/Users/hugh/GitHub/CS196/src/textures.h
+/home/albur/Documents/Github/CS196/src/textures.h
 
 deps/glfw-3.1/include/GLFW/glfw3.h
 stddef.h

@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/CS196
+CMAKE_SOURCE_DIR = /home/albur/Documents/Github/CS196
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/CS196
+CMAKE_BINARY_DIR = /home/albur/Documents/Github/CS196
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,16 +79,6 @@ install/local: preinstall
 install/local/fast: install/local
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -110,14 +100,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/eric/CS196 && $(CMAKE_COMMAND) -E cmake_progress_start /home/eric/CS196/CMakeFiles /home/eric/CS196/deps/glfw-3.1/tests/CMakeFiles/progress.marks
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eric/CS196/CMakeFiles 0
+	cd /home/albur/Documents/Github/CS196 && $(CMAKE_COMMAND) -E cmake_progress_start /home/albur/Documents/Github/CS196/CMakeFiles /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/CMakeFiles/progress.marks
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/albur/Documents/Github/CS196/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/clean
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -126,22 +116,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/preinstall
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/preinstall
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/eric/CS196 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/albur/Documents/Github/CS196 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/rule
 
 # Convenience name for target.
@@ -150,12 +140,12 @@ accuracy: deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/rule
 
 # fast build rule for target.
 accuracy/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/build.make deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/build.make deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/build
 .PHONY : accuracy/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/rule
 
 # Convenience name for target.
@@ -164,12 +154,12 @@ clipboard: deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/rule
 
 # fast build rule for target.
 clipboard/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build
 .PHONY : clipboard/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/cursor.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/cursor.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/cursor.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/cursor.dir/rule
 
 # Convenience name for target.
@@ -178,12 +168,12 @@ cursor: deps/glfw-3.1/tests/CMakeFiles/cursor.dir/rule
 
 # fast build rule for target.
 cursor/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursor.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursor.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursor.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursor.dir/build
 .PHONY : cursor/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/rule
 
 # Convenience name for target.
@@ -192,12 +182,12 @@ cursoranim: deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/rule
 
 # fast build rule for target.
 cursoranim/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/build
 .PHONY : cursoranim/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/defaults.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/defaults.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/defaults.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/defaults.dir/rule
 
 # Convenience name for target.
@@ -206,12 +196,12 @@ defaults: deps/glfw-3.1/tests/CMakeFiles/defaults.dir/rule
 
 # fast build rule for target.
 defaults/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/defaults.dir/build.make deps/glfw-3.1/tests/CMakeFiles/defaults.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/defaults.dir/build.make deps/glfw-3.1/tests/CMakeFiles/defaults.dir/build
 .PHONY : defaults/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/empty.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/empty.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/empty.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/empty.dir/rule
 
 # Convenience name for target.
@@ -220,12 +210,12 @@ empty: deps/glfw-3.1/tests/CMakeFiles/empty.dir/rule
 
 # fast build rule for target.
 empty/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/build
 .PHONY : empty/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/events.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/events.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/events.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/events.dir/rule
 
 # Convenience name for target.
@@ -234,12 +224,12 @@ events: deps/glfw-3.1/tests/CMakeFiles/events.dir/rule
 
 # fast build rule for target.
 events/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/build
 .PHONY : events/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/rule
 
 # Convenience name for target.
@@ -248,12 +238,12 @@ fsaa: deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/rule
 
 # fast build rule for target.
 fsaa/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build
 .PHONY : fsaa/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/gamma.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/gamma.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/gamma.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/gamma.dir/rule
 
 # Convenience name for target.
@@ -262,12 +252,12 @@ gamma: deps/glfw-3.1/tests/CMakeFiles/gamma.dir/rule
 
 # fast build rule for target.
 gamma/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build
 .PHONY : gamma/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/rule
 
 # Convenience name for target.
@@ -276,12 +266,12 @@ glfwinfo: deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/rule
 
 # fast build rule for target.
 glfwinfo/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build
 .PHONY : glfwinfo/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/iconify.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/iconify.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/iconify.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/iconify.dir/rule
 
 # Convenience name for target.
@@ -290,12 +280,12 @@ iconify: deps/glfw-3.1/tests/CMakeFiles/iconify.dir/rule
 
 # fast build rule for target.
 iconify/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build
 .PHONY : iconify/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/rule
 
 # Convenience name for target.
@@ -304,12 +294,12 @@ joysticks: deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/rule
 
 # fast build rule for target.
 joysticks/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build
 .PHONY : joysticks/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/modes.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/modes.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/modes.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/modes.dir/rule
 
 # Convenience name for target.
@@ -318,12 +308,12 @@ modes: deps/glfw-3.1/tests/CMakeFiles/modes.dir/rule
 
 # fast build rule for target.
 modes/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/build
 .PHONY : modes/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/peter.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/peter.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/peter.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/peter.dir/rule
 
 # Convenience name for target.
@@ -332,12 +322,12 @@ peter: deps/glfw-3.1/tests/CMakeFiles/peter.dir/rule
 
 # fast build rule for target.
 peter/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/build
 .PHONY : peter/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/reopen.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/reopen.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/reopen.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/reopen.dir/rule
 
 # Convenience name for target.
@@ -346,12 +336,12 @@ reopen: deps/glfw-3.1/tests/CMakeFiles/reopen.dir/rule
 
 # fast build rule for target.
 reopen/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build
 .PHONY : reopen/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/sharing.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/sharing.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/sharing.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/sharing.dir/rule
 
 # Convenience name for target.
@@ -360,12 +350,12 @@ sharing: deps/glfw-3.1/tests/CMakeFiles/sharing.dir/rule
 
 # fast build rule for target.
 sharing/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build
 .PHONY : sharing/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/tearing.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/tearing.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/tearing.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/tearing.dir/rule
 
 # Convenience name for target.
@@ -374,12 +364,12 @@ tearing: deps/glfw-3.1/tests/CMakeFiles/tearing.dir/rule
 
 # fast build rule for target.
 tearing/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build
 .PHONY : tearing/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/threads.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/threads.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/threads.dir/rule
 
 # Convenience name for target.
@@ -388,12 +378,12 @@ threads: deps/glfw-3.1/tests/CMakeFiles/threads.dir/rule
 
 # fast build rule for target.
 threads/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/build
 .PHONY : threads/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/title.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/title.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/title.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/title.dir/rule
 
 # Convenience name for target.
@@ -402,12 +392,12 @@ title: deps/glfw-3.1/tests/CMakeFiles/title.dir/rule
 
 # fast build rule for target.
 title/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/build
 .PHONY : title/fast
 
 # Convenience name for target.
 deps/glfw-3.1/tests/CMakeFiles/windows.dir/rule:
-	cd /home/eric/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/windows.dir/rule
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f CMakeFiles/Makefile2 deps/glfw-3.1/tests/CMakeFiles/windows.dir/rule
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/windows.dir/rule
 
 # Convenience name for target.
@@ -416,7 +406,7 @@ windows: deps/glfw-3.1/tests/CMakeFiles/windows.dir/rule
 
 # fast build rule for target.
 windows/fast:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/build
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
 __/deps/getopt.o: __/deps/getopt.c.o
@@ -424,13 +414,13 @@ __/deps/getopt.o: __/deps/getopt.c.o
 
 # target to build an object file
 __/deps/getopt.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/__/deps/getopt.c.o
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/__/deps/getopt.c.o
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.o
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/__/deps/getopt.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/__/deps/getopt.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/__/deps/getopt.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/__/deps/getopt.c.o
 .PHONY : __/deps/getopt.c.o
 
 __/deps/getopt.i: __/deps/getopt.c.i
@@ -438,13 +428,13 @@ __/deps/getopt.i: __/deps/getopt.c.i
 
 # target to preprocess a source file
 __/deps/getopt.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.i
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/__/deps/getopt.c.i
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/__/deps/getopt.c.i
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.i
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.i
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/__/deps/getopt.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/__/deps/getopt.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/__/deps/getopt.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/__/deps/getopt.c.i
 .PHONY : __/deps/getopt.c.i
 
 __/deps/getopt.s: __/deps/getopt.c.s
@@ -452,13 +442,13 @@ __/deps/getopt.s: __/deps/getopt.c.s
 
 # target to generate assembly for a file
 __/deps/getopt.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.s
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/__/deps/getopt.c.s
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/__/deps/getopt.c.s
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.s
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.s
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/__/deps/getopt.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/__/deps/getopt.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/__/deps/getopt.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/__/deps/getopt.c.s
 .PHONY : __/deps/getopt.c.s
 
 __/deps/tinycthread.o: __/deps/tinycthread.c.o
@@ -466,8 +456,8 @@ __/deps/tinycthread.o: __/deps/tinycthread.c.o
 
 # target to build an object file
 __/deps/tinycthread.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
 .PHONY : __/deps/tinycthread.c.o
 
 __/deps/tinycthread.i: __/deps/tinycthread.c.i
@@ -475,8 +465,8 @@ __/deps/tinycthread.i: __/deps/tinycthread.c.i
 
 # target to preprocess a source file
 __/deps/tinycthread.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.i
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.i
 .PHONY : __/deps/tinycthread.c.i
 
 __/deps/tinycthread.s: __/deps/tinycthread.c.s
@@ -484,8 +474,8 @@ __/deps/tinycthread.s: __/deps/tinycthread.c.s
 
 # target to generate assembly for a file
 __/deps/tinycthread.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.s
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.s
 .PHONY : __/deps/tinycthread.c.s
 
 accuracy.o: accuracy.c.o
@@ -493,7 +483,7 @@ accuracy.o: accuracy.c.o
 
 # target to build an object file
 accuracy.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/build.make deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/accuracy.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/build.make deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/accuracy.c.o
 .PHONY : accuracy.c.o
 
 accuracy.i: accuracy.c.i
@@ -501,7 +491,7 @@ accuracy.i: accuracy.c.i
 
 # target to preprocess a source file
 accuracy.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/build.make deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/accuracy.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/build.make deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/accuracy.c.i
 .PHONY : accuracy.c.i
 
 accuracy.s: accuracy.c.s
@@ -509,7 +499,7 @@ accuracy.s: accuracy.c.s
 
 # target to generate assembly for a file
 accuracy.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/build.make deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/accuracy.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/build.make deps/glfw-3.1/tests/CMakeFiles/accuracy.dir/accuracy.c.s
 .PHONY : accuracy.c.s
 
 clipboard.o: clipboard.c.o
@@ -517,7 +507,7 @@ clipboard.o: clipboard.c.o
 
 # target to build an object file
 clipboard.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/clipboard.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/clipboard.c.o
 .PHONY : clipboard.c.o
 
 clipboard.i: clipboard.c.i
@@ -525,7 +515,7 @@ clipboard.i: clipboard.c.i
 
 # target to preprocess a source file
 clipboard.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/clipboard.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/clipboard.c.i
 .PHONY : clipboard.c.i
 
 clipboard.s: clipboard.c.s
@@ -533,7 +523,7 @@ clipboard.s: clipboard.c.s
 
 # target to generate assembly for a file
 clipboard.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/clipboard.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/build.make deps/glfw-3.1/tests/CMakeFiles/clipboard.dir/clipboard.c.s
 .PHONY : clipboard.c.s
 
 cursor.o: cursor.c.o
@@ -541,7 +531,7 @@ cursor.o: cursor.c.o
 
 # target to build an object file
 cursor.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursor.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursor.dir/cursor.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursor.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursor.dir/cursor.c.o
 .PHONY : cursor.c.o
 
 cursor.i: cursor.c.i
@@ -549,7 +539,7 @@ cursor.i: cursor.c.i
 
 # target to preprocess a source file
 cursor.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursor.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursor.dir/cursor.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursor.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursor.dir/cursor.c.i
 .PHONY : cursor.c.i
 
 cursor.s: cursor.c.s
@@ -557,7 +547,7 @@ cursor.s: cursor.c.s
 
 # target to generate assembly for a file
 cursor.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursor.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursor.dir/cursor.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursor.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursor.dir/cursor.c.s
 .PHONY : cursor.c.s
 
 cursoranim.o: cursoranim.c.o
@@ -565,7 +555,7 @@ cursoranim.o: cursoranim.c.o
 
 # target to build an object file
 cursoranim.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/cursoranim.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/cursoranim.c.o
 .PHONY : cursoranim.c.o
 
 cursoranim.i: cursoranim.c.i
@@ -573,7 +563,7 @@ cursoranim.i: cursoranim.c.i
 
 # target to preprocess a source file
 cursoranim.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/cursoranim.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/cursoranim.c.i
 .PHONY : cursoranim.c.i
 
 cursoranim.s: cursoranim.c.s
@@ -581,7 +571,7 @@ cursoranim.s: cursoranim.c.s
 
 # target to generate assembly for a file
 cursoranim.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/cursoranim.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/build.make deps/glfw-3.1/tests/CMakeFiles/cursoranim.dir/cursoranim.c.s
 .PHONY : cursoranim.c.s
 
 defaults.o: defaults.c.o
@@ -589,7 +579,7 @@ defaults.o: defaults.c.o
 
 # target to build an object file
 defaults.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/defaults.dir/build.make deps/glfw-3.1/tests/CMakeFiles/defaults.dir/defaults.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/defaults.dir/build.make deps/glfw-3.1/tests/CMakeFiles/defaults.dir/defaults.c.o
 .PHONY : defaults.c.o
 
 defaults.i: defaults.c.i
@@ -597,7 +587,7 @@ defaults.i: defaults.c.i
 
 # target to preprocess a source file
 defaults.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/defaults.dir/build.make deps/glfw-3.1/tests/CMakeFiles/defaults.dir/defaults.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/defaults.dir/build.make deps/glfw-3.1/tests/CMakeFiles/defaults.dir/defaults.c.i
 .PHONY : defaults.c.i
 
 defaults.s: defaults.c.s
@@ -605,7 +595,7 @@ defaults.s: defaults.c.s
 
 # target to generate assembly for a file
 defaults.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/defaults.dir/build.make deps/glfw-3.1/tests/CMakeFiles/defaults.dir/defaults.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/defaults.dir/build.make deps/glfw-3.1/tests/CMakeFiles/defaults.dir/defaults.c.s
 .PHONY : defaults.c.s
 
 empty.o: empty.c.o
@@ -613,7 +603,7 @@ empty.o: empty.c.o
 
 # target to build an object file
 empty.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/empty.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/empty.c.o
 .PHONY : empty.c.o
 
 empty.i: empty.c.i
@@ -621,7 +611,7 @@ empty.i: empty.c.i
 
 # target to preprocess a source file
 empty.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/empty.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/empty.c.i
 .PHONY : empty.c.i
 
 empty.s: empty.c.s
@@ -629,7 +619,7 @@ empty.s: empty.c.s
 
 # target to generate assembly for a file
 empty.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/empty.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/empty.dir/build.make deps/glfw-3.1/tests/CMakeFiles/empty.dir/empty.c.s
 .PHONY : empty.c.s
 
 events.o: events.c.o
@@ -637,7 +627,7 @@ events.o: events.c.o
 
 # target to build an object file
 events.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/events.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/events.c.o
 .PHONY : events.c.o
 
 events.i: events.c.i
@@ -645,7 +635,7 @@ events.i: events.c.i
 
 # target to preprocess a source file
 events.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/events.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/events.c.i
 .PHONY : events.c.i
 
 events.s: events.c.s
@@ -653,7 +643,7 @@ events.s: events.c.s
 
 # target to generate assembly for a file
 events.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/events.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/events.dir/build.make deps/glfw-3.1/tests/CMakeFiles/events.dir/events.c.s
 .PHONY : events.c.s
 
 fsaa.o: fsaa.c.o
@@ -661,7 +651,7 @@ fsaa.o: fsaa.c.o
 
 # target to build an object file
 fsaa.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/fsaa.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/fsaa.c.o
 .PHONY : fsaa.c.o
 
 fsaa.i: fsaa.c.i
@@ -669,7 +659,7 @@ fsaa.i: fsaa.c.i
 
 # target to preprocess a source file
 fsaa.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/fsaa.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/fsaa.c.i
 .PHONY : fsaa.c.i
 
 fsaa.s: fsaa.c.s
@@ -677,7 +667,7 @@ fsaa.s: fsaa.c.s
 
 # target to generate assembly for a file
 fsaa.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/fsaa.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/build.make deps/glfw-3.1/tests/CMakeFiles/fsaa.dir/fsaa.c.s
 .PHONY : fsaa.c.s
 
 gamma.o: gamma.c.o
@@ -685,7 +675,7 @@ gamma.o: gamma.c.o
 
 # target to build an object file
 gamma.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/gamma.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/gamma.c.o
 .PHONY : gamma.c.o
 
 gamma.i: gamma.c.i
@@ -693,7 +683,7 @@ gamma.i: gamma.c.i
 
 # target to preprocess a source file
 gamma.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/gamma.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/gamma.c.i
 .PHONY : gamma.c.i
 
 gamma.s: gamma.c.s
@@ -701,7 +691,7 @@ gamma.s: gamma.c.s
 
 # target to generate assembly for a file
 gamma.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/gamma.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/gamma.dir/build.make deps/glfw-3.1/tests/CMakeFiles/gamma.dir/gamma.c.s
 .PHONY : gamma.c.s
 
 glfwinfo.o: glfwinfo.c.o
@@ -709,7 +699,7 @@ glfwinfo.o: glfwinfo.c.o
 
 # target to build an object file
 glfwinfo.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o
 .PHONY : glfwinfo.c.o
 
 glfwinfo.i: glfwinfo.c.i
@@ -717,7 +707,7 @@ glfwinfo.i: glfwinfo.c.i
 
 # target to preprocess a source file
 glfwinfo.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.i
 .PHONY : glfwinfo.c.i
 
 glfwinfo.s: glfwinfo.c.s
@@ -725,7 +715,7 @@ glfwinfo.s: glfwinfo.c.s
 
 # target to generate assembly for a file
 glfwinfo.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/build.make deps/glfw-3.1/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.s
 .PHONY : glfwinfo.c.s
 
 iconify.o: iconify.c.o
@@ -733,7 +723,7 @@ iconify.o: iconify.c.o
 
 # target to build an object file
 iconify.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/iconify.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/iconify.c.o
 .PHONY : iconify.c.o
 
 iconify.i: iconify.c.i
@@ -741,7 +731,7 @@ iconify.i: iconify.c.i
 
 # target to preprocess a source file
 iconify.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/iconify.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/iconify.c.i
 .PHONY : iconify.c.i
 
 iconify.s: iconify.c.s
@@ -749,7 +739,7 @@ iconify.s: iconify.c.s
 
 # target to generate assembly for a file
 iconify.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/iconify.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/iconify.dir/build.make deps/glfw-3.1/tests/CMakeFiles/iconify.dir/iconify.c.s
 .PHONY : iconify.c.s
 
 joysticks.o: joysticks.c.o
@@ -757,7 +747,7 @@ joysticks.o: joysticks.c.o
 
 # target to build an object file
 joysticks.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/joysticks.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/joysticks.c.o
 .PHONY : joysticks.c.o
 
 joysticks.i: joysticks.c.i
@@ -765,7 +755,7 @@ joysticks.i: joysticks.c.i
 
 # target to preprocess a source file
 joysticks.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/joysticks.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/joysticks.c.i
 .PHONY : joysticks.c.i
 
 joysticks.s: joysticks.c.s
@@ -773,7 +763,7 @@ joysticks.s: joysticks.c.s
 
 # target to generate assembly for a file
 joysticks.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/joysticks.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/build.make deps/glfw-3.1/tests/CMakeFiles/joysticks.dir/joysticks.c.s
 .PHONY : joysticks.c.s
 
 modes.o: modes.c.o
@@ -781,7 +771,7 @@ modes.o: modes.c.o
 
 # target to build an object file
 modes.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/modes.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/modes.c.o
 .PHONY : modes.c.o
 
 modes.i: modes.c.i
@@ -789,7 +779,7 @@ modes.i: modes.c.i
 
 # target to preprocess a source file
 modes.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/modes.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/modes.c.i
 .PHONY : modes.c.i
 
 modes.s: modes.c.s
@@ -797,7 +787,7 @@ modes.s: modes.c.s
 
 # target to generate assembly for a file
 modes.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/modes.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/modes.dir/build.make deps/glfw-3.1/tests/CMakeFiles/modes.dir/modes.c.s
 .PHONY : modes.c.s
 
 peter.o: peter.c.o
@@ -805,7 +795,7 @@ peter.o: peter.c.o
 
 # target to build an object file
 peter.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/peter.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/peter.c.o
 .PHONY : peter.c.o
 
 peter.i: peter.c.i
@@ -813,7 +803,7 @@ peter.i: peter.c.i
 
 # target to preprocess a source file
 peter.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/peter.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/peter.c.i
 .PHONY : peter.c.i
 
 peter.s: peter.c.s
@@ -821,7 +811,7 @@ peter.s: peter.c.s
 
 # target to generate assembly for a file
 peter.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/peter.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/peter.dir/build.make deps/glfw-3.1/tests/CMakeFiles/peter.dir/peter.c.s
 .PHONY : peter.c.s
 
 reopen.o: reopen.c.o
@@ -829,7 +819,7 @@ reopen.o: reopen.c.o
 
 # target to build an object file
 reopen.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/reopen.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/reopen.c.o
 .PHONY : reopen.c.o
 
 reopen.i: reopen.c.i
@@ -837,7 +827,7 @@ reopen.i: reopen.c.i
 
 # target to preprocess a source file
 reopen.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/reopen.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/reopen.c.i
 .PHONY : reopen.c.i
 
 reopen.s: reopen.c.s
@@ -845,7 +835,7 @@ reopen.s: reopen.c.s
 
 # target to generate assembly for a file
 reopen.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/reopen.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/reopen.dir/build.make deps/glfw-3.1/tests/CMakeFiles/reopen.dir/reopen.c.s
 .PHONY : reopen.c.s
 
 sharing.o: sharing.c.o
@@ -853,7 +843,7 @@ sharing.o: sharing.c.o
 
 # target to build an object file
 sharing.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/sharing.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/sharing.c.o
 .PHONY : sharing.c.o
 
 sharing.i: sharing.c.i
@@ -861,7 +851,7 @@ sharing.i: sharing.c.i
 
 # target to preprocess a source file
 sharing.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/sharing.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/sharing.c.i
 .PHONY : sharing.c.i
 
 sharing.s: sharing.c.s
@@ -869,7 +859,7 @@ sharing.s: sharing.c.s
 
 # target to generate assembly for a file
 sharing.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/sharing.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/sharing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/sharing.dir/sharing.c.s
 .PHONY : sharing.c.s
 
 tearing.o: tearing.c.o
@@ -877,7 +867,7 @@ tearing.o: tearing.c.o
 
 # target to build an object file
 tearing.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/tearing.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/tearing.c.o
 .PHONY : tearing.c.o
 
 tearing.i: tearing.c.i
@@ -885,7 +875,7 @@ tearing.i: tearing.c.i
 
 # target to preprocess a source file
 tearing.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/tearing.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/tearing.c.i
 .PHONY : tearing.c.i
 
 tearing.s: tearing.c.s
@@ -893,7 +883,7 @@ tearing.s: tearing.c.s
 
 # target to generate assembly for a file
 tearing.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/tearing.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/tearing.dir/build.make deps/glfw-3.1/tests/CMakeFiles/tearing.dir/tearing.c.s
 .PHONY : tearing.c.s
 
 threads.o: threads.c.o
@@ -901,7 +891,7 @@ threads.o: threads.c.o
 
 # target to build an object file
 threads.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.o
 .PHONY : threads.c.o
 
 threads.i: threads.c.i
@@ -909,7 +899,7 @@ threads.i: threads.c.i
 
 # target to preprocess a source file
 threads.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.i
 .PHONY : threads.c.i
 
 threads.s: threads.c.s
@@ -917,7 +907,7 @@ threads.s: threads.c.s
 
 # target to generate assembly for a file
 threads.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.make deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.s
 .PHONY : threads.c.s
 
 title.o: title.c.o
@@ -925,7 +915,7 @@ title.o: title.c.o
 
 # target to build an object file
 title.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/title.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/title.c.o
 .PHONY : title.c.o
 
 title.i: title.c.i
@@ -933,7 +923,7 @@ title.i: title.c.i
 
 # target to preprocess a source file
 title.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/title.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/title.c.i
 .PHONY : title.c.i
 
 title.s: title.c.s
@@ -941,7 +931,7 @@ title.s: title.c.s
 
 # target to generate assembly for a file
 title.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/title.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/title.dir/build.make deps/glfw-3.1/tests/CMakeFiles/title.dir/title.c.s
 .PHONY : title.c.s
 
 windows.o: windows.c.o
@@ -949,7 +939,7 @@ windows.o: windows.c.o
 
 # target to build an object file
 windows.c.o:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/windows.c.o
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/windows.c.o
 .PHONY : windows.c.o
 
 windows.i: windows.c.i
@@ -957,7 +947,7 @@ windows.i: windows.c.i
 
 # target to preprocess a source file
 windows.c.i:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/windows.c.i
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/windows.c.i
 .PHONY : windows.c.i
 
 windows.s: windows.c.s
@@ -965,7 +955,7 @@ windows.s: windows.c.s
 
 # target to generate assembly for a file
 windows.c.s:
-	cd /home/eric/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/windows.c.s
+	cd /home/albur/Documents/Github/CS196 && $(MAKE) -f deps/glfw-3.1/tests/CMakeFiles/windows.dir/build.make deps/glfw-3.1/tests/CMakeFiles/windows.dir/windows.c.s
 .PHONY : windows.c.s
 
 # Help Target
@@ -974,14 +964,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-<<<<<<< HEAD
 	@echo "... accuracy"
 	@echo "... clipboard"
-=======
-	@echo "... title"
-	@echo "... joysticks"
-	@echo "... modes"
->>>>>>> 9cfbb0673791cbaab4e1f393582f9fc821d37cf8
 	@echo "... cursor"
 	@echo "... cursoranim"
 	@echo "... defaults"
@@ -994,7 +978,6 @@ help:
 	@echo "... iconify"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... joysticks"
 	@echo "... list_install_components"
 	@echo "... modes"
@@ -1083,6 +1066,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/eric/CS196 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/albur/Documents/Github/CS196 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

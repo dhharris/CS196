@@ -3,6 +3,8 @@
 #include "input.h"
 #include "textures.h"
 #include "world.h"
+#include "physics.h"
+#include "movement.h"
 
 double rotate_x = 0;
 double rotate_y = 0;
@@ -59,15 +61,29 @@ int create_window() {
 
 }
 
-void input() {
+void input(Blocks *blocks) {
 
-    input_main(&g->translate_x, &g->translate_y, &g->translate_z, &g->zoom, &rotate_x, &rotate_y);
+    input_main(&g->translate_x, &g->translate_y, &g->translate_z, &g->zoom, &rotate_x, &rotate_y,blocks);
 
     glOrtho( -WINDOW_WIDTH/2*g->zoom, WINDOW_WIDTH/2*g->zoom, -WINDOW_HEIGHT/2*g->zoom, WINDOW_HEIGHT/2*g->zoom, -100, 100 );
     glViewport(0,0, WINDOW_WIDTH * g->zoom, WINDOW_HEIGHT * g->zoom);
     glTranslatef(g->translate_x, g->translate_y, g->translate_z);
 
 }
+
+void input_keyboard (unsigned char key, int x, int y){//albur code
+    
+    switch (key) {
+      case 'g':    // F1: Toggle between full-screen and windowed mode
+         //move(blocks,0.0,0.1,1);
+         printf("%2.2f potatoes/sec\n", 0.0);
+         break;
+   }
+
+}
+   // key is the char pressed, e.g., 'a' or 27 for ESC
+   // (x, y) is the mouse location in Windows' coordinates
+
 
 void render(Blocks *blocks, unsigned char *image) {
 
@@ -84,7 +100,8 @@ void render(Blocks *blocks, unsigned char *image) {
     glMatrixMode(GL_MODELVIEW);                     // Select The Modelview Matrix
     glLoadIdentity();                           // Reset The Modelview Matrix
 
-    input();
+    input(blocks);
+
 
     /* Rotate using arrow keys */
     glRotatef( rotate_x, 1.0, 0.0, 0.0 );
@@ -116,9 +133,9 @@ int main(int argc, char **argv) {
 
     gen_terrain(0, blocks);
 
-
-
     
+
+
     if (!create_window())
         return -1;
 
@@ -132,8 +149,11 @@ int main(int argc, char **argv) {
     int nb_frames = 0;
 
     /* Game Loop */
+            
+    //create_sphere(blocks, 0.0, 0.0, 0.0, 50.0);
+        
     while (!glfwWindowShouldClose(g->window)) {
-    	
+
         /*  Measure FPS */
         double currentTime = glfwGetTime();
         nb_frames++;
@@ -142,8 +162,10 @@ int main(int argc, char **argv) {
             printf("%2.2f frames/sec\n", (double)(nb_frames));
             nb_frames = 0;
             last_time += 1.0;
+            //calculate_acc(blocks,1.0);
+            
         }
-
+        movement(blocks,1);
         render(blocks, image);
 
         

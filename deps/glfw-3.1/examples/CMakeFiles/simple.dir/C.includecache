@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/eric/CS196/deps/glfw-3.1/examples/simple.c
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/examples/simple.c
 GLFW/glfw3.h
 -
 stdlib.h

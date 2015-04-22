@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/eric/CS196/deps/glfw-3.1/deps/glad.c
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/glad.c
 string.h
 -
 glad/glad.h
 -
 
-/home/eric/CS196/deps/glfw-3.1/examples/heightmap.c
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/examples/heightmap.c
 stdlib.h
 -
 stdio.h

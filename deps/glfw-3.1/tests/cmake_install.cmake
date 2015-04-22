@@ -1,4 +1,4 @@
-# Install script for directory: /home/eric/CS196/deps/glfw-3.1/tests
+# Install script for directory: /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

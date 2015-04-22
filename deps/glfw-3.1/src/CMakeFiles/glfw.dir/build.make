@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/CS196
+CMAKE_SOURCE_DIR = /home/albur/Documents/Github/CS196
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/CS196
+CMAKE_BINARY_DIR = /home/albur/Documents/Github/CS196
 
 # Include any dependencies generated for this target.
 include deps/glfw-3.1/src/CMakeFiles/glfw.dir/depend.make
@@ -51,17 +51,17 @@ include deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/context.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/context.c.o: deps/glfw-3.1/src/context.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/context.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/context.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/context.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/context.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/context.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/context.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/context.c > CMakeFiles/glfw.dir/context.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/context.c > CMakeFiles/glfw.dir/context.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/context.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/context.c -o CMakeFiles/glfw.dir/context.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/context.c -o CMakeFiles/glfw.dir/context.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/context.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/context.c.o.requires
@@ -74,17 +74,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/context.c.o.provides.build: deps/glfw-3.1/
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/init.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/init.c.o: deps/glfw-3.1/src/init.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/init.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/init.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/init.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/init.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/init.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/init.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/init.c > CMakeFiles/glfw.dir/init.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/init.c > CMakeFiles/glfw.dir/init.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/init.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/init.c -o CMakeFiles/glfw.dir/init.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/init.c -o CMakeFiles/glfw.dir/init.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/init.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/init.c.o.requires
@@ -97,17 +97,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/init.c.o.provides.build: deps/glfw-3.1/src
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/input.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/input.c.o: deps/glfw-3.1/src/input.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/input.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/input.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/input.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/input.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/input.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/input.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/input.c > CMakeFiles/glfw.dir/input.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/input.c > CMakeFiles/glfw.dir/input.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/input.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/input.c -o CMakeFiles/glfw.dir/input.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/input.c -o CMakeFiles/glfw.dir/input.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/input.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/input.c.o.requires
@@ -120,17 +120,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/input.c.o.provides.build: deps/glfw-3.1/sr
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/monitor.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/monitor.c.o: deps/glfw-3.1/src/monitor.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/monitor.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/monitor.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/monitor.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/monitor.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/monitor.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/monitor.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/monitor.c > CMakeFiles/glfw.dir/monitor.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/monitor.c > CMakeFiles/glfw.dir/monitor.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/monitor.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/monitor.c -o CMakeFiles/glfw.dir/monitor.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/monitor.c -o CMakeFiles/glfw.dir/monitor.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/monitor.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/monitor.c.o.requires
@@ -143,17 +143,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/monitor.c.o.provides.build: deps/glfw-3.1/
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/window.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/window.c.o: deps/glfw-3.1/src/window.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/window.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/window.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/window.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/window.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/window.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/window.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/window.c > CMakeFiles/glfw.dir/window.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/window.c > CMakeFiles/glfw.dir/window.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/window.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/window.c -o CMakeFiles/glfw.dir/window.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/window.c -o CMakeFiles/glfw.dir/window.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/window.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/window.c.o.requires
@@ -166,17 +166,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/window.c.o.provides.build: deps/glfw-3.1/s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_init.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_init.c.o: deps/glfw-3.1/src/x11_init.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_init.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_init.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/x11_init.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_init.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/x11_init.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/x11_init.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/x11_init.c > CMakeFiles/glfw.dir/x11_init.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/x11_init.c > CMakeFiles/glfw.dir/x11_init.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/x11_init.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/x11_init.c -o CMakeFiles/glfw.dir/x11_init.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/x11_init.c -o CMakeFiles/glfw.dir/x11_init.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_init.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_init.c.o.requires
@@ -189,17 +189,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_init.c.o.provides.build: deps/glfw-3.1
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_monitor.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_monitor.c.o: deps/glfw-3.1/src/x11_monitor.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_monitor.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/x11_monitor.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_monitor.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/x11_monitor.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/x11_monitor.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/x11_monitor.c > CMakeFiles/glfw.dir/x11_monitor.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/x11_monitor.c > CMakeFiles/glfw.dir/x11_monitor.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/x11_monitor.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/x11_monitor.c -o CMakeFiles/glfw.dir/x11_monitor.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/x11_monitor.c -o CMakeFiles/glfw.dir/x11_monitor.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_monitor.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_monitor.c.o.requires
@@ -212,17 +212,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_monitor.c.o.provides.build: deps/glfw-
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_window.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_window.c.o: deps/glfw-3.1/src/x11_window.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_window.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_window.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/x11_window.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/x11_window.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/x11_window.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/x11_window.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/x11_window.c > CMakeFiles/glfw.dir/x11_window.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/x11_window.c > CMakeFiles/glfw.dir/x11_window.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/x11_window.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/x11_window.c -o CMakeFiles/glfw.dir/x11_window.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/x11_window.c -o CMakeFiles/glfw.dir/x11_window.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_window.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_window.c.o.requires
@@ -235,17 +235,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/x11_window.c.o.provides.build: deps/glfw-3
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: deps/glfw-3.1/src/xkb_unicode.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/xkb_unicode.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/xkb_unicode.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/xkb_unicode.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/xkb_unicode.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/xkb_unicode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/xkb_unicode.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/xkb_unicode.c > CMakeFiles/glfw.dir/xkb_unicode.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/xkb_unicode.c > CMakeFiles/glfw.dir/xkb_unicode.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/xkb_unicode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/xkb_unicode.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/xkb_unicode.c -o CMakeFiles/glfw.dir/xkb_unicode.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/xkb_unicode.c -o CMakeFiles/glfw.dir/xkb_unicode.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/xkb_unicode.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/xkb_unicode.c.o.requires
@@ -258,17 +258,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/xkb_unicode.c.o.provides.build: deps/glfw-
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/linux_joystick.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/linux_joystick.c.o: deps/glfw-3.1/src/linux_joystick.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/linux_joystick.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/linux_joystick.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/linux_joystick.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/linux_joystick.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/linux_joystick.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/linux_joystick.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/linux_joystick.c > CMakeFiles/glfw.dir/linux_joystick.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/linux_joystick.c > CMakeFiles/glfw.dir/linux_joystick.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/linux_joystick.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/linux_joystick.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/linux_joystick.c -o CMakeFiles/glfw.dir/linux_joystick.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/linux_joystick.c -o CMakeFiles/glfw.dir/linux_joystick.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/linux_joystick.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/linux_joystick.c.o.requires
@@ -281,17 +281,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/linux_joystick.c.o.provides.build: deps/gl
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_time.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_time.c.o: deps/glfw-3.1/src/posix_time.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_time.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_time.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/posix_time.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_time.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/posix_time.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/posix_time.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/posix_time.c > CMakeFiles/glfw.dir/posix_time.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/posix_time.c > CMakeFiles/glfw.dir/posix_time.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/posix_time.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/posix_time.c -o CMakeFiles/glfw.dir/posix_time.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/posix_time.c -o CMakeFiles/glfw.dir/posix_time.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_time.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_time.c.o.requires
@@ -304,17 +304,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_time.c.o.provides.build: deps/glfw-3
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_tls.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_tls.c.o: deps/glfw-3.1/src/posix_tls.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_tls.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_tls.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/posix_tls.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/posix_tls.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/posix_tls.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_tls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/posix_tls.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/posix_tls.c > CMakeFiles/glfw.dir/posix_tls.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/posix_tls.c > CMakeFiles/glfw.dir/posix_tls.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_tls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/posix_tls.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/posix_tls.c -o CMakeFiles/glfw.dir/posix_tls.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/posix_tls.c -o CMakeFiles/glfw.dir/posix_tls.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_tls.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_tls.c.o.requires
@@ -327,17 +327,17 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/posix_tls.c.o.provides.build: deps/glfw-3.
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/glx_context.c.o: deps/glfw-3.1/src/CMakeFiles/glfw.dir/flags.make
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/glx_context.c.o: deps/glfw-3.1/src/glx_context.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/src/CMakeFiles/glfw.dir/glx_context.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/glx_context.c.o   -c /home/eric/CS196/deps/glfw-3.1/src/glx_context.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/glfw.dir/glx_context.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/glx_context.c
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/glx_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw.dir/glx_context.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/src/glx_context.c > CMakeFiles/glfw.dir/glx_context.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/glx_context.c > CMakeFiles/glfw.dir/glx_context.c.i
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/glx_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw.dir/glx_context.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/src/glx_context.c -o CMakeFiles/glfw.dir/glx_context.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/glx_context.c -o CMakeFiles/glfw.dir/glx_context.c.s
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/glx_context.c.o.requires:
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/glx_context.c.o.requires
@@ -383,8 +383,8 @@ deps/glfw-3.1/src/libglfw3.a: deps/glfw-3.1/src/CMakeFiles/glfw.dir/glx_context.
 deps/glfw-3.1/src/libglfw3.a: deps/glfw-3.1/src/CMakeFiles/glfw.dir/build.make
 deps/glfw-3.1/src/libglfw3.a: deps/glfw-3.1/src/CMakeFiles/glfw.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C static library libglfw3.a"
-	cd /home/eric/CS196/deps/glfw-3.1/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean_target.cmake
-	cd /home/eric/CS196/deps/glfw-3.1/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean_target.cmake
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/build: deps/glfw-3.1/src/libglfw3.a
@@ -406,10 +406,10 @@ deps/glfw-3.1/src/CMakeFiles/glfw.dir/requires: deps/glfw-3.1/src/CMakeFiles/glf
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/requires
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/clean:
-	cd /home/eric/CS196/deps/glfw-3.1/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/clean
 
 deps/glfw-3.1/src/CMakeFiles/glfw.dir/depend:
-	cd /home/eric/CS196 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/CS196 /home/eric/CS196/deps/glfw-3.1/src /home/eric/CS196 /home/eric/CS196/deps/glfw-3.1/src /home/eric/CS196/deps/glfw-3.1/src/CMakeFiles/glfw.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/albur/Documents/Github/CS196 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albur/Documents/Github/CS196 /home/albur/Documents/Github/CS196/deps/glfw-3.1/src /home/albur/Documents/Github/CS196 /home/albur/Documents/Github/CS196/deps/glfw-3.1/src /home/albur/Documents/Github/CS196/deps/glfw-3.1/src/CMakeFiles/glfw.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : deps/glfw-3.1/src/CMakeFiles/glfw.dir/depend
 

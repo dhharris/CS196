@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/home/eric/CS196/deps/glfw-3.1/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"/home/eric/CS196/deps/glfw-3.1/install_manifest.txt\"")
+if (NOT EXISTS "/home/albur/Documents/Github/CS196/deps/glfw-3.1/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"/home/albur/Documents/Github/CS196/deps/glfw-3.1/install_manifest.txt\"")
 endif()
 
-file(READ "/home/eric/CS196/deps/glfw-3.1/install_manifest.txt" files)
+file(READ "/home/albur/Documents/Github/CS196/deps/glfw-3.1/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/CS196
+CMAKE_SOURCE_DIR = /home/albur/Documents/Github/CS196
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/CS196
+CMAKE_BINARY_DIR = /home/albur/Documents/Github/CS196
 
 # Include any dependencies generated for this target.
 include deps/glfw-3.1/tests/CMakeFiles/threads.dir/depend.make
@@ -51,17 +51,17 @@ include deps/glfw-3.1/tests/CMakeFiles/threads.dir/flags.make
 
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.o: deps/glfw-3.1/tests/CMakeFiles/threads.dir/flags.make
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.o: deps/glfw-3.1/tests/threads.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/threads.dir/threads.c.o   -c /home/eric/CS196/deps/glfw-3.1/tests/threads.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/threads.dir/threads.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/threads.c
 
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/threads.dir/threads.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/tests/threads.c > CMakeFiles/threads.dir/threads.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/threads.c > CMakeFiles/threads.dir/threads.c.i
 
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/threads.dir/threads.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/tests/threads.c -o CMakeFiles/threads.dir/threads.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/threads.c -o CMakeFiles/threads.dir/threads.c.s
 
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.o.requires:
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.o.requires
@@ -74,17 +74,17 @@ deps/glfw-3.1/tests/CMakeFiles/threads.dir/threads.c.o.provides.build: deps/glfw
 
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o: deps/glfw-3.1/tests/CMakeFiles/threads.dir/flags.make
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o: deps/glfw-3.1/deps/tinycthread.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eric/CS196/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o"
-	cd /home/eric/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/threads.dir/__/deps/tinycthread.c.o   -c /home/eric/CS196/deps/glfw-3.1/deps/tinycthread.c
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/threads.dir/__/deps/tinycthread.c.o   -c /home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/tinycthread.c
 
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/threads.dir/__/deps/tinycthread.c.i"
-	cd /home/eric/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/eric/CS196/deps/glfw-3.1/deps/tinycthread.c > CMakeFiles/threads.dir/__/deps/tinycthread.c.i
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/tinycthread.c > CMakeFiles/threads.dir/__/deps/tinycthread.c.i
 
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/threads.dir/__/deps/tinycthread.c.s"
-	cd /home/eric/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/eric/CS196/deps/glfw-3.1/deps/tinycthread.c -o CMakeFiles/threads.dir/__/deps/tinycthread.c.s
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests && /usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/tinycthread.c -o CMakeFiles/threads.dir/__/deps/tinycthread.c.s
 
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o.requires:
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o.requires
@@ -109,7 +109,6 @@ deps/glfw-3.1/tests/threads: deps/glfw-3.1/tests/CMakeFiles/threads.dir/build.ma
 deps/glfw-3.1/tests/threads: deps/glfw-3.1/src/libglfw3.a
 deps/glfw-3.1/tests/threads: /usr/lib/x86_64-linux-gnu/libGLU.so
 deps/glfw-3.1/tests/threads: /usr/lib/x86_64-linux-gnu/libX11.so
-deps/glfw-3.1/tests/threads: /usr/lib/x86_64-linux-gnu/librt.so
 deps/glfw-3.1/tests/threads: /usr/lib/x86_64-linux-gnu/libXrandr.so
 deps/glfw-3.1/tests/threads: /usr/lib/x86_64-linux-gnu/libXinerama.so
 deps/glfw-3.1/tests/threads: /usr/lib/x86_64-linux-gnu/libXi.so
@@ -128,7 +127,7 @@ deps/glfw-3.1/tests/threads: /usr/lib/x86_64-linux-gnu/libXcursor.so
 deps/glfw-3.1/tests/threads: /usr/lib/x86_64-linux-gnu/libGL.so
 deps/glfw-3.1/tests/threads: deps/glfw-3.1/tests/CMakeFiles/threads.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable threads"
-	cd /home/eric/CS196/deps/glfw-3.1/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threads.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threads.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/build: deps/glfw-3.1/tests/threads
@@ -139,10 +138,10 @@ deps/glfw-3.1/tests/CMakeFiles/threads.dir/requires: deps/glfw-3.1/tests/CMakeFi
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/threads.dir/requires
 
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/clean:
-	cd /home/eric/CS196/deps/glfw-3.1/tests && $(CMAKE_COMMAND) -P CMakeFiles/threads.dir/cmake_clean.cmake
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests && $(CMAKE_COMMAND) -P CMakeFiles/threads.dir/cmake_clean.cmake
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/threads.dir/clean
 
 deps/glfw-3.1/tests/CMakeFiles/threads.dir/depend:
-	cd /home/eric/CS196 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/CS196 /home/eric/CS196/deps/glfw-3.1/tests /home/eric/CS196 /home/eric/CS196/deps/glfw-3.1/tests /home/eric/CS196/deps/glfw-3.1/tests/CMakeFiles/threads.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/albur/Documents/Github/CS196 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albur/Documents/Github/CS196 /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests /home/albur/Documents/Github/CS196 /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests /home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/CMakeFiles/threads.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : deps/glfw-3.1/tests/CMakeFiles/threads.dir/depend
 

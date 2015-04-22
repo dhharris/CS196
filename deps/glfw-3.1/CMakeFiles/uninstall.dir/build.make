@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eric/CS196
+CMAKE_SOURCE_DIR = /home/albur/Documents/Github/CS196
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eric/CS196
+CMAKE_BINARY_DIR = /home/albur/Documents/Github/CS196
 
 # Utility rule file for uninstall.
 
@@ -46,7 +46,7 @@ CMAKE_BINARY_DIR = /home/eric/CS196
 include deps/glfw-3.1/CMakeFiles/uninstall.dir/progress.make
 
 deps/glfw-3.1/CMakeFiles/uninstall:
-	cd /home/eric/CS196/deps/glfw-3.1 && /usr/bin/cmake -P /home/eric/CS196/deps/glfw-3.1/cmake_uninstall.cmake
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1 && /usr/bin/cmake -P /home/albur/Documents/Github/CS196/deps/glfw-3.1/cmake_uninstall.cmake
 
 uninstall: deps/glfw-3.1/CMakeFiles/uninstall
 uninstall: deps/glfw-3.1/CMakeFiles/uninstall.dir/build.make
@@ -57,10 +57,10 @@ deps/glfw-3.1/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : deps/glfw-3.1/CMakeFiles/uninstall.dir/build
 
 deps/glfw-3.1/CMakeFiles/uninstall.dir/clean:
-	cd /home/eric/CS196/deps/glfw-3.1 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/albur/Documents/Github/CS196/deps/glfw-3.1 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : deps/glfw-3.1/CMakeFiles/uninstall.dir/clean
 
 deps/glfw-3.1/CMakeFiles/uninstall.dir/depend:
-	cd /home/eric/CS196 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eric/CS196 /home/eric/CS196/deps/glfw-3.1 /home/eric/CS196 /home/eric/CS196/deps/glfw-3.1 /home/eric/CS196/deps/glfw-3.1/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/albur/Documents/Github/CS196 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albur/Documents/Github/CS196 /home/albur/Documents/Github/CS196/deps/glfw-3.1 /home/albur/Documents/Github/CS196 /home/albur/Documents/Github/CS196/deps/glfw-3.1 /home/albur/Documents/Github/CS196/deps/glfw-3.1/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : deps/glfw-3.1/CMakeFiles/uninstall.dir/depend
 

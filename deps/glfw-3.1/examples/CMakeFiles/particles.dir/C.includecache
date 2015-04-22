@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/eric/CS196/deps/glfw-3.1/deps/getopt.c
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/getopt.c
 getopt.h
-/home/eric/CS196/deps/glfw-3.1/deps/getopt.h
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/getopt.h
 stddef.h
 -
 string.h
 -
 
-/home/eric/CS196/deps/glfw-3.1/deps/getopt.h
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/getopt.h
 
-/home/eric/CS196/deps/glfw-3.1/deps/tinycthread.c
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/tinycthread.c
 tinycthread.h
-/home/eric/CS196/deps/glfw-3.1/deps/tinycthread.h
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/tinycthread.h
 stdlib.h
 -
 signal.h
@@ -36,7 +36,7 @@ process.h
 sys/timeb.h
 -
 
-/home/eric/CS196/deps/glfw-3.1/deps/tinycthread.h
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/tinycthread.h
 time.h
 -
 pthread.h
@@ -44,7 +44,7 @@ pthread.h
 windows.h
 -
 
-/home/eric/CS196/deps/glfw-3.1/examples/particles.c
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/examples/particles.c
 stdlib.h
 -
 stdio.h
