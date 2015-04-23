@@ -22,10 +22,6 @@ lodepng.h
 
 /home/albur/Documents/Github/CS196/src/block.h
 
-/home/albur/Documents/Github/CS196/src/gravity.c
-physics.h
-/home/albur/Documents/Github/CS196/src/physics.h
-
 /home/albur/Documents/Github/CS196/src/headers.h
 GLFW/glfw3.h
 -
@@ -42,39 +38,15 @@ string.h
 time.h
 -
 
-/home/albur/Documents/Github/CS196/src/input.h
+/home/albur/Documents/Github/CS196/src/input.c
 headers.h
 /home/albur/Documents/Github/CS196/src/headers.h
-
-/home/albur/Documents/Github/CS196/src/main.c
-main.h
-/home/albur/Documents/Github/CS196/src/main.h
 block.h
 /home/albur/Documents/Github/CS196/src/block.h
-input.h
-/home/albur/Documents/Github/CS196/src/input.h
-textures.h
-/home/albur/Documents/Github/CS196/src/textures.h
-world.h
-/home/albur/Documents/Github/CS196/src/world.h
-physics.h
-/home/albur/Documents/Github/CS196/src/physics.h
 movement.h
 /home/albur/Documents/Github/CS196/src/movement.h
 
-/home/albur/Documents/Github/CS196/src/main.h
-headers.h
-/home/albur/Documents/Github/CS196/src/headers.h
-
 /home/albur/Documents/Github/CS196/src/movement.h
-world.h
-/home/albur/Documents/Github/CS196/src/world.h
-block.h
-/home/albur/Documents/Github/CS196/src/block.h
-headers.h
-/home/albur/Documents/Github/CS196/src/headers.h
-
-/home/albur/Documents/Github/CS196/src/physics.h
 world.h
 /home/albur/Documents/Github/CS196/src/world.h
 block.h

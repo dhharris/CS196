@@ -134,6 +134,7 @@ deps/glfw-3.1/examples/particles: deps/glfw-3.1/examples/CMakeFiles/particles.di
 deps/glfw-3.1/examples/particles: deps/glfw-3.1/src/libglfw3.a
 deps/glfw-3.1/examples/particles: /usr/lib/x86_64-linux-gnu/libGLU.so
 deps/glfw-3.1/examples/particles: /usr/lib/x86_64-linux-gnu/libX11.so
+deps/glfw-3.1/examples/particles: /usr/lib/x86_64-linux-gnu/librt.so
 deps/glfw-3.1/examples/particles: /usr/lib/x86_64-linux-gnu/libXrandr.so
 deps/glfw-3.1/examples/particles: /usr/lib/x86_64-linux-gnu/libXinerama.so
 deps/glfw-3.1/examples/particles: /usr/lib/x86_64-linux-gnu/libXi.so

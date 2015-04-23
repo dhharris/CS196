@@ -31,7 +31,7 @@ void calculate_acc(Blocks *blocks,float time_step){
     	            accz += acc*z/l;
 
                     //collision code
-                    //collisionCheck(blocks ,i, x, y,z,hasCollided);
+                    collisionCheck(blocks ,i, x, y,z,hasCollided);
             	}
             }
             blocks->arr[i].v[0] += accx;

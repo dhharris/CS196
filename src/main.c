@@ -163,7 +163,6 @@ int main(int argc, char **argv) {
             nb_frames = 0;
             last_time += 1.0;
             //calculate_acc(blocks,1.0);
-            
         }
         movement(blocks,1);
         render(blocks, image);

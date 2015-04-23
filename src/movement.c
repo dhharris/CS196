@@ -1,11 +1,11 @@
 #include "movement.h"
 
-//int isJumping =0;
+int isJumping =0;
 void jump(Blocks *blocks ,int indexPlayer){
-	//if(!isJumping){ 
-	//	isJumping =1;
+	if(!isJumping){ 
+		isJumping =1;
 		blocks->arr[indexPlayer].v[1] +=JUMP_HEIGHT;
-	//}
+	}
 }
 
 void move(Blocks *blocks , float stepsX , float stepsZ ,int indexPlayer){
@@ -17,7 +17,7 @@ void fake_Gravity(Blocks *blocks, int indexPlayer){
 	blocks->arr[indexPlayer].v[1] -= 1.0;
 	if(blocks->arr[indexPlayer].y<=0){
 		blocks->arr[indexPlayer].v[1]=0;
-	//	isJumping=0;
+		isJumping=0;
 	}
 }
 
