@@ -71,7 +71,7 @@ void collisionCheck(Blocks *blocks ,int i,float x, float y, float z , int *hasCo
         blocks->arr[i].v[2] =-blocks->arr[i].v[2];
         hasCollided[4]=1;
     }else if(x >BLOCK_SIZE/2 && x <=16.0 && hasCollided[5]==0){
-        blocks->arr[i].v[0] =-blocks->arr[i].v[0];
+        blocks->arr[i].v[2] =-blocks->arr[i].v[2];
         hasCollided[5]=1;
     }
 }

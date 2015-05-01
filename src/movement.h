@@ -9,5 +9,6 @@
 
 void jump(Blocks *blocks ,int indexPlayer);
 void move(Blocks *blocks , float stepsX , float stepsY ,int indexPlayer);
+void motionResistance(Blocks *blocks, int indexPlayer);
 void movement(Blocks *blocks, int indexPlayer);
 #endif

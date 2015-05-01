@@ -38,11 +38,7 @@ string.h
 time.h
 -
 
-/home/albur/Documents/Github/CS196/src/input.c
-headers.h
-/home/albur/Documents/Github/CS196/src/headers.h
-block.h
-/home/albur/Documents/Github/CS196/src/block.h
+/home/albur/Documents/Github/CS196/src/movement.c
 movement.h
 /home/albur/Documents/Github/CS196/src/movement.h
 
