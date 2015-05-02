@@ -1,5 +1,6 @@
 #include "headers.h"
-
+#include "block.h"
+#include "movement.h"
 #define MOVE_SPEED 2
 #define ROTATE_SPEED 3
 #define ZOOM_MULTIPLIER 0.002
@@ -7,6 +8,8 @@
 int action1; /* Camera rotation */
 double action2; /* Scrolling */
 int action3; /* Change location of camera */
+
+int movementbool[3];
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
@@ -26,6 +29,16 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     	action3 = 2;
     else if (key == GLFW_KEY_S && (action == GLFW_REPEAT || action == GLFW_PRESS))
     	action3 = 3;
+    else if (key == GLFW_KEY_SPACE && (action == GLFW_REPEAT || action == GLFW_PRESS))
+    	movementbool[1] =1;
+    else if (key == GLFW_KEY_I && (action == GLFW_REPEAT || action == GLFW_PRESS))
+    	movementbool[0] =1;
+    else if (key == GLFW_KEY_K && (action == GLFW_REPEAT || action == GLFW_PRESS))
+    	movementbool[0] =2;
+    else if (key == GLFW_KEY_L && (action == GLFW_REPEAT || action == GLFW_PRESS))
+    	movementbool[2] =1;
+    else if (key == GLFW_KEY_J && (action == GLFW_REPEAT || action == GLFW_PRESS))
+    	movementbool[2] =2;
     else
     	action1 = action3 = -1;
  
@@ -82,7 +95,7 @@ void input_translate(float *x, float *y, float *z) {
 	}
 }
 
-void input_main(float *x, float *y, float *z, double *zoom, double *rotate_x, double *rotate_y) {
+void input_main(float *x, float *y, float *z, double *zoom, double *rotate_x, double *rotate_y, Blocks *blocks) {
 	
 	input_rotate(rotate_x, rotate_y);
 
@@ -93,6 +106,25 @@ void input_main(float *x, float *y, float *z, double *zoom, double *rotate_x, do
 	else; /* Do nothing */
 
 	input_translate(x,y,z);
+
+	if(movementbool[1]==1){
+            jump(blocks,1);
+            movementbool[1] = 0;
+    }
+    if(movementbool[0]==1){
+    	move(blocks , 1.0 , 0.0 ,1);
+    	movementbool[0]=0;
+    }else if(movementbool[0] ==2){
+    	move(blocks , -1.0 , 0.0 ,1);
+    	movementbool[0]=0;
+    }
+	if(movementbool[2]==1){
+    	move(blocks , 0.0 , 1.0 ,1);
+    	movementbool[2]=0;
+    }else if(movementbool[2] ==2){
+    	move(blocks , 0.0 , -1.0 ,1);
+    	movementbool[2]=0;
+    }
 
 	action2 = 0;
 	action3 = -1;
