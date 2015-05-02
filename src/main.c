@@ -63,13 +63,14 @@ int create_window() {
 
 }
 
-void input() {
+void input(Blocks *blocks) {
 
-    input_main(&g->translate_x, &g->translate_y, &g->translate_z, &g->zoom, &rotate_x, &rotate_y);
+    input_main(&g->translate_x, &g->translate_y, &g->translate_z, &g->zoom, &rotate_x, &rotate_y, blocks);
 
     glOrtho( -WINDOW_WIDTH/2*g->zoom, WINDOW_WIDTH/2*g->zoom, -WINDOW_HEIGHT/2*g->zoom, WINDOW_HEIGHT/2*g->zoom, -100, 100 );
     glViewport(0,0, WINDOW_WIDTH * g->zoom, WINDOW_HEIGHT * g->zoom);
     glTranslatef(g->translate_x, g->translate_y, g->translate_z);
+
 
 }
 
@@ -88,7 +89,7 @@ void render(Blocks *blocks, unsigned char *image) {
     glMatrixMode(GL_MODELVIEW);                     // Select The Modelview Matrix
     glLoadIdentity();                           // Reset The Modelview Matrix
 
-    input();
+    input(blocks);
 
     /* Rotate using arrow keys */
     glRotatef( rotate_x, 1.0, 0.0, 0.0 );
@@ -118,8 +119,9 @@ int main(int argc, char **argv) {
     g->zoom = INITIAL_ZOOM;
    
     // Generate terrain
-         create_block(0.0, -16.0, 0.0, blocks, 14);
-         gen_terrain(0, blocks);
+          create_block(0.0, 0.0, 0.0, blocks, 14); // character
+         // gen_terrain(0, blocks);
+         create_block(0.0,32.0,0.0,blocks,8);
        
 
 

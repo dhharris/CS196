@@ -53,7 +53,7 @@ void draw_special(unsigned char *image, Blocks *blocks, int index) {
 
 		case 0: top = 0, sides = 3, bottom = 2, front = 3;
 			break;
-		case 8: sides = 8, top = 9, bottom = 10, front = 9;
+		case 8: sides = 8, top = 9, bottom = 10, front = 8;
 			break;
 		case 14: front = 14, sides = 30, bottom = 46, top = 47;
 			break;
@@ -125,52 +125,52 @@ void draw_special(unsigned char *image, Blocks *blocks, int index) {
 	glBegin(GL_QUADS);
 	
     	// Front Face 
-    	glTexCoord2fv(tex_front[1]); glVertex3fv(vertices[1]);  // Bottom Left Of The Texture and Quad
-    	glTexCoord2fv(tex_front[0]); glVertex3fv(vertices[0]);  // Bottom Right Of The Texture and Quad
-    	glTexCoord2fv(tex_front[3]); glVertex3fv(vertices[4]);  // Top Right Of The Texture and Quad
-    	glTexCoord2fv(tex_front[2]); glVertex3fv(vertices[5]);  // Top Left Of The Texture and Quad
+    	glTexCoord2fv(tex_front[3]); glVertex3fv(vertices[1]);  // Bottom Left Of The Texture and Quad
+    	glTexCoord2fv(tex_front[2]); glVertex3fv(vertices[0]);  // Bottom Right Of The Texture and Quad
+    	glTexCoord2fv(tex_front[1]); glVertex3fv(vertices[4]);  // Top Right Of The Texture and Quad
+    	glTexCoord2fv(tex_front[0]); glVertex3fv(vertices[5]);  // Top Left Of The Texture and Quad
 
     	// Back Face 
-    	glTexCoord2fv(tex_sides[1]); glVertex3fv(vertices[2]);  // Bottom Right Of The Texture and Quad
-    	glTexCoord2fv(tex_sides[2]); glVertex3fv(vertices[6]);  // Top Right Of The Texture and Quad
-    	glTexCoord2fv(tex_sides[3]); glVertex3fv( vertices[7]);  // Top Left Of The Texture and Quad
-    	glTexCoord2fv(tex_sides[0]); glVertex3fv( vertices[3]);  // Bottom Left Of The Texture and Quad
-
-    glEnd();
-    
-    glBegin(GL_QUADS);
-
-    	// Bottom Face
-    	glTexCoord2fv(tex_bottom[3]); glVertex3fv(vertices[7]);  // Top Left Of The Texture and Quad
-    	glTexCoord2fv(tex_bottom[0]); glVertex3fv(vertices[5]);  // Bottom Left Of The Texture and Quad
-    	glTexCoord2fv(tex_bottom[1]); glVertex3fv( vertices[4]);  // Bottom Right Of The Texture and Quad
-    	glTexCoord2fv(tex_bottom[2]); glVertex3fv( vertices[6]);  // Top Right Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[3]); glVertex3fv(vertices[2]);  // Bottom Right Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[0]); glVertex3fv(vertices[6]);  // Top Right Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[1]); glVertex3fv( vertices[7]);  // Top Left Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[2]); glVertex3fv( vertices[3]);  // Bottom Left Of The Texture and Quad
 
     glEnd();
     
     glBegin(GL_QUADS);
 
     	// Top Face
-    	glTexCoord2fv(tex_top[2]); glVertex3fv(vertices[0]);  // Top Right Of The Texture and Quad
-    	glTexCoord2fv(tex_top[3]); glVertex3fv( vertices[2]);  // Top Left Of The Texture and Quad
-    	glTexCoord2fv(tex_top[0]); glVertex3fv( vertices[3]);  // Bottom Left Of The Texture and Quad
-    	glTexCoord2fv(tex_top[1]); glVertex3fv(vertices[1]);  // Bottom Right Of The Texture and Quad
+    	glTexCoord2fv(tex_top[3]); glVertex3fv(vertices[7]);  // Top Left Of The Texture and Quad
+    	glTexCoord2fv(tex_top[0]); glVertex3fv(vertices[5]);  // Bottom Left Of The Texture and Quad
+    	glTexCoord2fv(tex_top[1]); glVertex3fv( vertices[4]);  // Bottom Right Of The Texture and Quad
+    	glTexCoord2fv(tex_top[2]); glVertex3fv( vertices[6]);  // Top Right Of The Texture and Quad
+
+    glEnd();
+    
+    glBegin(GL_QUADS);
+
+    	// Bottom Face
+    	glTexCoord2fv(tex_bottom[2]); glVertex3fv(vertices[0]);  // Top Right Of The Texture and Quad
+    	glTexCoord2fv(tex_bottom[3]); glVertex3fv( vertices[2]);  // Top Left Of The Texture and Quad
+    	glTexCoord2fv(tex_bottom[0]); glVertex3fv( vertices[3]);  // Bottom Left Of The Texture and Quad
+    	glTexCoord2fv(tex_bottom[1]); glVertex3fv(vertices[1]);  // Bottom Right Of The Texture and Quad
 
     glEnd();
     
     glBegin(GL_QUADS);
 
     	// Right face
-    	glTexCoord2fv(tex_sides[0]); glVertex3fv( vertices[2]);  // Bottom Right Of The Texture and Quad
-    	glTexCoord2fv(tex_sides[3]); glVertex3fv( vertices[6]);  // Top Right Of The Texture and Quad
-    	glTexCoord2fv(tex_sides[2]); glVertex3fv( vertices[4]);  // Top Left Of The Texture and Quad
-    	glTexCoord2fv(tex_sides[1]); glVertex3fv( vertices[0]);  // Bottom Left Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[2]); glVertex3fv( vertices[2]);  // Bottom Right Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[1]); glVertex3fv( vertices[6]);  // Top Right Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[0]); glVertex3fv( vertices[4]);  // Top Left Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[3]); glVertex3fv( vertices[0]);  // Bottom Left Of The Texture and Quad
 
     	// Left Face
-    	glTexCoord2fv(tex_sides[1]); glVertex3fv(vertices[3]);  // Bottom Left Of The Texture and Quad
-    	glTexCoord2fv(tex_sides[0]); glVertex3fv(vertices[1]);  // Bottom Right Of The Texture and Quad
-    	glTexCoord2fv(tex_sides[3]); glVertex3fv(vertices[5]);  // Top Right Of The Texture and Quad
-    	glTexCoord2fv(tex_sides[2]); glVertex3fv(vertices[7]);  // Top Left Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[3]); glVertex3fv(vertices[3]);  // Bottom Left Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[2]); glVertex3fv(vertices[1]);  // Bottom Right Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[1]); glVertex3fv(vertices[5]);  // Top Right Of The Texture and Quad
+    	glTexCoord2fv(tex_sides[0]); glVertex3fv(vertices[7]);  // Top Left Of The Texture and Quad
 
 	glEnd();
 }
