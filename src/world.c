@@ -18,7 +18,7 @@ void gen_terrain(int seed, Blocks *bl) {
 
 	for (i = -WORLD_SIZE/2; i < 64; i += BLOCK_SIZE) {
 		for (j = -WORLD_SIZE/2; j < 64; j += BLOCK_SIZE) {
-			create_block(i, 0, j, bl, 0);
+			create_block(i, -16, j, bl, 0);
 		}
 	}
 
@@ -36,7 +36,7 @@ void gen_terrain(int seed, Blocks *bl) {
 
 	for (i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {
 		for (j = -WORLD_SIZE/2; j < WORLD_SIZE/2-32; j += BLOCK_SIZE) {
-			create_block(i, 64, j, bl, 69);
+			create_block(i, -64, j, bl, 69);
 		}
 	}
 

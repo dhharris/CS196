@@ -120,8 +120,8 @@ int main(int argc, char **argv) {
    
     // Generate terrain
           create_block(0.0, 0.0, 0.0, blocks, 14); // character
-         // gen_terrain(0, blocks);
-         create_block(0.0,32.0,0.0,blocks,8);
+         gen_terrain(0, blocks);
+         
        
 
 
