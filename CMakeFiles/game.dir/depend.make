@@ -20,8 +20,12 @@ CMakeFiles/game.dir/src/gravity.c.o: src/world.h
 CMakeFiles/game.dir/src/gravity.c.o: deps/glfw-3.1/include/GLFW/glfw3.h
 
 CMakeFiles/game.dir/src/input.c.o: deps/lodepng.h
+CMakeFiles/game.dir/src/input.c.o: src/block.h
 CMakeFiles/game.dir/src/input.c.o: src/headers.h
 CMakeFiles/game.dir/src/input.c.o: src/input.c
+CMakeFiles/game.dir/src/input.c.o: src/movement.h
+CMakeFiles/game.dir/src/input.c.o: src/textures.h
+CMakeFiles/game.dir/src/input.c.o: src/world.h
 CMakeFiles/game.dir/src/input.c.o: deps/glfw-3.1/include/GLFW/glfw3.h
 
 CMakeFiles/game.dir/src/main.c.o: deps/lodepng.h

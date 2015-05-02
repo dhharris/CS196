@@ -108,21 +108,21 @@ void input_main(float *x, float *y, float *z, double *zoom, double *rotate_x, do
 	input_translate(x,y,z);
 
 	if(movementbool[1]==1){
-            jump(blocks,1);
+            jump(blocks,0);
             movementbool[1] = 0;
     }
     if(movementbool[0]==1){
-    	move(blocks , 1.0 , 0.0 ,1);
+    	move(blocks , 1.0 , 0.0 ,0);
     	movementbool[0]=0;
     }else if(movementbool[0] ==2){
-    	move(blocks , -1.0 , 0.0 ,1);
+    	move(blocks , -1.0 , 0.0 ,0);
     	movementbool[0]=0;
     }
 	if(movementbool[2]==1){
-    	move(blocks , 0.0 , 1.0 ,1);
+    	move(blocks , 0.0 , 1.0 ,0);
     	movementbool[2]=0;
     }else if(movementbool[2] ==2){
-    	move(blocks , 0.0 , -1.0 ,1);
+    	move(blocks , 0.0 , -1.0 ,0);
     	movementbool[2]=0;
     }
 

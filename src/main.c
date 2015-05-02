@@ -151,7 +151,7 @@ int main(int argc, char **argv) {
             nb_frames = 0;
             last_time += 1.0;
         }
-        movement(blocks,1);
+        movement(blocks,0);
         render(blocks, image);
 
         

@@ -61,6 +61,10 @@ time.h
 /Users/hugh/GitHub/CS196/src/input.c
 headers.h
 /Users/hugh/GitHub/CS196/src/headers.h
+block.h
+/Users/hugh/GitHub/CS196/src/block.h
+movement.h
+/Users/hugh/GitHub/CS196/src/movement.h
 
 /Users/hugh/GitHub/CS196/src/input.h
 headers.h

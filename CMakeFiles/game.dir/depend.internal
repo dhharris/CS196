@@ -21,8 +21,12 @@ CMakeFiles/game.dir/src/gravity.c.o
  deps/glfw-3.1/include/GLFW/glfw3.h
 CMakeFiles/game.dir/src/input.c.o
  /Users/hugh/GitHub/CS196/deps/lodepng.h
+ /Users/hugh/GitHub/CS196/src/block.h
  /Users/hugh/GitHub/CS196/src/headers.h
  /Users/hugh/GitHub/CS196/src/input.c
+ /Users/hugh/GitHub/CS196/src/movement.h
+ /Users/hugh/GitHub/CS196/src/textures.h
+ /Users/hugh/GitHub/CS196/src/world.h
  deps/glfw-3.1/include/GLFW/glfw3.h
 CMakeFiles/game.dir/src/main.c.o
  /Users/hugh/GitHub/CS196/deps/lodepng.h
