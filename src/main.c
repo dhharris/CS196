@@ -162,9 +162,10 @@ int main(int argc, char **argv) {
             printf("%2.2f frames/sec\n", (double)(nb_frames));
             nb_frames = 0;
             last_time += 1.0;
-            //calculate_acc(blocks,1.0);
+            calculate_acc(blocks,1.0);
         }
-        movement(blocks,1);
+        //calculate_acc(blocks,1.0);
+        //movement(blocks,1);
         render(blocks, image);
 
         

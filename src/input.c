@@ -9,7 +9,7 @@ int action1; /* Camera rotation */
 double action2; /* Scrolling */
 int action3; /* Change location of camera */
 
-int movementbool[3];
+int movementbool[4];
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
@@ -39,7 +39,10 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     	movementbool[2] =1;
     else if (key == GLFW_KEY_J && (action == GLFW_REPEAT || action == GLFW_PRESS))
     	movementbool[2] =2;
-    else
+    else if (key == GLFW_KEY_Z && (action == GLFW_PRESS)){
+        if(movementbool[3] == 1)  movementbool[3] =2;
+        else movementbool[3] =1;
+    }else
     	action1 = action3 = -1;
  
 
@@ -60,6 +63,7 @@ void input_init(GLFWwindow* window) {
 	glfwSetMouseButtonCallback(window, mouse_button_callback);
 	glfwSetKeyCallback(window, key_callback);
 	glfwSetScrollCallback(window, scroll_callback);
+    movementbool[3]=1;
 }
 
 void input_rotate(double *rotate_x, double *rotate_y) {
@@ -112,17 +116,17 @@ void input_main(float *x, float *y, float *z, double *zoom, double *rotate_x, do
             movementbool[1] = 0;
     }
     if(movementbool[0]==1){
-    	move(blocks , 1.0 , 0.0 ,1);
+    	move(blocks , movementbool[3]*1.0 , 0.0 ,1);
     	movementbool[0]=0;
     }else if(movementbool[0] ==2){
-    	move(blocks , -1.0 , 0.0 ,1);
+    	move(blocks , movementbool[3]*-1.0 , 0.0 ,1);
     	movementbool[0]=0;
     }
 	if(movementbool[2]==1){
-    	move(blocks , 0.0 , 1.0 ,1);
+    	move(blocks , 0.0 , movementbool[3]*1.0 ,1);
     	movementbool[2]=0;
     }else if(movementbool[2] ==2){
-    	move(blocks , 0.0 , -1.0 ,1);
+    	move(blocks , 0.0 , movementbool[3]*-1.0 ,1);
     	movementbool[2]=0;
     }
 
