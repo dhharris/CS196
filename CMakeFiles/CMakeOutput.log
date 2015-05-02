@@ -808,3 +808,43 @@ int main(int argc, char** argv)
 #endif
 }
 
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /Users/hugh/GitHub/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1304379538/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1304379538.dir/build.make CMakeFiles/cmTryCompileExec1304379538.dir/build
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1304379538.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1304379538.dir/CheckIncludeFiles.c.o   -c /Users/hugh/GitHub/CS196/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1304379538
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1304379538.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec1304379538.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1304379538  
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /Users/hugh/GitHub/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec233022231/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec233022231.dir/build.make CMakeFiles/cmTryCompileExec233022231.dir/build
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_progress_report /Users/hugh/GitHub/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec233022231.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec233022231.dir/CheckSymbolExists.c.o   -c /Users/hugh/GitHub/CS196/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec233022231
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec233022231.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTryCompileExec233022231.dir/CheckSymbolExists.c.o  -o cmTryCompileExec233022231  
+
+File /Users/hugh/GitHub/CS196/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

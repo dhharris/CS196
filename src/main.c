@@ -116,10 +116,9 @@ int main(int argc, char **argv) {
     g->zoom = INITIAL_ZOOM;
    
     // Generate terrain
-         create_block(0.0, 0.0, 0.0, blocks, 8);
-         create_block(16.0, 0.0, 0.0, blocks, 0);
-         create_block(32.0, 0.0, 0.0, blocks, 16);
-         create_block(48.0, 0.0, 0.0, blocks, 35);
+         create_block(0.0, -16.0, 0.0, blocks, 14);
+         gen_terrain(0, blocks);
+       
 
 
 

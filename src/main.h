@@ -5,8 +5,8 @@
 
 /* Game constants */
 #define GAME_NAME "Game"
-#define WINDOW_WIDTH 854 // Same dimensions as Minecraft
-#define WINDOW_HEIGHT 480
+#define WINDOW_WIDTH 854*2 // Same dimensions as Minecraft
+#define WINDOW_HEIGHT 480*2
 
 
 /* structs */

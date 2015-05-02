@@ -16,20 +16,28 @@ void gen_terrain(int seed, Blocks *bl) {
 
 	int i, j, k;
 
-	for (i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {
-		for (j = -WORLD_SIZE/2; j < WORLD_SIZE/2; j += BLOCK_SIZE) {
-			create_block(i, 0, j, bl, 5);
+	for (i = -WORLD_SIZE/2; i < 64; i += BLOCK_SIZE) {
+		for (j = -WORLD_SIZE/2; j < 64; j += BLOCK_SIZE) {
+			create_block(i, 0, j, bl, 0);
 		}
 	}
 
-
-
-	/* Stone */
-	for (i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {
-		for (j = -WORLD_SIZE/2; j < WORLD_SIZE/2; j += BLOCK_SIZE) {
-			for (k = -WORLD_HEIGHT; k < 0; k += BLOCK_SIZE) {
-				create_block(i, k, j, bl, 1);
-			}
+	
+	for (i = -WORLD_SIZE; i < WORLD_SIZE* 2; i += BLOCK_SIZE) {
+		for (j = -WORLD_SIZE; j < WORLD_SIZE * 2; j += BLOCK_SIZE) {
+			create_block(i, j, -64, bl, 69);
 		}
 	}
+	for (i = -WORLD_SIZE; i < WORLD_SIZE* 2; i += BLOCK_SIZE) {
+		for (j = -WORLD_SIZE; j < WORLD_SIZE * 2; j += BLOCK_SIZE) {
+			create_block(-64, j, i, bl, 69);
+		}
+	}
+
+	for (i = -WORLD_SIZE/2; i < WORLD_SIZE/2; i += BLOCK_SIZE) {
+		for (j = -WORLD_SIZE/2; j < WORLD_SIZE/2-32; j += BLOCK_SIZE) {
+			create_block(i, 64, j, bl, 69);
+		}
+	}
+
 }
