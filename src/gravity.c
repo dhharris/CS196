@@ -31,7 +31,7 @@ void calculate_acc(Blocks *blocks,float time_step){
     	            accz += acc*z/l;
 
                     //collision code
-                    collisionCheck(blocks ,i, x, y,z,hasCollided);
+                    collision_check(blocks ,i, x, y,z,hasCollided);
             	}
             }
             blocks->arr[i].v[0] += accx;
@@ -49,7 +49,7 @@ void calculate_acc(Blocks *blocks,float time_step){
 
 
 // inputs x y and z are the differences in distances between the start points of all objects
-void collisionCheck(Blocks *blocks ,int i,float x, float y, float z , int *hasCollided){
+void collision_check(Blocks *blocks ,int i,float x, float y, float z , int *hasCollided){
 
     if(x <= BLOCK_SIZE/2 && x >= 0.0 && hasCollided[0]==0){
         blocks->arr[i].v[0] = -blocks->arr[i].v[0];

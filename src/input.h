@@ -2,6 +2,7 @@
 #define _input_h_
 
 #include "headers.h"
+#include "movement.h"
 
 #define INITIAL_ZOOM -0.1f
 

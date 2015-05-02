@@ -571,6 +571,30 @@ src/block.c.s:
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/block.c.s
 .PHONY : src/block.c.s
 
+src/gravity.o: src/gravity.c.o
+.PHONY : src/gravity.o
+
+# target to build an object file
+src/gravity.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/gravity.c.o
+.PHONY : src/gravity.c.o
+
+src/gravity.i: src/gravity.c.i
+.PHONY : src/gravity.i
+
+# target to preprocess a source file
+src/gravity.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/gravity.c.i
+.PHONY : src/gravity.c.i
+
+src/gravity.s: src/gravity.c.s
+.PHONY : src/gravity.s
+
+# target to generate assembly for a file
+src/gravity.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/gravity.c.s
+.PHONY : src/gravity.c.s
+
 src/input.o: src/input.c.o
 .PHONY : src/input.o
 
@@ -618,6 +642,30 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+src/movement.o: src/movement.c.o
+.PHONY : src/movement.o
+
+# target to build an object file
+src/movement.c.o:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/movement.c.o
+.PHONY : src/movement.c.o
+
+src/movement.i: src/movement.c.i
+.PHONY : src/movement.i
+
+# target to preprocess a source file
+src/movement.c.i:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/movement.c.i
+.PHONY : src/movement.c.i
+
+src/movement.s: src/movement.c.s
+.PHONY : src/movement.s
+
+# target to generate assembly for a file
+src/movement.c.s:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/movement.c.s
+.PHONY : src/movement.c.s
 
 src/textures.o: src/textures.c.o
 .PHONY : src/textures.o
@@ -714,12 +762,18 @@ help:
 	@echo "... src/block.o"
 	@echo "... src/block.i"
 	@echo "... src/block.s"
+	@echo "... src/gravity.o"
+	@echo "... src/gravity.i"
+	@echo "... src/gravity.s"
 	@echo "... src/input.o"
 	@echo "... src/input.i"
 	@echo "... src/input.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/movement.o"
+	@echo "... src/movement.i"
+	@echo "... src/movement.s"
 	@echo "... src/textures.o"
 	@echo "... src/textures.i"
 	@echo "... src/textures.s"

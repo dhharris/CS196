@@ -63,6 +63,9 @@ void create_block(float x, float y, float z, Blocks* bl, int type) {
 	bl->arr[bl->count].x = x;
 	bl->arr[bl->count].y = y;
 	bl->arr[bl->count].z = z; 
+	bl->arr[bl->count].v[0] = 0.0;
+	bl->arr[bl->count].v[1] = 0.0;
+	bl->arr[bl->count].v[2] = 0.0;
 	bl->arr[bl->count].visible = 1;
 	bl->arr[bl->count].type = type;
 	bl->arr[bl->count].special = (type == 5);

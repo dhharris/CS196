@@ -9,6 +9,8 @@ typedef struct {
     float x;
     float y;
     float z;
+    float v[3];
+    float mass;
     float color_r;
     float color_g;
     float color_b;

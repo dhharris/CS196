@@ -3,6 +3,8 @@
 #include "input.h"
 #include "textures.h"
 #include "world.h"
+#include "physics.h"
+#include "movement.h"
 
 double rotate_x = 0;
 double rotate_y = 0;
@@ -149,7 +151,7 @@ int main(int argc, char **argv) {
             nb_frames = 0;
             last_time += 1.0;
         }
-
+        movement(blocks,1);
         render(blocks, image);
 
         
