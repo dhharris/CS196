@@ -22,10 +22,6 @@ lodepng.h
 
 /home/albur/Documents/Github/CS196/src/block.h
 
-/home/albur/Documents/Github/CS196/src/gravity.c
-physics.h
-/home/albur/Documents/Github/CS196/src/physics.h
-
 /home/albur/Documents/Github/CS196/src/headers.h
 GLFW/glfw3.h
 -
