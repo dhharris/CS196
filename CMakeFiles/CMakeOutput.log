@@ -888,3 +888,153 @@ int main(int argc, char** argv)
 #endif
 }
 
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1176800693/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1176800693.dir/build.make CMakeFiles/cmTryCompileExec1176800693.dir/build
+make[1]: Entering directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1176800693.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec1176800693.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1176800693
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1176800693.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec1176800693.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1176800693 -rdynamic -lX11 -lXext 
+make[1]: Leaving directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec264592398/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec264592398.dir/build.make CMakeFiles/cmTryCompileExec264592398.dir/build
+make[1]: Entering directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec264592398.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec264592398.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec264592398
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec264592398.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec264592398.dir/CheckFunctionExists.c.o  -o cmTryCompileExec264592398 -rdynamic 
+make[1]: Leaving directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3432374241/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3432374241.dir/build.make CMakeFiles/cmTryCompileExec3432374241.dir/build
+make[1]: Entering directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3432374241.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec3432374241.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3432374241
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3432374241.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec3432374241.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3432374241 -rdynamic 
+make[1]: Leaving directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec548582037/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec548582037.dir/build.make CMakeFiles/cmTryCompileExec548582037.dir/build
+make[1]: Entering directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec548582037.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec548582037.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec548582037
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec548582037.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec548582037.dir/CheckFunctionExists.c.o  -o cmTryCompileExec548582037 -rdynamic 
+make[1]: Leaving directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4133418038/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4133418038.dir/build.make CMakeFiles/cmTryCompileExec4133418038.dir/build
+make[1]: Entering directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4133418038.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec4133418038.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4133418038
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4133418038.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec4133418038.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4133418038 -rdynamic 
+make[1]: Leaving directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3862153820/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3862153820.dir/build.make CMakeFiles/cmTryCompileExec3862153820.dir/build
+make[1]: Entering directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3862153820.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec3862153820.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3862153820
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3862153820.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec3862153820.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3862153820 -rdynamic -lICE 
+make[1]: Leaving directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1948566004/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1948566004.dir/build.make CMakeFiles/cmTryCompileExec1948566004.dir/build
+make[1]: Entering directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1948566004.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1948566004.dir/CheckIncludeFiles.c.o   -c /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1948566004
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1948566004.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1948566004.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1948566004 -rdynamic 
+make[1]: Leaving directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4129469970/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4129469970.dir/build.make CMakeFiles/cmTryCompileExec4129469970.dir/build
+make[1]: Entering directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4129469970.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4129469970.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4129469970
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4129469970.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec4129469970.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4129469970 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+
+
+Determining if the function glXGetProcAddress exists passed with the following output:
+Change Dir: /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1541036020/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1541036020.dir/build.make CMakeFiles/cmTryCompileExec1541036020.dir/build
+make[1]: Entering directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1541036020.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddress   -o CMakeFiles/cmTryCompileExec1541036020.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1541036020
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1541036020.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddress    CMakeFiles/cmTryCompileExec1541036020.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1541036020 -rdynamic -lGL 
+make[1]: Leaving directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+
+
+Determining if the function glXGetProcAddressARB exists passed with the following output:
+Change Dir: /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2239168150/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2239168150.dir/build.make CMakeFiles/cmTryCompileExec2239168150.dir/build
+make[1]: Entering directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2239168150.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB   -o CMakeFiles/cmTryCompileExec2239168150.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2239168150
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2239168150.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB    CMakeFiles/cmTryCompileExec2239168150.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2239168150 -rdynamic -lGL 
+make[1]: Leaving directory `/home/albur/Documents/Github/CS196/CMakeFiles/CMakeTmp'
+
+

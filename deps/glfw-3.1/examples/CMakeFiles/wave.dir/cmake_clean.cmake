@@ -1,10 +1,10 @@
-file(REMOVE_RECURSE
-  "CMakeFiles/Wave.dir/wave.c.o"
-  "Wave.pdb"
-  "Wave.app/Contents/MacOS/Wave"
+FILE(REMOVE_RECURSE
+  "CMakeFiles/wave.dir/wave.c.o"
+  "wave.pdb"
+  "wave"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C)
-  include(CMakeFiles/Wave.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+FOREACH(lang C)
+  INCLUDE(CMakeFiles/wave.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

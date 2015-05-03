@@ -1,10 +1,10 @@
-file(REMOVE_RECURSE
-  "CMakeFiles/Boing.dir/boing.c.o"
-  "Boing.pdb"
-  "Boing.app/Contents/MacOS/Boing"
+FILE(REMOVE_RECURSE
+  "CMakeFiles/boing.dir/boing.c.o"
+  "boing.pdb"
+  "boing"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C)
-  include(CMakeFiles/Boing.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+FOREACH(lang C)
+  INCLUDE(CMakeFiles/boing.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)
