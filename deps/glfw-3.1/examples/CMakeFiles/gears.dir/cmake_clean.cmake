@@ -1,10 +1,10 @@
-FILE(REMOVE_RECURSE
-  "CMakeFiles/gears.dir/gears.c.o"
-  "gears.pdb"
-  "gears"
+file(REMOVE_RECURSE
+  "CMakeFiles/Gears.dir/gears.c.o"
+  "Gears.pdb"
+  "Gears.app/Contents/MacOS/Gears"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang C)
-  INCLUDE(CMakeFiles/gears.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang C)
+  include(CMakeFiles/Gears.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

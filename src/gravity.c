@@ -6,8 +6,6 @@ void potato(Blocks *blocks){
     float y =  blocks->arr[1].y - blocks->arr[0].y;
     float z = blocks->arr[1].z - blocks->arr[0].z; // calculating distance between blocks
     float l =(x*x + y*y + z*z);
-
-            printf("%2.2f \n", (float)(l));
     if(l <BLOCK_SIZE*BLOCK_SIZE) potatobool=1;
     if(potatobool == 1) calculate_acc(blocks,1);
 

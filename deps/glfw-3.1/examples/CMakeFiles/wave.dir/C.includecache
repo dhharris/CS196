@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/albur/Documents/Github/CS196/deps/glfw-3.1/examples/wave.c
+/Users/hugh/GitHub/CS196/deps/glfw-3.1/examples/wave.c
 stdio.h
 -
 stdlib.h

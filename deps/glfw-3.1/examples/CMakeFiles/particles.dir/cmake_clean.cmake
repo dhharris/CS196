@@ -1,12 +1,11 @@
-FILE(REMOVE_RECURSE
-  "CMakeFiles/particles.dir/particles.c.o"
-  "CMakeFiles/particles.dir/__/deps/tinycthread.c.o"
-  "CMakeFiles/particles.dir/__/deps/getopt.c.o"
-  "particles.pdb"
-  "particles"
+file(REMOVE_RECURSE
+  "CMakeFiles/Particles.dir/particles.c.o"
+  "CMakeFiles/Particles.dir/__/deps/tinycthread.c.o"
+  "Particles.pdb"
+  "Particles.app/Contents/MacOS/Particles"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang C)
-  INCLUDE(CMakeFiles/particles.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang C)
+  include(CMakeFiles/Particles.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
