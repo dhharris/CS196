@@ -119,7 +119,9 @@ int main(int argc, char **argv) {
     g->zoom = INITIAL_ZOOM;
    
     // Generate terrain
-          create_block(0.0, 0.0, 0.0, blocks, 14); // character
+          create_block(0.0, 0.0, 0.0, blocks, 14,1.0); // character
+
+         create_block(0.0,0.0,BLOCK_SIZE*3,blocks,8,1.0); //TNT!
          gen_terrain(0, blocks);
          
        
@@ -152,7 +154,9 @@ int main(int argc, char **argv) {
             printf("%2.2f frames/sec\n", (double)(nb_frames));
             nb_frames = 0;
             last_time += 1.0;
+            //calculate_acc(blocks,0.1);
         }
+        potato(blocks);
         movement(blocks,0);
         render(blocks, image);
 

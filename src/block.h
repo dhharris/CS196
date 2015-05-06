@@ -27,7 +27,7 @@ typedef struct {
 
 
 Blocks* init_blocks(void);
-void create_block(float x, float y, float z, Blocks *blocks, int type);
+void create_block(float x, float y, float z, Blocks *blocks, int type , float mass);
 void resize(Block *blocks, int *size, int offset);
 void remove_blocks(Blocks *blocks);
 void draw_block(Blocks *blocks, int index);

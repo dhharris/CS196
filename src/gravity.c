@@ -1,5 +1,19 @@
 #include "physics.h"
 
+int potatobool =0;
+void potato(Blocks *blocks){
+    float x = blocks->arr[1].x - blocks->arr[0].x;
+    float y =  blocks->arr[1].y - blocks->arr[0].y;
+    float z = blocks->arr[1].z - blocks->arr[0].z; // calculating distance between blocks
+    float l =(x*x + y*y + z*z);
+
+            printf("%2.2f \n", (float)(l));
+    if(l <BLOCK_SIZE*BLOCK_SIZE) potatobool=1;
+    if(potatobool == 1) calculate_acc(blocks,1);
+
+}
+
+
 
 void calculate_acc(Blocks *blocks,float time_step){
     float accx; float accy; float accz; int i=0; int j=0;
@@ -13,10 +27,10 @@ void calculate_acc(Blocks *blocks,float time_step){
             hasCollided[count] = 0;
         }
 
-        if(blocks->arr[i].visible == 1){
+        if(blocks->arr[i].visible == 1 &&blocks->arr[i].mass >0.0){
             for(j =0; j< INITIAL_BLOCKS;j++){
 
-                if(i!=j && blocks->arr[j].visible == 1){
+                if(i!=j && blocks->arr[j].visible == 1 &&blocks->arr[j].mass >0.0){
     	            float x = blocks->arr[j].x - blocks->arr[i].x;
                     float y =  blocks->arr[j].y - blocks->arr[i].y;
                     float z = blocks->arr[j].z - blocks->arr[i].z; // calculating distance between blocks
@@ -31,7 +45,7 @@ void calculate_acc(Blocks *blocks,float time_step){
     	            accz += acc*z/l;
 
                     //collision code
-                    collision_check(blocks ,i, x, y,z,hasCollided);
+                    //collision_check(blocks ,i, x, y,z,hasCollided);
             	}
             }
             blocks->arr[i].v[0] += accx;

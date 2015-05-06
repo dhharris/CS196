@@ -55,7 +55,7 @@ void resize(Block *bl, int *size, int offset) {
 }
 
 /* x, y, z are the coordinate location of the center of the block */
-void create_block(float x, float y, float z, Blocks* bl, int type) {
+void create_block(float x, float y, float z, Blocks* bl, int type, float mass) {
 
 	// if (count == bl.size)
 	// 	resize(bl.arr, &bl.size, 1);
@@ -67,6 +67,7 @@ void create_block(float x, float y, float z, Blocks* bl, int type) {
 	bl->arr[bl->count].v[1] = 0.0;
 	bl->arr[bl->count].v[2] = 0.0;
 	bl->arr[bl->count].visible = 1;
+	bl->arr[bl->count].mass= mass;
 	bl->arr[bl->count].type = type;
 	bl->arr[bl->count].special = (type == 5);
 	++bl->count;
@@ -91,7 +92,7 @@ void create_blocks(
 	for (i = 0; i < length_x; ++i) {
 		for (j = 0; j < length_z; ++j) {
 			for (k = 0; k < length_y; ++k) {
-				create_block(initial_x + i*BLOCK_SIZE, initial_y + k*BLOCK_SIZE, initial_z + j*BLOCK_SIZE, bl, block_type);
+				create_block(initial_x + i*BLOCK_SIZE, initial_y + k*BLOCK_SIZE, initial_z + j*BLOCK_SIZE, bl, block_type,1.0);
 			}
 		}
 	}
@@ -183,7 +184,7 @@ void create_sphere(Blocks *bl, float x, float y, float z, float radius) {
 		for (i = x - radius; i <= x + radius; i++ ) {
 			for (k = z - radius; k <= z + radius; k++) {
 				if (distance(i,j,k,x,y,z) <= (radius + SPHERE_THRESHOLD) && distance(i,j,k,x,y,z) >= (radius - SPHERE_THRESHOLD)) {
-					create_block(i,j,k,bl, 1);
+					create_block(i,j,k,bl, 1,1.0);
 				}
 			}
 		}
