@@ -1,7 +1,7 @@
 set(CMAKE_C_COMPILER "/usr/bin/cc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "AppleClang")
-set(CMAKE_C_COMPILER_VERSION "6.0.0.6000056")
+set(CMAKE_C_COMPILER_VERSION "6.1.0.6020049")
 set(CMAKE_C_COMPILE_FEATURES "")
 set(CMAKE_C90_COMPILE_FEATURES "")
 set(CMAKE_C99_COMPILE_FEATURES "")
@@ -55,7 +55,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.0/lib/darwin/libclang_rt.osx.a")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.1.0/lib/darwin/libclang_rt.osx.a")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib;/usr/local/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Library/Frameworks;/System/Library/Frameworks")
 
