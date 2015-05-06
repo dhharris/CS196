@@ -38,14 +38,6 @@ string.h
 time.h
 -
 
-/home/albur/Documents/Github/CS196/src/input.c
-headers.h
-/home/albur/Documents/Github/CS196/src/headers.h
-block.h
-/home/albur/Documents/Github/CS196/src/block.h
-movement.h
-/home/albur/Documents/Github/CS196/src/movement.h
-
 /home/albur/Documents/Github/CS196/src/input.h
 headers.h
 /home/albur/Documents/Github/CS196/src/headers.h
@@ -71,10 +63,6 @@ movement.h
 /home/albur/Documents/Github/CS196/src/main.h
 headers.h
 /home/albur/Documents/Github/CS196/src/headers.h
-
-/home/albur/Documents/Github/CS196/src/movement.c
-movement.h
-/home/albur/Documents/Github/CS196/src/movement.h
 
 /home/albur/Documents/Github/CS196/src/movement.h
 world.h
