@@ -1,5 +1,5 @@
 #----------------------------------------------------------------
-# Generated CMake target import file.
+# Generated CMake target import file for configuration "".
 #----------------------------------------------------------------
 
 # Commands may need to know the format version.

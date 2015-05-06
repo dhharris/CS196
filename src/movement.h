@@ -4,7 +4,7 @@
 #include "world.h"
 #include "block.h"
 #include "headers.h"
-#define STEP_DISTANCE 0.8f
+#define STEP_DISTANCE 0.6f
 #define JUMP_HEIGHT 10.0f
 
 void jump(Blocks *blocks ,int indexPlayer);

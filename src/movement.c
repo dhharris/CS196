@@ -22,11 +22,11 @@ void fake_Gravity(Blocks *blocks, int indexPlayer){
 }
 
 void motionResistance(Blocks *blocks, int indexPlayer){
-	blocks->arr[indexPlayer].v[0] = blocks->arr[indexPlayer].v[0]/1.25;
-	if(blocks->arr[indexPlayer].v[0] < 0.1 && blocks->arr[indexPlayer].v[0]>-0.1 ){
+	blocks->arr[indexPlayer].v[0] = blocks->arr[indexPlayer].v[0]/1.05;
+	if(blocks->arr[indexPlayer].v[0] < 0.1 && blocks->arr[indexPlayer].v[0]>-0.05 ){
 		blocks->arr[indexPlayer].v[0]=0;
 	}
-	blocks->arr[indexPlayer].v[2] = blocks->arr[indexPlayer].v[2]/1.25;
+	blocks->arr[indexPlayer].v[2] = blocks->arr[indexPlayer].v[2]/1.1;
 	if(blocks->arr[indexPlayer].v[2] < 0.1 && blocks->arr[indexPlayer].v[2]>-0.1){
 		blocks->arr[indexPlayer].v[2]=0;
 	}

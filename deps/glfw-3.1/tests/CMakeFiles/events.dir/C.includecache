@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/deps/getopt.c
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/getopt.c
 getopt.h
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/deps/getopt.h
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/getopt.h
 stddef.h
 -
 string.h
 -
 
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/deps/getopt.h
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/deps/getopt.h
 
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/tests/events.c
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/events.c
 GLFW/glfw3.h
 -
 stdio.h
@@ -30,7 +30,7 @@ string.h
 locale.h
 -
 getopt.h
-/Users/hugh/GitHub/CS196/deps/glfw-3.1/tests/getopt.h
+/home/albur/Documents/Github/CS196/deps/glfw-3.1/tests/getopt.h
 
 deps/glfw-3.1/deps/GL/glext.h
 windows.h

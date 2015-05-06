@@ -1,4 +1,4 @@
-file(REMOVE_RECURSE
+FILE(REMOVE_RECURSE
   "CMakeFiles/modes.dir/modes.c.o"
   "CMakeFiles/modes.dir/__/deps/getopt.c.o"
   "modes.pdb"
@@ -6,6 +6,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C)
-  include(CMakeFiles/modes.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+FOREACH(lang C)
+  INCLUDE(CMakeFiles/modes.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)
